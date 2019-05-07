@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-13 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PE-13" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PE-13 <small>FIRE PROTECTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE - PHYSICAL AND ENVIRONMENTAL PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PE-13
+                                        </td>
+                                        <td>
+                                            PE-13 (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                        <td>
+                                            PE-13 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE</a>
+                    &gt; <strong>PE-13</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization employs and maintains fire suppression and detection devices/systems for the information system that are supported by an independent energy source.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies primarily to facilities containing concentrations of information system resources including, for example, data centers, server rooms, and mainframe computer rooms. Fire suppression and detection devices/systems include, for example, sprinkler systems, handheld fire extinguishers, fixed fire hoses, and smoke detectors.</blockquote>
+    
+        <p>
+        Related to: 
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PE-13(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-13%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                FIRE PROTECTION | DETECTION DEVICES / SYSTEMS<br>
+                                <strong>The organization employs fire detection devices/systems for the information system that activate automatically and notify [Assignment: organization-defined personnel or roles] and [Assignment: organization-defined emergency responders] in the event of a fire.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can identify specific personnel, roles, and emergency responders in the event that individuals on the notification list must have appropriate access authorizations and/or clearances, for example, to obtain access to facilities where classified operations are taking place or where there are information systems containing classified information.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PE-13(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-13%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                FIRE PROTECTION | SUPPRESSION DEVICES / SYSTEMS<br>
+                                <strong>The organization employs fire suppression devices/systems for the information system that provide automatic notification of any activation to Assignment: organization-defined personnel or roles] and [Assignment: organization-defined emergency responders].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can identify specific personnel, roles, and emergency responders in the event that individuals on the notification list must have appropriate access authorizations and/or clearances, for example, to obtain access to facilities where classified operations are taking place or where there are information systems containing classified information.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PE-13(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-13%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                FIRE PROTECTION | AUTOMATIC FIRE SUPPRESSION<br>
+                                <strong>The organization employs an automatic fire suppression capability for the information system when the facility is not staffed on a continuous basis.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">PE-13(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-13%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                FIRE PROTECTION | INSPECTIONS<br>
+                                <strong>The organization ensures that the facility undergoes [Assignment: organization-defined frequency] inspections by authorized and qualified inspectors and resolves identified deficiencies within [Assignment: organization-defined time period].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-13 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+</html>

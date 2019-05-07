@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CP-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ajwONNXlHELKGMnHyj55Cb6TF9fjt7E0NpnoFISr/Mcz05TP+mK1E8+qzhEqsZpU0H/dizO2ltCe7+7bxtn/7krZs0We+F0TwJlbqmo92yrV3dACSLOsmBY2qD+VH2LDZ0yBSoFp65quLzxCeAtAabj+AC7J+miitU1RLs/Hdo0yILj1y5+8Lu68D1/2Vks8RsNmDzCa6UnhREYV1dRricTWvNMvPbciKQrj8lXrtXYdMhkPNJQ2yGBSJ84LG69WzMk907gA085afOGAViR3J6b5H3XR+n2QVVaASNNQ8MrBA9QE4Ud24JsR7eqP+z79cEI/e+rIg1EMwXMxe+53YSGqVY18kP1v6D7WdYAprO3+0SYa2i9xRDJR0ZzOtGa0HEgcEdmTP9UAViAK4pbiBWf8LY/MSpU3gvSJSPqYBQSuLd7b1gEdi4MTEDdWBNSgZSt3NHDEG6QBwJYbfjdGwfDmtXAn+5Fb1UMgGNfOg58s6v+I1iLhH9ky6eT9n4y+9aq54yMSnowgAa3hhb6uZPwkTT3Q5PD2U1OZ6cCf0L0jFVjdE/bj6z/zuRKwAY6sHepJrAQb6k/c6c8as6CS7KNrQV4uMvMyeC3J+wxhmAhb42HyGdc9SIeM+EVDU15KmM2IwDRgcwqPqESo6s1aw8QBvmi1WcGw+hUrmZKyEvxkwYriy71zfXYvXyjyl0SrR+tITpfJ19Dmnf0h8Sl/bcQj0Wt8v0L7k4Y83imuWrCGi+yZ2GJNBgHLv0kaQHmLWCeJ4n59NQyLUNdvHwOFfgkO9xNzQSHD837uHa+Ke+Qe9X4HmZ/Ykz4tu6aXIMY1FlQaGKipRypzoLkH2SFoMlzczAZywtCe5Byvaz2hnh0AIZPYMuoVaQtbRFRutr9K7P+xVJiyb818xNrMYo9OiiItJYm0CmdF+FcCXDLkJRjUQtSBxOGGIAjeebhmlU05CwWmmItlVOYvVPEczbTxXELRfPqjV8x00ciemOGzEF8U/61XxGU19G5XJyZrS30MppUdXVRVKmCkNuwRNTOsCanwiCg04BF4OGz8rONeCQLTCAQPxAo6W/INgeWBUi7xU1YMfcA9WVURtqW5AIrAQ0NQXUCxIwNieEL2wfWUXrHbM537IBJdTm0liHQxBOc7NVcNeUrWz42Ae8JKp6nF9gWmnyoq1GFCYw/0qB6aBdP3+mGEaHeG7WsxVNfJAYxI+XIFVw+9tX/ptWW3zvHMJHxPa+xoJwERsF8iiV4FayU5D3hVJFjTcx9uE9btd69gPDgZyk9v6xIuvbhuzRd6iDebXMQ1a12SP/xHFth19icUuxLkAJwgjtfB6BRXN20+BsLHzrEntqXLgZBKKtm+ezwJV+2JDNipTTOMsPYqMf7WSdnlL11rF7RZia+DKogxaVrW+db2ErF7fSItJGyA54r4Uk0usPpnDoJZP2bSGgv7OvnDAYXoLPgJY6lWkFkPjvkJKO5E1kxFkmM7ddhrrxd+CQzjBQw2mkRJlM18hLgK9Bu4C4uTMZAzMZCpJGmvNeKgWoJk/ASZQK/2Ja6sG49a6lpADEpdT86YJ2EjfkfeRVLqrp40ayfAd1LgnDb2vmbKj+Bi5s5hrEy8YbLaS3pk3DNRxYXSkxPnSS0RdtzX27eXShLgjKJJLziHqpELqpDVpsZWEZra3jrYYieJDdm4LhLxsS8PNpzCkLGZCCItRCGIb4bOQKFsKW3gYaGiwcJdhmsR4biPMtRpa6B7zyWrR5vdMKCA4mJX+eELWKa/TvFrd3esyBU/KHZQL+LAroggEjDLwbDdanMG7nwCUaWqC+8KjDxlIO6JwovRFyGPwlcb67+hPq96UXO39y8Z3OM/3CAn31rAO11tMctzZLD3R9Fm6HWOxHeV7w49gI9v8kulmpiaWARvZfQxljI6q53UyF8mWUukGLgS4/M033HVVQfgZ8bkytTbRPfGmoUgAolfR11NOPc+WC6myZSkKFv8UaaUwFu154KPmdS7E8ZfXOqrt9GdyD3XuEfhxBUw4rqxra3t8jtvyG8eXiXjM70SVRTT5fKMIaAcMHCXjNSdgL5KPKGnff2i2DuM/icWAlGV1p8NxaEqM4hjiH27o9B52DsupADy+P6LkdhoFhDTCcWGGdr+Dqv9SbxV16n4rW0J05BqozY5ajNQKTv+Evowv6pMBGFVVcHzS3Ns3Jr79KaIxrSaHOsiLXqPPmF6REc/vlz2t8PXCmnB44kivSLt0Ot2OJ1isWkSiDM5oHA1d0necJFj7/S+Ppzt27kH4ifUCh/tezGd4yv/1L1wxWIMS3c/M0HSo9Auhm48YTEsqaofB5zQ4tb6ZXvR+1D55iRwgwRGkeVTc6f84ifjGytpWmPscTrtFgYhpmm12ugZWhRQgLnTAzNnw+me+LVYp1qSce1z1BZpYvK9p8xgxmJYZTnmzKXI10kMXchztrUFZauIDqfUZHnHKkUjTO8R13lHaBPTBnzkE7G5cF9lAhTh5ULX/kwsfsIJgLYRz0xqoNpO8eXj8lKAVW+2IIMoouUDTsbepG8Yhp2sVe/KlHKXuTFqNWADaZ2vOSPCxPMlpF5zGrmBX4uzJSaXCSVmQRRYUc8eNI4Mcb604uy/U0j6dXshrCkQhRZepsaTinsFeGOmYZtdQnOoNmUSOjIWOVhjaNtcT4nbNiO1D3ZJPEIJBoMFYb6++3NDJT7Kaf0UT3k91RjG3+kb+gKCjAomQ60yn8igtnVV7dM+POdXLlzlVlfOY+lutrgN3XN3wN7BX/3kN6DZs+/KVH+i738RM/ajocTErVK8OOKg3F37uUMMegRTEpRq9zNCrEMxCFPKZ01gnuOGzuXqtkUkvgOwqbC2MaAq32Lx9+7ABJdn9OEwiX9sXAXNCWPdKUsktMbk1ENVMHZ30pSX/QHCzbTBfmzH+MGxC0kvsTjiomTrb/tlblMW78E6LGa8ycRmMKW//N1LY3khbP4f9AID7vUhNSoc1qfoL7OpXzsRfp5st54mkWAfRk/2tgkLhe60vAYabpy/1ixgouoI6S2ODqHpTOXs4xH0PGxw7mYycRFeEiX+3LBQT0X/4GQ0sjK2K43ZZb6G5IGqvXOLYxLS/8fPVmurlicT1G9atBUANImR7Z2zjUHKMpctm96BGCyvjtq6sxXwZ1xdW1I3BpQLb/rsCt/dzw+ZaH9uqRU/RWUNWZ92RwuryaaUw9HC6zZsjufjeQIQ+mffgUuRSKYCYn7nLsjZ0kQweCnNsuNOnnZYNu9OvVDif4UCVVGixotMFyu+Cp+BKIO1Xg+zw9cpzLbHioEUPzlRGijtLUjW3VNev4hA4oVjevvMOtWs4C14Xg9A10P9/qRRvWt7hxs7SQ5+0RDroH+ShdSRKjJSwzseoABsnJs+fcDdNpf0eThTjuCLP8TG55/bgcMz54ZD+sbIiTAsf+vuElXdtFRoqoGppZ6Te4VXZB8cA0V6ANG6NDSZZxLcX/2b7jeisi361aw55o2n8gKnL2Aqrmvu2j3mrT2nomHNk5JbvigRAFBmLZyFiTgKuGZ+OfW2LsCKYvDT2ITCc7bj+tYfiWmTzvOSzdxo7bhvnJwlTyHb1tAbkV5F6rt40wRmvQ7osYn/dTQYozWoqMsMu5YynZiEtCNnya97A7kqD0n1BxAV7VHEbA+606gnYdIKmP5VlzRuRX5qs6f0xA0nYpbVhs1gzWc+7EHswJYtfybWatzPgnd6eDfaxDBAW5bXMGncBQnvEt+2cK2HS5JNGWdHJ1ZKQg3g/twqyIW5F52QzhQlZwrjkhGbiP/uBZ33qHXpdkV4AiQt6ydsLCBzg7K9569JCoGz88QqGkj0u/iVsyKCyhlcqIXMVRkx4JlZbdRMPnDl2qXWfbjK6YDgRdd1tW6Mn0pd5lxz8Li2dP0bS+lZtr7sChjwEzWMXQDlklu7EWuAI8QQOabSSKfc/mj8ogmbzjtxYVLsT5SrG4Q/I7bzrdINDHppIhqOaslJwuw4uGW9Xon/19BDMeU4qHP91+FLu5hkUD1bxU5B/fmS/MoljilGukkwng85m/F7UZTDdpEmHRDBeA2F5TseNckA19bXncTKXJI/rJGsFfMkTuw/PalCY33zJquwuZsTZS3ZGuXLlQTY0aUR4rm2ue+Tn41VB8nBsEMrbMBW4YTr2qyKmoMSmk9Ekj3fx/WxBjvmTsBi/c5AwqhxChnetR9eOplvPUcgB9Gus/HkAkM9RCtitkJMbPqDwtPeA0griqEoWvgHBTY0sHWlmu9vBS0JqXhap3KUvIsTEtWi8v2fkVXYshwPAii+g0jylmjBf1L74mygc+6ngvsqVs/onUGRLkgnsv9K1+U7+/9LfnhxUOrxx+cRD6X7g35XbUp/4iP63F5h3sSVRFVOKq0mzy3Rerm/hEGchtMsHkuiGyHZdD42D8H1chMY82Z/r46jyy5Qruhyr/cfZS5dTv9DwcT7wIzU5roMzMYI9h/DumFO0wxB4EAcuuqICHe7h3H046+ZgNLPL6KcROsbFe3S0g39Dhp7rLubh/BMOf7tJZ/mjj8LfiLsVSCQlfb3aVCQtDkBhJ+aou+KgzdXC1wlMQSS68WLKgRxN5XmO/eYMLPOmcv07g/9BXJB9IoXgEG2i/f9/AN+J2qXgLMVmaXRHqST85ff2ohJkSRVhrNiNqDVI+rcGUhqN3sUQaSYIH5vLN35SROW9cSTPcpTLTsiF5kIofb/Uft/1p5Ro1Ze0Y8tVy9H+KJP8ojTIMuSDGRzXUKfv6J8DNeegvn7P5tRTAZpSWYMRLtTtscOjqHxbjh7U2ZNUKi5LqtEtqWYigajJUwJ2kLMY95xAgRLZFLe7iPobS+JN/TlC6L8T0tDBWKk6fgvXLuvUGBrY8lSdeiPix/YNCROSLpW60/NJiCJN5DKKF8Ac8jK1k3GrAcRw4BqD8TSX5Octxs/apTi+9MHkbyiqTBiPAIlFIWm0oshBSBNn4vPGE49b4+poyILmBuhNz5o0o/gdYnD+p6aivJcccKxuNCzQWRjNDFXZHGf77Uit9etaXi+Rkqr/S+qiAR9TWsisL737exNgxm8CwUwD1KK39AAd+4UkLzCUtxVp+eypDJ/lQgnywk6IIwKx4dwK+HROqgEePkwKT9iWmHXzJ9+1tjw1xShwnRC1FGFhxP2vYeSBRMBL4BdsTFDrVl6gHLeM1TMqqZnOIhpYqCCSu4vsYAF4p1Qi6xtBu35K/HQ+nXLn1zBQvH6ALr+KOawzfrTTmjryDwsbYoOJkQe3iOPciDxAVhLGzo0uYf+4mGSlOhMBNSjAvbSr18ukC+egEEMeZj2Cyj7/35Ip0lgVs5yJSQllhyiqCx3XBuv7xt+gvD5rvCsMr8LcjiPppPW29VAlFi7XlHLCYL44WSdR8tLZxQ8ALnsgGcK7gezjMNme/TH86DiYIsqKOJeeAdFBwA48ooqgbNm6SeHSTHXATP0g12DDmRRbWR1gRa3UvxhN7TDmbvguZzhWJrbSS0fGcLFGe25USzLVFprZn2IUMS+XsNc9HMyGM7rzL1xB3aaI/K1oaWwSB/7RdSBgMMlJlb9ZFd8M11Eud0aJ41H6eKyndVgUXbXdY4G8AdpRT8/9JCg1WhXvc6gMt4ejTkF/lTb+xIwDomnvcM0beculfcJTAlSYN1Vnof1BDfBMcEJIADF2HMKv6zkFCuKR/KfocT6fkhsDoT8ecqjRkJk3yGsJKrmqxbNYZt9XDN+lttFtlXfz1iHTwiTjOwxwrZJND3TMJMgAf+Jfmy9GaZn1uYJQveDy9nY9bsmFdaQkzLy+z5WhqbEclMnUGIJ6rjNXyhmVWU6WBEQkp9zG4wU+xGXOt7ChHKqwmkCXabJ8UDK/Wc5pSRtfscYVN+Yo9h3yWCc81Vq0Ls4YWC5bKNwTBwBeU5Onx01NdteBRxoUMvPbxssX/FezO6CqiU97ioYcj2i7I6rCEMBmIC2if2c1MPYUNIyrZ8nuB+07tlso9+fmdcirLW7TPiFt1KdS8oPcEzFI52+yXYlvHzvkiHbMKDg3Y025LmLPsm21FcfAA8vIPo1NBgIqUzNehuIauZKDGou2qYsLJnFYlRZV7RJu3/tfhwYMl8nnrcXUFKlB7LCmA26cTOcinKvJEQ7svgT4E7gwktJHGK/bBKA+B9ta15s9hjQFMZtMxetV7aOOfMi7IuLsKaHIfITVtModilDXZ93GHs/whTFW4X2iN8TJrn066JV8VKFBq+iE3547L/EHuaFLU3kBjI8j3I5rIZsEWMoxU/anWE5pNS6faS9BIKO9OohU3YCYoY/nFmeZ6ftlSipE1kbCEKs33lZ0LixTwjppoS/jva/bfIaQqmn6wTZG+rRErlbvFW9WHxFAuVyOZLGz7JEdImBjuGvlGuHMRm4VYYMV4wSYfFBuEUpzEZ7Qehik1XuSK+QcnX415kaSITmggOrOt1sUcdGeh/nmQ2RP8lqjba9gtArN9uw+ZutYfeF1SdIztBYW0H1Le0QduV/13SRNeFF62W3W25zPnEXtkeQ3FNYqYQJzVI6cw0IcVKWNX9lybXwx7T0bWsX6u8nooUhWUFDu8pSCcpO2C2gqUWWkJUN5KG338hQxKul8V39urlNULpWsqQjrD0eTnqCXjdt7gAFhc96HyooEHw1NAhKypfm7nWVjEoZbB8kQy4V2DZaeh3bL6qjRYXyAJsIz5bpsfWBxhRjCJVriLZUmuM9YXXvvM0Rf8g0e/9silb4/j8zTJ6aSpOcYZzJCUcZIZHLg2Tb38Bqlw2QzgrDF5s2fOuamMrnmHt1a9b4hBEutqcKTxQacf+B9tWnPO+0hu25L/TNFOLrB5lq+mDfaNBlDeBCAjppY6b9LVAmBW9rMZ/Yh9ZSlw4NxGZgm5HEq4+LP0e2O1m71ufHlYyPXczELZTuHtu4QFb8+AKlOea8gnGpuVBrGM1usQG8pI1XDAk69x62m5PwdevBdq0GgLO3s5xDrp52200FH693Nxo/DDOvSVNykqlusCA/uhqZe4Zk6EsP5wT6AIjXbqVop12ydx8xUi4pBFlY6lxAf+Bo0mq7VTZR3lrFUMn0fjZxVSJANpLIVDgbPR310GLqRubBvWzJsaG0jBJQEzylmeaLwZMPGgGAxQfk41j/arXwmmctcALZw/yfSzLsBTHAPFGlkvi+bAAcF0m5JX0kuBHiWLXVqzGseXw3iLAvY1KDFDGDer6FQwy6SQgQwgrV+RX5QUhT8qcSV7P+jglEBXlmw3fJG/Pwg3IB6mxcHIoChvstCGZP61dEzAooXLvxinpHEH/sKKLnKeigKg0jL7oyXTQV/ld3WcRdwWm7bkAs2ZGz/rj9Tj+j2txkoxNxIyH0xxRur1b+RTUWRW0l5Bg8rG2a4ZnH4AWr6MkMnMnOwXjqOpcTIsVsyRw1l7urFRD9J4/9CKhIGOUjD6Qiju1HMwGiAY1OeJDFfGuDyIz2Uqdtp4nwjs5x6uCvjnMqsaQMSdQCfyWQChGH1vMrD+XrtkTlEN8sw3dgnDedyXkK00g1mZiZVKUS984xtbc8AlciTEcnYJb3MMbOKKHgkR0LBVr04/SAgyNs8k+ze+zSE2qd972r2y1ybBOo5eVVNlc5KZ/TTanBR6nqhWxuMJnJZlvfMB1clrKgle41Xr/ejpKfEsFdzfsACet6VSJ9PoL2vvzpwut1UNo6bn8rW2Ly5NgsXeR6csrPD+Fvi6tDRzf8IAmuxTpW9Foq/Y/U8wIAbZz+AN8azt2bEDg/T0Y31jTxKD/WbQkEbb+dJPMHAAyFywAciRFOC3tvx+80Mig9B9XXyvG3jPmUlpqjB2ckbILwONqkMrB2EAmTdrTN6oMK2u8hSNkyNdZzJRe5EFDg8jugHUWPlJ4kwCSdIBe4quamq0U+HSFCYGCFKpd8n63hrfuREJz14lHqbDHUhp3s2mNq72Kv9Pa14arZzsHyTpAf1+ImbX/WlXkIPRezFCTMIsU2hxgWHZ8CQxpeATYGK/vTIV/9dQRAyac8w1Nfa686m7qqLSEaD/vXZ7K3xJZi4QADGD5f0i5f0xmuh2s1pzOeO8NnEYBvnWs2jP4jV2ihOtArhj0ljTJjqTQyszBdPULbQpDK6QVUQ4a4jLiUpSIzueztlRFCgBa7uy4sZWIDJ+CNrkfrYJUL76+4/VPclvv1q0od7ZO/QKlvVA+ti03n2nfw8peUO0ZMIK2JdMz7EngcPM24wRqAQG4SUVsayksQeeLAB5fawQrnu5eyIoLAt++iTDPkfwSU5XaGkgHCEdrg2IwVmWlkhW5o6CZ1rbrtR+goqeZAf8H6JzWJG8MNcSI0HzfaAer+75MMJhrEQ27wzbhYnslsL95D2B43GysI+N5/uIcP4bAcFiCFXvkQWGSG8BtQQHcLPMVIgS4hdleVdl23q97DdQHHD7TnK4Vy1OtELKqczTV29Lezl85KxpMeHQA97M128mI+tSxK/7Uo84uPK4tIlu10yxeC+SkZjdeCz6EbIgXm+F1EHrg8Xo2kh61XZj1HpAKcPQHSgrmIbrnJJzVY9u40CCzN">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CP-8 <small>TELECOMMUNICATIONS SERVICES</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP - CONTINGENCY PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            CP-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            CP-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP</a>
+                    &gt; <strong>CP-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization establishes alternate telecommunications services including necessary agreements to permit the resumption of [Assignment: organization-defined information system operations] for essential missions and business functions within [Assignment: organization-defined time period] when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to telecommunications services (data and voice) for primary and alternate processing and storage sites. Alternate telecommunications services reflect the continuity requirements in contingency plans to maintain essential missions/business functions despite the loss of primary telecommunications services. Organizations may specify different time periods for primary/alternate sites. Alternate telecommunications services include, for example, additional organizational or commercial ground-based circuits/lines or satellites in lieu of ground-based communications. Organizations consider factors such as availability, quality of service, and access when entering into alternate telecommunications agreements.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-6">CP-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-7">CP-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CP-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TELECOMMUNICATIONS SERVICES | PRIORITY OF SERVICE PROVISIONS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CP-8 (1)(a)<a name="//apple_ref/cpp/Modifier/CP-8%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Develops primary and alternate telecommunications service agreements that contain priority-of-service provisions in accordance with organizational availability requirements (including recovery time objectives); and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CP-8 (1)(b)<a name="//apple_ref/cpp/Modifier/CP-8%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Requests Telecommunications Service Priority for all telecommunications services used for national security emergency preparedness in the event that the primary and/or alternate telecommunications services are provided by a common carrier.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations consider the potential mission/business impact in situations where telecommunications service providers are servicing other organizations with similar priority-of-service provisions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CP-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TELECOMMUNICATIONS SERVICES | SINGLE POINTS OF FAILURE<br>
+                                <strong>The organization obtains alternate telecommunications services to reduce the likelihood of sharing a single point of failure with primary telecommunications services.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CP-8(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-8%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TELECOMMUNICATIONS SERVICES | SEPARATION OF PRIMARY / ALTERNATE PROVIDERS<br>
+                                <strong>The organization obtains alternate telecommunications services from providers that are separated from primary service providers to reduce susceptibility to the same threats.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Threats that affect telecommunications services are typically defined in organizational assessments of risk and include, for example, natural disasters, structural failures, hostile cyber/physical attacks, and errors of omission/commission. Organizations seek to reduce common susceptibilities by, for example, minimizing shared infrastructure among telecommunications service providers and achieving sufficient geographic separation between services. Organizations may consider using a single service provider in situations where the service provider can provide alternate telecommunications services meeting the separation needs addressed in the risk assessment.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CP-8(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-8%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TELECOMMUNICATIONS SERVICES | PROVIDER CONTINGENCY PLAN<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CP-8 (4)(a)<a name="//apple_ref/cpp/Modifier/CP-8%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Requires primary and alternate telecommunications service providers to have contingency plans;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CP-8 (4)(b)<a name="//apple_ref/cpp/Modifier/CP-8%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Reviews provider contingency plans to ensure that the plans meet organizational contingency requirements; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CP-8 (4)(c)<a name="//apple_ref/cpp/Modifier/CP-8%20%284%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Obtains evidence of contingency testing/training by providers [Assignment: organization-defined frequency].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Reviews of provider contingency plans consider the proprietary nature of such plans. In some situations, a summary of provider contingency plans may be sufficient evidence for organizations to satisfy the review requirement. Telecommunications service providers may also participate in ongoing disaster recovery exercises in coordination with the Department of Homeland Security, state, and local governments. Organizations may use these types of activities to satisfy evidentiary requirements related to service provider contingency plan reviews, testing, and training.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CP-8(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-8%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TELECOMMUNICATIONS SERVICES | ALTERNATE TELECOMMUNICATION SERVICE TESTING<br>
+                                <strong>The organization tests alternate telecommunication services [Assignment: organization-defined frequency].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-34</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-34">http://csrc.nist.gov/publications/PubsSPs.html#800-34</a></td>
+                </tr>
+            
+                <tr>
+                    <th>National Communications Systems Directive 3-10</th>
+                    <td><a href="#"></a></td>
+                </tr>
+            
+                <tr>
+                    <th>http://www.dhs.gov/telecommunications-service-priority-tsp</th>
+                    <td><a href="http://www.dhs.gov/telecommunications-service-priority-tsp">http://www.dhs.gov/telecommunications-service-priority-tsp</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

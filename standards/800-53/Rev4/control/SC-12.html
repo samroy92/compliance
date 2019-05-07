@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-12 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-12" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-12 <small>CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SC-12
+                                        </td>
+                                        <td>
+                                            SC-12
+                                        </td>
+                                        <td>
+                                            SC-12 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-12</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance, specifying appropriate options, levels, and parameters. Organizations manage trust stores to ensure that only approved trust anchors are in such trust stores. This includes certificates with visibility external to organizational information systems and certificates related to the internal operations of systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-17">SC-17</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-12(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-12%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT | AVAILABILITY<br>
+                                <strong>The organization maintains availability of information in the event of the loss of cryptographic keys by users.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Escrowing of encryption keys is a common practice for ensuring availability in the event of loss of keys (e.g., due to forgotten passphrase).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-12(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-12%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT | SYMMETRIC KEYS<br>
+                                <strong>The organization produces, controls, and distributes symmetric cryptographic keys using [Selection: NIST FIPS-compliant; NSA-approved] key management technology and processes.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-12(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-12%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT | ASYMMETRIC KEYS<br>
+                                <strong>The organization produces, controls, and distributes asymmetric cryptographic keys using [Selection: NSA-approved key management technology and processes; approved PKI Class 3 certificates or prepositioned keying material; approved PKI Class 3 or Class 4 certificates and hardware security tokens that protect the user�s private key].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-12(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-12%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT | PKI CERTIFICATES<br>
+                                <strong>[Withdrawn: Incorporated into SC-12].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-12(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-12%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT | PKI CERTIFICATES / HARDWARE TOKENS<br>
+                                <strong>[Withdrawn: Incorporated into SC-12].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-56</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-56">http://csrc.nist.gov/publications/PubsSPs.html#800-56</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-57</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-57">http://csrc.nist.gov/publications/PubsSPs.html#800-57</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-12 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

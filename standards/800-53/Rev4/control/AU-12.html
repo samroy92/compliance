@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-12 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-12" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-12 <small>AUDIT GENERATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AU-12
+                                        </td>
+                                        <td>
+                                            AU-12
+                                        </td>
+                                        <td>
+                                            AU-12 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-12</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Provides audit record generation capability for the auditable events defined in AU-2 a. at [Assignment: organization-defined information system components];
+</p>
+<p>
+b.
+Allows [Assignment: organization-defined personnel or roles] to select which auditable events are to be audited by specific components of the information system; and
+</p>
+<p>
+c.
+Generates audit records for the events defined in AU-2 d. with the content defined in AU-3.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Audit records can be generated from many different information system components. The list of audited events is the set of events for which audits are to be generated. These events are typically a subset of all events for which the information system is capable of generating audit records.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-2">AU-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-3">AU-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-6">AU-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-7">AU-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-12(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-12%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT GENERATION | SYSTEM-WIDE / TIME-CORRELATED AUDIT TRAIL<br>
+                                <strong>The information system compiles audit records from [Assignment: organization-defined information system components] into a system-wide (logical or physical) audit trail that is time-correlated to within [Assignment: organization-defined level of tolerance for the relationship between time stamps of individual records in the audit trail].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-8.html">AU-8</a>, <a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-12(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-12%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT GENERATION | STANDARDIZED FORMATS<br>
+                                <strong>The information system produces a system-wide (logical or physical) audit trail composed of audit records in a standardized format.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Audit information that is normalized to common standards promotes interoperability and exchange of such information between dissimilar devices and information systems. This facilitates production of event information that can be more readily analyzed and correlated. Standard formats for audit records include, for example, system log records and audit records compliant with Common Event Expressions (CEE). If logging mechanisms within information systems do not conform to standardized formats, systems may convert individual audit records into standardized formats when compiling system-wide audit trails.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AU-12(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-12%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT GENERATION | CHANGES BY AUTHORIZED INDIVIDUALS<br>
+                                <strong>The information system provides the capability for [Assignment: organization-defined individuals or roles] to change the auditing to be performed on [Assignment: organization-defined information system components] based on [Assignment: organization-defined selectable event criteria] within [Assignment: organization-defined time thresholds].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement enables organizations to extend or limit auditing as necessary to meet organizational requirements. Auditing that is limited to conserve information system resources may be extended to address certain threat situations. In addition, auditing may be limited to a specific set of events to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which audit actions are changed, for example, near real-time, within minutes, or within hours.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-7.html">AU-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-12 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

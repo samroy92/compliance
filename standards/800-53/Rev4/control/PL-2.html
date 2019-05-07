@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PL-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PL-2 <small>SYSTEM SECURITY PLAN</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PLANNING-2.html">PL - PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PL-2
+                                        </td>
+                                        <td>
+                                            PL-2 (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                        <td>
+                                            PL-2 (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PLANNING-2.html">PL</a>
+                    &gt; <strong>PL-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops a security plan for the information system that:
+</p>
+<p>
+1.
+Is consistent with the organization�s enterprise architecture;
+</p>
+<p>
+2.
+Explicitly defines the authorization boundary for the system;
+</p>
+<p>
+3.
+Describes the operational context of the information system in terms of missions and business processes;
+</p>
+<p>
+4.
+Provides the security categorization of the information system including supporting rationale;
+</p>
+<p>
+5.
+Describes the operational environment for the information system and relationships with or connections to other information systems;
+</p>
+<p>
+6.
+Provides an overview of the security requirements for the system;
+</p>
+<p>
+7.
+Identifies any relevant overlays, if applicable;
+</p>
+<p>
+8.
+Describes the security controls in place or planned for meeting those requirements including a rationale for the tailoring decisions; and
+</p>
+<p>
+9.
+Is reviewed and approved by the authorizing official or designated representative prior to plan implementation;
+</p>
+
+
+<p>
+b.
+Distributes copies of the security plan and communicates subsequent changes to the plan to [Assignment: organization-defined personnel or roles];
+</p>
+<p>
+c.
+Reviews the security plan for the information system [Assignment: organization-defined frequency];
+</p>
+<p>
+d.
+Updates the plan to address changes to the information system/environment of operation or problems identified during plan implementation or security control assessments; and
+</p>
+<p>
+e.
+Protects the security plan from unauthorized disclosure and modification.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Security plans relate security requirements to a set of security controls and control enhancements. Security plans also describe, at a high level, how the security controls and control enhancements meet those security requirements, but do not provide detailed, technical descriptions of the specific design or implementation of the controls/enhancements. Security plans contain sufficient information (including the specification of parameter values for assignment and selection statements either explicitly or by reference) to enable a design and implementation that is unambiguously compliant with the intent of the plans and subsequent determinations of risk to organizational operations and assets, individuals, other organizations, and the Nation if the plan is implemented as intended. Organizations can also apply tailoring guidance to the security control baselines in Appendix D and CNSS Instruction 1253 to develop overlays for community-wide use or to address specialized requirements, technologies, or missions/environments of operation (e.g., DoD-tactical, Federal Public Key Infrastructure, or Federal Identity, Credential, and Access Management, space operations). Appendix I provides guidance on developing overlays.
+Security plans need not be single documents; the plans can be a collection of various documents including documents that already exist. Effective security plans make extensive use of references to policies, procedures, and additional documents (e.g., design and implementation specifications) where more detailed information can be obtained. This reduces the documentation requirements associated with security programs and maintains security-related information in other established management/operational areas related to enterprise architecture, system development life cycle, systems engineering, and acquisition. For example, security plans do not contain detailed contingency plan or incident response plan information but instead provide explicitly or by reference, sufficient information to define what needs to be accomplished by those plans.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-14">AC-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-2">CA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-9">CM-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-8">IR-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-5">MA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-5">MP-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-7">PL-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-1">PM-1</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-8">PM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-9">PM-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-11">PM-11</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-5">SA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-17">SA-17</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PL-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM SECURITY PLAN | CONCEPT OF OPERATIONS<br>
+                                <strong>[Withdrawn: Incorporated into PL-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PL-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM SECURITY PLAN | FUNCTIONAL ARCHITECTURE<br>
+                                <strong>[Withdrawn: Incorporated into PL-8].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PL-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM SECURITY PLAN | PLAN / COORDINATE WITH OTHER ORGANIZATIONAL ENTITIES<br>
+                                <strong>The organization plans and coordinates security-related activities affecting the information system with [Assignment: organization-defined individuals or groups] before conducting such activities in order to reduce the impact on other organizational entities.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-related activities include, for example, security assessments, audits, hardware and software maintenance, patch management, and contingency plan testing. Advance planning and coordination includes emergency and nonemergency (i.e., planned or nonurgent unplanned) situations. The process defined by organizations to plan and coordinate security-related activities can be included in security plans for information systems or other documents, as appropriate.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CP-4.html">CP-4</a>, <a href="IR-4.html">IR-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-18</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-18">http://csrc.nist.gov/publications/PubsSPs.html#800-18</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-10" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-10 <small>NON-REPUDIATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            AU-10
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-10</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system protects against an individual (or process acting on behalf of an individual) falsely denying having performed [Assignment: organization-defined actions to be covered by non-repudiation].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Types of individual actions covered by non-repudiation include, for example, creating information, sending and receiving messages, approving information (e.g., indicating concurrence or signing a contract). Non-repudiation protects individuals against later claims by: (i) authors of not having authored particular documents; (ii) senders of not having transmitted messages; (iii) receivers of not having received messages; or (iv) signatories of not having signed documents. Non-repudiation services can be used to determine if information originated from a particular individual, or if an individual took specific actions (e.g., sending an email, signing a contract, approving a procurement request) or received specific information. Organizations obtain non-repudiation services by employing various techniques or mechanisms (e.g., digital signatures, digital message receipts).</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-12">SC-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-8">SC-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-16">SC-16</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-17">SC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-23">SC-23</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-10(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-10%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                NON-REPUDIATION | ASSOCIATION OF IDENTITIES<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AU-10 (1)(a)<a name="//apple_ref/cpp/Modifier/AU-10%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Binds the identity of the information producer with the information to [Assignment: organization-defined strength of binding]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AU-10 (1)(b)<a name="//apple_ref/cpp/Modifier/AU-10%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Provides the means for authorized individuals to determine the identity of the producer of the information.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement supports audit requirements that provide organizational personnel with the means to identify who produced specific information in the event of an information transfer. Organizations determine and approve the strength of the binding between the information producer and the information based on the security category of the information and relevant risk factors.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-4.html">AC-4</a>, <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-10(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-10%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                NON-REPUDIATION | VALIDATE BINDING OF INFORMATION PRODUCER IDENTITY<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AU-10 (2)(a)<a name="//apple_ref/cpp/Modifier/AU-10%20%282%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Validates the binding of the information producer identity to the information at [Assignment: organization-defined frequency]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AU-10 (2)(b)<a name="//apple_ref/cpp/Modifier/AU-10%20%282%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Performs [Assignment: organization-defined actions] in the event of a validation error.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement prevents the modification of information between production and review. The validation of bindings can be achieved, for example, by the use of cryptographic checksums. Organizations determine if validations are in response to user requests or generated automatically.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="AC-4.html">AC-4</a>, <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AU-10(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-10%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                NON-REPUDIATION | CHAIN OF CUSTODY<br>
+                                <strong>The information system maintains reviewer/releaser identity and credentials within the established chain of custody for all information reviewed or released.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Chain of custody is a process that tracks the movement of evidence through its collection, safeguarding, and analysis life cycle by documenting each person who handled the evidence, the date and time it was collected or transferred, and the purpose for the transfer. If the reviewer is a human or if the review function is automated but separate from the release/transfer function, the information system associates the identity of the reviewer of the information to be released with the information and the information label. In the case of human reviews, this control enhancement provides organizational officials the means to identify who reviewed and released the information. In the case of automated reviews, this control enhancement ensures that only approved review functions are employed.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-4.html">AC-4</a>, <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AU-10(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-10%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                NON-REPUDIATION | VALIDATE BINDING OF INFORMATION REVIEWER IDENTITY<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AU-10 (4)(a)<a name="//apple_ref/cpp/Modifier/AU-10%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Validates the binding of the information reviewer identity to the information at the transfer or release points prior to release/transfer between [Assignment: organization-defined security domains]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AU-10 (4)(b)<a name="//apple_ref/cpp/Modifier/AU-10%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Performs [Assignment: organization-defined actions] in the event of a validation error.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement prevents the modification of information between review and transfer/release. The validation of bindings can be achieved, for example, by the use of cryptographic checksums. Organizations determine validations are in response to user requests or generated automatically.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-4.html">AC-4</a>, <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AU-10(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-10%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                NON-REPUDIATION | DIGITAL SIGNATURES<br>
+                                <strong>[Withdrawn: Incorporated into SI-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/IA-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="UsGLamfy//hmO+iXslEA12GbTq5WY9LRovndnRkVcISJRRW7f3zGvWRhCMwvkcZ20NDB16l52RPuZaP/1ZeTeIvUdV2KtxSTGynnHVDIDg3e8Zleoncc0mqqqbRdUJZNCNKA4IlAMkvBi5MvyNbWdnRuJrY4CfhGbP2uf9u8xsbOB/7yVSb1Hu+hMqwCvUw50Znli9mXmX2l0rfj5P4X8KSSrH3WgQWmnljskK6lfYpbFJXGtsTqWetyzEgqudP3xTFtomoWk5gy0WFU1pSjElszP+cNiP9S0n3YMTc1HfdsYYeKWZn09VVQ0aEL3cbKhsQ85BZPMIJsOsm6U/Vi+1WzAqNY7hXR8tUXerZNcnRDwMBheRf1SuU1eWCT6//miCXsi3+xZN1ay29pMnkeGX2sZ3plNdpqNjUNnP8GOUzMJyOzz4XHgvzMBcUBfNOSEWyfu1Dv5oSS18sk9loDm3q2c8tb2jc/1QwplnVAtOWWfUyE3n/98QaAbq/6fx/HKTv9omf4FzQH424Ppk/VORNB5I/WrJF/L+ygB1a7ohUvZp8f4tNKezakhFPbJcJyTTeHf44Vm4raMx4KgHKBRRGJVmy7rAebmySTlZ0JXvYyAb8VRuNlAUHXfcY8j+w03eBPU3DHGlGYDBxNY3+ule8LfBXjV2sf0U1pTQhXfEE3Rt6wcx4H7bEFhz83t6Gv1XP2Lc7JKe8AnCu/Hd7v6XPurDCQ/AfnaXhy9OjnWq1TfGDtI9I6KsprxIev0mmkuong5Jp+zZHppAD/ReASgh+5d+hvyovNrJTH05TiHP4iI6ZOAbekLzwmpEDU52Gcw5GY+N69VCW0eyRw55AG14eSTxQfvrn0ikrcLh8Y9YCVviJBpNl+HTuX9RAaCSIXZXgf5Q6oMqZR0tsvkRj1N/z1FIPoRIiUtSGQbmZG9qVfuXxY5wb4MjdLHJlbpLwqXwaJIBWe4u9XaDdF4ACoCQss/BpoTwBJH9sXkRO1IlCbY4BeHk1gFciNn9LYdxkuwO9+lyXD+zJwu/++xtiCKcbaTl8BChSXDdcPgRW4+OFBhj3VKyHgnwLt+QgVxbZ0ZhSd3otbBNP8JhOlYudOvgrlWATrwxuaecqlBPwHfGh0WtF6wnu18eSdAFw2NyqrE0vLDNC4YPknkmTrvlKrRi93Ikn6SgBskOOoJs4ty+hHZtPvtDUzJGFwHn2sMEwJ6n1iZASizonAoVp6oOPJ9mlGYGMSSxh3G2MCyhN2Kfl+behzUZpcpg3ihu7PG2RFgpSMAs3K02DjyS7YW+n6fgppAGFmY8GjLqQeqFxTxxjKUWWUi9ZNiRbBE1E6zou7FbfmvMlx32FYiHu9JievQMy8QjSHF8LDBVGcZbaGE/xBlsB4Ezsmh1FfdI6NaGmVXIXXZyvkPbTOH191mQ4OkkKOoQO8SmlvUqbQTBz/tOUoGoGreZEmXFouxX4ad2xRRdbJ5jgK+stjZO5qph9aQQg8zlbP2iv7X/raR7pJGbMUAB+OqowlbOfRGSctoP+csqgsmwtKNNIuBxASbCNDPHj12RB9NFRk7qLCl+dexMhYGzE+L8P0zM+IQqVWSY2jEnW3A0IstzF+EilryvE/s/aaeCN8LQ7pPq5vo3eEF13MGMENxNJWaD/LTVsZn4uvmDbG2a2LU1eqkn3aKrpokuMfOiXhum7KeeUzZ1j8b7FFIIyIey5NVcOpd7rhjtOhdtc1ItmOTC+0QByi1J5b3V8qq8Li+v79+VMxZhubqkRSbMUZf8SMZ0PnEIMeSUxvcU2ILTyKPRGoE4nLkHzKKqwDx/6JQMQeEhQ6M9c01SgZRpaz9GQNp8+bq3RkD8C+FfNvsKIENsFMc/F3crtVJBbkcrnAb6+aDTkekM4PmUth8bkiziEpYPqe5fIoucIL4AhwP6xIB4e5KDY4n8rVkYRKMHsY8y/ZFR1sJroWY+OiTmsViPUK7YZH12JvGe0ZDqrCMa0NheebewnhIU7ptaL+b6yBfxyuTUdhWM37EJ2A4IFmQifKeetdth7W/58fzWRIebeIe7uZInJkrhDnqMRDkK6QweXYxmRPy2+n1IJzZrs98RHIbaL2ywhgMX2ElRug8IcWLoIXfDPjioCt7JGAbp7Qux5aWEk/B/hlEibNdmdw21CtWRtUWqHEaTxWIenbOd2PuIZo4GcBZvjHwHuLkchDqvaKc82Pk8RRB785t9gS5Ff+cva4jnLOVanN9alApRCt91txk9asF+H78v8e6/Q867E7YPQcktEtLF3E01C+04Rh6X0dWTscQvdLSBXmJ3svRRoTHq9JuvA/IrrCkreSSILk40XvxB+PCUnTTnUzUDzscHXF+duy3LnBBjeiP0nocfs8G6zCd9jwttqZSNXK/SfXn0tTkEI8OLSxjK7DMagKotP+I1R+pJLu8NwvjlgCyuQiICL06BYOX+wWuq4kj7Lr/2iSNvwWoPmg/vePvYZBuPgvEa1LJDHkJDkuQ2ujHJ27RIA+ouWwZamGQHDrEY7jN2a/Jk4GgrLq/xv7NDhhPpi3WWTC+0ukUJXuKtzWthiejESBBoxr2lx+fOqjqCpuo65W1Pg+AEr4lswT4BBvEIM+4NE1koq9YMr4NuZPvN/6o1v2MYGfun4YQezQCFWrDOdMDHgkPAmJSlR1w0uPgJ8RFPkkY1/Q40aZ5QT1TeOao9RNdjziWV6f0aSil0XhZlFPpoC0IpoWaODT1exfEyj2qqrJqos4ZeIIG47bvfbeL7Hq5px2xjXi5rwrpFyHNR9i/KM+N0kNRs/vbp/malUNEeMljLkHX28rQQH+uqHrnJOvO/8xVIZJBUQSEsXPbLBPv9iZn9x+8MUqLyMo+2SaaviCWsu8ig4NM7GhJY5Em5dqg438fsHYVivte/NNUmNZJOFB2wZpJ1Z6fAILG7yWcDgnaWQiFTkO/CwEQ5Ebb84sCX8U4CHTL5qjeR0900Uql5msBjBTJJZX0kMxAdTbYvfUHOpDHlNgPCXz5p37pzco/TSary7BduKh4f+t+vrWA1xcRGoLHdNXobbFg4b99eIAlbckMeGBbLFUQQ87P5/SnYfQpjbnxm0ITdlIBMHwM5ANqR8APwKN2kQc2aCwCWH0GnJGwsR3MtHGGCXixiEqSXBtoUr4Bc20gAgPoMGD2poGAqEyi3oKXjp4aHFcSn1i/WLOREQ6aidWoKxarY+ZMK1AHyBwrqo0om6wLhupQQ+yahYR97js+TTLwVeGCdN0rAAi2e2A32ULsoYtGjhWM/5Bs2YmZrZvn3dJKyMQ32Jhk9g+Fq7gTGFdhlBfhj5Zkb8W74XUOb/ANqDa2ktObOT1ddaCjrGrBnNRTllXUtlR5+RmiqNEsCG3+f8ZdBnziEBR+JygfmIhBwNRxsXgj6ynkuPIeFHvNatlXbkYGqHNsC9guvACCiY/T8HmFbjI8RtXux+dVDt+o4TsD+n330HLfZwrY9tUnw5/ffzR2yuFDz3TFEHWiOlOAq6ApU0Gt40/TxAJanu6HNhU9Eb5bcrwEYJhRbsAaSKTvvS5XhtFQ5nALmapDNT3FApRvNb5nTgth5aDBsVYZCH8VQ1mRToz20Ajoo27odp4Um1uAaTKCxblegWrsGGAvXOtUeLk6oRKfp4BJEpW72sNhiG1DIRvrTZ+2cgp4cbyoY3nWOBq91xkwadADstJV5GMBSdjr1psaNpTycrnXGnM1FPxPHROYP0jLD0IrdpVFfczpMCZgint/HmoclsO5eoppnny+5F7CxmT18GcJUAg0wBSPYlc7Ajn8h16niH+O6fJtsXVVyYUpFT0fiXxIoxmcL0dWX5Z5O6iDCZkPD+JLl8Gb0OjRXc7w28Ttk5yWm4Ou3jDSCcT2yjXD3T/wiAtnl4FXOfGrrZLAsnn13c1CtaKpiWoLPGZ0PoTLro5g1oibsllCaa2V9JDWYaoEF6RPzs/YQWtXayxp1C1ZgWyVYwMIL/5xCE27yoDNnAFz9avvmz6PHN2TlGsZVSTcLmh+FT45u+0NfrzqZ2F56+duvZizR4TgWlfhVNWRPHQ07B0a0sFY4FDfupTVEMxpSKyahAD3p6AiGqIHyV0uzN6TlLUrRkmGgqcqo9F/lWv70OqeJWvI6IUrGphwWsakNlwgXVZVqQ0Qeo4sVX6XbbR9z4fsGDwB4gEjmkQ9tV4sl5r8LhXZibEyrxF4brXM9hqhervQ2n6AJAB/R/bRElv4MksgTxlMBZDuJWLqzSvi86hCi48ZYRIXAFtrPHD9Q263K8Fo3OywFiJ9xwj2cjRPx67WjEyP7pKsj+2x5flyJBBBGG0I3Gapnl+DuX6t7fYVAZtdJ1ZX4O2Mn6fc67DNl2Tnw2yYOimRIzNu8itTMwV1Ji7GPl4pEIMM6Pv4zVZqjuNAsWac0DU/+YgDq7wxyXWkeMdWA1EMassgtJ6qCHWauwFQ3yJNaMQz0sf64RcMV/YidjsTEza4aDYU0hj7Zenk0X4ZNcane6wSVle8g+8ea1AGadyXyh7vV38PQi/yT7EGdJYD/xZWkM9mmZBpmd9YyqCjovMlKRLMmBzchBGh9UcK36degflRK3rChU8RfDvPbH2yQ2eKJZG0NnrMDRmREQPNVTKrLVgfqC7tGCe+MufD99FEs1MyfhVBKhnh3/HH6eC3wdU3rBXkuFvTh5rxRDepSty9dMWPbJjCApjF8hPCb2ZltdEFQVACOFCMo4fK3qCxzderX7d4Tdf0N6eZlg9FPwVGif4YcMjW5+ejG92gyuu7WwFJixHj7coFnd0KKRwI8ZLdZi3V71MhsRiIoodWhvYr/RCiI2uezMPBg9AQsU+7zLCsW8wMtLcqDMXT36RWaABBRSoNBsGRz8Bf/JhaWDvyaZorVqV2sJ5Jlxm2UwNYnsGCZyLxkrcRQ1imsAqd8xqyUsgkwEpJlHmUC4Vv4apLDWei7kmP4mMSFllMs3yOlJVBc53F20FqyYsPq5fKaRcyESJyCqKtqN6+Jop+rey0ytdfVE+RKmCvoMcDyxaN6s4lf04L5nXi+AHbhSmOs0cXq5/Kub8jmoDyDAMinTfmX+N/qLinl66Aftik+0FxQ6eNsH5YBupSvBbTyxHp6JOdtz3QxL4jrXI5/YpURMjVPOoPd2g2XzjQ3q0RjDaxHRRmTEZxbwB/dHnTLxcJd+1d5uroIlt91RyAtRpif2enhW+4c+Qj/FlvIRPyPbJ0OFun/uDlSLBBsfQTlXX7OfuE3ZIrbxWUs5knrg+qjocDiUrA1i4fhF84imzt0WWSpgDRuMeaAPHgAP4F5fN8UK3ELgN7viC1whE8PD2y0Wx+KcSm3L4uFn2jjDOpLRW08ZzwCNnfLzqYXrARyKpGD81u1SFW7BfLBfO3/EAqcQyl8cDI3A+tE6L1yVsWkcxz8AEj0IwxWlsdS0PEHtM92XLNEdaPspgMBYK2CMPIruDUnusqCZrslOl0IVmUgqnDnyOAdHNxq+yVePYD8nZB3FEJQEsMSfEMbz9R/KAYcJW7ssYcTqs+OJh3qxo2uTNUpZ+PpNPYqCF7bpTgMido1t2nlFWcZ7rXqQcaRzSTy75uUA0dByrbRyJ9Tyhdpz0r1q4lB4H8DyZEeKDieEMgwyi+rE6+nJtCxSt+4EbBEfnGMHfX4YSo0DsPcQ3Lt6lkMwHjsv2+lUXWDHUPXHkt/iiLRfSj/N/fVI56BLfi2iXcrINhgagd+ufJJZvUndSe4i4jM7921PpCs4K9yv6YcybyyXdpoac5CEqCes0hxeiPpERtRsZk122rgkPcUhpZ+Z9G+n4JyXZPUJOaGuTcTmrNDimIjdxN3i+kVYIn4UgI61svD8uGcq8vWC/ng39jOiwl/feH/mPufCxCY9XiHWo52h/nig6v0hLbqhKDiuBfmMR5kDPElyrLhpuVX27yScXeeCYZnHSHIL8qh4W6dfmqELjcMnBBwwTBqxZPbKh47vqW+4tPo9gDZ9TZ4QdlxFfOnBb1H+XfNjqvORIozFGk6UVJlHhlbhuu24DwIPFfGPO6F5HR5tm01RlA28krkhyvQA8j57GqLgoOAzgDiaPJ6aVLO7RWFhzhIGvqztXPVwq+x2ux9Tz5gvRbxVzTFkb1zxkLZLT2bjAvMdsTQJy+Wp0nS16tbLJfB1xzoj+vX5q9cLfl4H56S+dIdPlDKBfb5p/dvYrSWBPIrcceRNUAanTDX4aIYXjadZtyab6+N4VDNi77EvPjP/1sSwfWAXcHaZnE4m9wdUzIVCb2iiooiHJ1Ur8xf0UK7pAX2NMIEIP8CR3n08kjZvkCGxSjNk1ulG8S33PEENIJ1SIJpbhyuYscPoRQm6dA2G7VhIWRwFq0V9O51krex8Z5p9U1Q8W9HZ2DmDMYnm1yRtG8lbthOWncJ2HaErYCNPLY9yxdohaEMKxFLxbwnY6GmZkzChUEAUA4TI6jll+hivE8FadKfSlaZPZZvC+IEtFCG6yn9HWk3AeUVo+hGKN/wM7WGl8GvB2XNjElKsXrgOS/oLUcapnNniT1vU9XWlZE7TtUsjr6VI9c2P4/o3wF19ydDBvl7SzqOBxo4OsDu7/rqjEfTHTDeDvuDzmPFj3JDEArMf5LOlB/NBIt/xnb9RA/MzLbPLYdbNG3sw+NPNzhC2D/HJLOMLiZeSy0h8CNJib2hRdGYCF13qjB+iOwv/sv4lb6Kv7c5kfyWc2C0wRlK/QwKIQNEn6GDTPvcu6xfx3fsFMcl0B4sCgBPoKYVFRAEQNlRIKtOQG8Hv1HcZA1iktoQaxy5ELdXaXX+3R7Bvx6P2YynMIrH1RetOxXXho2QL0Cfzd/XGDzEmpVbQjRko/zOg5k5xavNsLQNFbRK4R+TOtw8iju6i9KPCqvYQVE4XWJBnXdUef7WHBjH31W7//Uozg0bIyPoF5JubHAN0H5OZ7c+TRCaFUv1eIW0iR2NX79UDQlPzU+h2B8EoxSvh4A16sdov2DNY66NHCrfSIc7oMyaZ8gEhWRkEn8xrZ/Wn9fEO+jCATxNu0e2G6LGcnQXHiQEnPX1aWeYJHeXcGzoc5pAeIBiNrZQmHpvOFvyoiKa9DCQloEzDo339AA2sgaBZQaL5w6nEJ0ZWIVtNuAhvXTP0OxLnaKGtBb2fIykWtLLDoDQxZovmLyxBxeal25MF6j0Ulk01S79l/rearbn9IIAFdymjaZl6mBRpNbqCTc2lRQwbfX7T3RUgugbkqsLljis5VVRrCYKu63lyyVGm0XjrEpQ54ZH2Sx4PxNHW1p2d96w88Fa+245UWdVG8bnv0Tehmf9OxnxqCBfv4E0MsXioBT8kx3pyB7zDFCSEWh+CexckSxucXw5lWXnTNmecrsltvsl6R35U7cynP873J2ZJF6r09qL5/G4Fe6lWWI/AUVxyUqAGWVUo1yU7w0CBeTDGSWKDYS7SxxfNeJAiJv0yG2d64SVQZPSPjMtrCjcqqMTe1WO0Sffa9HXvbXRdZ3TvyEjLi2l0m6wQPwPcf4IrXya/aY+AKSGyOyM+ZCqhYFcBGoSrGlVEpdGt0XrHiL+lWD0K6yViydfgOFHcv3uisv7SYWbClKjaN21EiQVoQ4UdqR7ARVviiwBsBRgwv96PqqJfcWE2Req5mM6PtYXU1GUrpB4fMZlE30QPBRW0sipNasEL/To1+ddOr9SMULCFSLsdMIi9Tfw/amg0DOHk3bv1reEhCoCIdAuNjzSMH6qAPMrWg5+XFPthYeBF6gfim0LPSton+DumQcVDkuw24/9IKEQktDTg1I+CZWRMMAAFIYheDRG4tQ/KJXXQa1jFW0F3JyWtlG44r7ASjdQQx9mkQiNwpgHsG7qd5S+PMzLbOXoNcv8ZzCVNXK8QCB6pbKelnHkOYXxxHdS96bFKg1RADAsp0/WPEy1pJqdub2RMhtCy0M/c+ysaq8xplMc+QsuYAEdIhP7oe4U9jqQS3xF9mF8EDOHiPOcBEbZ4qFH++YAqRiwaVSg1+N3loGUZqdGjpltF87FN5PaoBHulWUZk/wfc2WRE3wTX7XfTq+U+yCU3UoV27k/lsr3HB1z1dI5xa5yWdY5sbeItfXGIkCaoi1ZpkA2Y4Y6xVjMWT9hpQz68mC41IDCTpDB7ktxu6mZSZmMqvdJdX4VWl+4HZa5oF0lNPh6fPHUToGh07cetE2YI68ZklSAXKtkfLJ67A4qaBr3gmN1Y1RdXOj1sMWBbKsraLHPhBFmUwf4x1L6oWryyptgrhZpyGp+a+mL/2oj+ZQ3O1ndth4ZeenAenJXi6cb7Nj8QDe6w4WpKz63CEWoCweAlF2qbMfLtRODW0DiEJVXWhPqYZX/RDtr5OxlFd3p5rNGeKU5cXknmVLpEVUCUJfd7ItS4S5whxyu8TdWbU+71J8LnbBr/RYaANBWqPHVOdM8EBdt5xmtedNpEvynZ4ftBlhBtiQl6uQVgmMtbaicenLOEU+f8K57LCShVlvb7WeE2Bia4KSKIw8CcVKe1VtXwhYu1m8IKNV3Ba6ky3dTKzpkFJjkQffe1eovNtRWXGDTFuKAjSIB718nakSZ99nnUiSSbAHrK2DACeel48EvMKrHStwg6OtAGU7Vp7XE8ZrQa6g4luY/Hg8jiH+iQkDig0ovReoXKr231AEGFN2tmWoFfGxn9e9rPUYcawz0cWZGqT4rJMt9HUo0+GqYWpph2UZ/eJJkmQIS5mNOvdQ0GdGGlAgA/gv7QsVgXKCe66xVdRePtls22LMOqvGvX1H4gvKBszEZtM/ad6gXMVz/w5Mw8L57orAQjDXY6Zj+V0y4AMfKrnwKCaDr/MRg2+NJvhtzV5Rj3yifRXoOiMnXUjMBviKCC82PQJLCF9ApC3Q7fTuL8VdwbVZjtXzZuU4U31PzK1vk1ZjjFh/penH5rticWEq2BDNe1bEbwW3itISiRgF+1x1FCUkAj43G+AyuhcdPrHisVkQHMqBQ+TTfOqlKpT1EC5txGTBbl1I+6YINaQzKEeIoTUBRH3ptHFMLPuAhi0q3+dl2LH3PtblRICEi5MV5bzEqiSxugOaQPcEv/zf07fslfbNn/lkTG03Fs56gvOjxYnxeDxV5+jupTamrdY0kZgTNPD7azUhs6aNwTyCaRj1ZZuncWiRKhxj7fsvaDzX0G8DKtxkEXbtVtxv/d0y5947+GuZioxXbb/PyZ6jdCya0MKXPgt2uniZXfTwddMhSpQOMxmehdgW68vhf5025exEE1OnN6QTOlw6avo1ZdUnWJibyLsQL+KXoReZsd0NHKMKg3i5D9MWnCMD9q1enXGTOxJIzHD2WQ7iW3F28GRzzytzRKrEqJD2RCHVoECPcv07iOL0TxkLcsSXI303OagFXlKQ2+Y8/8cF5PWlyeHV0S/7A6MPypEIZyEkyUeid0SE55URzUphhOtFR0GD5dYBlmNUjMF2kvEL9j5wjYTBMf6UiCK0m7ydsUZdugPm1ueLjeMyyrTjWjHmaa3FR6ycOXiILUMLXIwWnvF7O5sYtaJgGhpQB2YJAlth2j/7LG3abFgrkPVbJ9+Zbge/eAIZNhhqjclr82F7ZyHvKuX8l4V2g+K3Nyi/EmE4ywRyXkeOFMDmdIwZq7fvP6YtldRvXm4FJrSRmqiYqvKf6j3VE1Ricwqd7lJl3s8Na1FqdaFZxhPXDh2Rtcm2QZgARWEixAq0aDICbMpyGzERPi8bPjx6oOB/EEEyAyLtY55Rg0l3eZJ+Jvxj/XmGfIZT1kGmp4X/dx56gWeny7Cp9lBijUeIAmCBUlPXrZ30/hBSNO7pFbttDSnvgtCuMg8NVHfu+7nVaZF9IOPAvv6eAEdq+5YIk2FEU0/bdQHIWXqn4oIIJs0Y2AxZCVKEvgHqyRyRRGucxLBdNyny8Luruc4drSQ/xwqr/gKsY7b0kpiiStbryaGPXK+NVtk5jDITBtNgTkV3stoVwDIdL+b3x/2kS+uJcJYmvgrsfNN9jB/sziEEGWcbCRiAH273hxs0I0UOKFo2PsRLKD4a1QWkfgZ8szND1u7b6h/HYxGh/Oop/2LUzwNIlVKhn2bTIvsnTOiCCwwy4zuzlVM/iKmfmb0v4fR5d2RN0Dryz6uWcID7ZPukNrIUR/ZDgEkWsWiXcHjg//bQA8+Idu57isV1tYXldYPeRwsNsHZUHaeAMHbOkXuB5xCESGQ8cnp8eEQUKD/P33WxQdPpH8P963eCpvGib7HllWqciZhrR+1wiDYU/ya7wlBDCVwT3yWalaV6DECiwhTNQMWhx+IhD4L/ZruRoOe8abzs4AoUdytV1EIXvLY96m4yWXuR8W1jR/b3+BHXY7G4IBl4Jr3fFgIwz3wGNrEZ35QvmoEJ71/E52jFmMkFi/nG3H7wXY3pWrNcD6KOxYImpxy/3KMRbMHa+6Hb3hHiWGdiTh3qo+qljJT8CpXMJGjc5fFvFu3L2vLG8+y2ch6WgVbHF/fbwNm8eBjOOW83cIvN956bP6+RzA0ti5PABMY2WskzhET59fmeRbPeulnM6G4JPFHXLqf++8VQ7AUiHTLpQh0V13avE95RQdt4EEIm7VuGjKVXjMomwr8QfmUU4paIzRAw64HCJBh6PcZTzKta82ezDgl18pNBzv7qYD+RJm2hmWSiLSvQ30NyIdmBaaZ8lATz7QsNed/0byor+wHDYSlEnoTUvp3U423QtBRtWKedEr9EX7zUhx6JLSlytBMjTpAKg267QpnZZXASHZgOhQZ4ezU86Z9EktSKAzLi+I8C5bj5T4OqTopOE653rT0HlSGB6iFfDM/BWm2aPiWJ5uPgvQX3UZhRTEW3/o1z6t7Jy7MJGdbbAPl+PwA5mHyh0UPHT4l+RbUEgBcUWLNCb7gDZCyCFTXkmRu6Ifp0CvYPzs42bn8GbF1Qi2KwgQTcMjieftOsTwKhBTl5j23/tyXmlryC9xIsCdR2QR9l4OYXjwW0zyrk4DO3pBf8sDRxRuihfjGGwUgPYoN8nkxA5zoiln0p3ekVpQwV4qyuWkNCimKOZIw0HQdWfF9GrhmUutPJYXQJDeLJ9P+2hIkn9Cic7wlJaLskdVGLzha2GjgVqfSeyEHdvXtqf3FxEgUTp5xX+ZJyJ1hSyyvalXlN2iTPMzwpfli0zRrcFXOtyGajijsWh8TOfI/BK9U7SZ8zeUxst5mvzo0kbIDUdMiGMyiFIVcEKR25CL6cN+p2mOlya/vgh6WAAT+o8XQeeD63DaErjpDVYMhthQUVAfdyKXA9FXo+rLmdrddJmDODpmhJkrp7YGI8SjnTmfOU0xZav/RjZ89Ko5nAUaz5PwJWrzVdq5Q6bIdGKsVt5ZHWJ+UCzzgLCuh6gidZ1QnokEqFQYYnluTjwlSTq16nd7Kkhwz4UlceVutFRgyz2ZeT6g7jXwzfeSIjFum3QB4HajLEGe3cqwI0Zkzavb14Yxt8uqLsK64YYc6pDPESJlEGuAtsQ7sEAYhkH61j/hBq9nOOPUjpNb6G5wmkeKT3BwfCs0c/Xa8nBB15RpNWjsVyixKDMFCY+mXg3XiSn0GBy9YZzPQkqCbUUvxhZK4We0MyO8vzBP32PY9AmlE0G9aBILzq3hKH8YqETiPOVxHzvrCAo3cwGQHUQhXeSoYa8NMgBW8ND1I/T9a1kYCmfQCTH7MkOxbuLD/QxUpeRclrVQPakJAJEzl0j7HQ6wvwwqjSMSi7QFKnlIvVFKwqFDzmB5yYc9Q0Igp7oYobTDcGGm6+Wqrqt1K+mapQh9K0OyZPukH7wJrWBYTPycZ+vZYGmTpUzI45eISLXxZ8rUm5TEf7RAf4Sqlkx+3LzuiaUb1mb//ISS66qVZc5PwgjS9ZXg1ZfrShBwNeEqhMnV+nNF3wF/kJHw=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">IA-8 <small>IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA - IDENTIFICATION AND AUTHENTICATION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            IA-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                        <td>
+                                            IA-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                        <td>
+                                            IA-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA</a>
+                    &gt; <strong>IA-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Non-organizational users include information system users other than organizational users explicitly covered by IA-2. These individuals are uniquely identified and authenticated for accesses other than those accesses explicitly identified and documented in AC-14. In accordance with the E-Authentication E-Government initiative, authentication of non-organizational users accessing federal information systems may be required to protect federal, proprietary, or privacy-related information (with exceptions noted for national security systems). Organizations use risk assessments to determine authentication needs and consider scalability, practicality, and security in balancing the need to ensure ease of use for access to federal information and information systems with the need to protect and adequately mitigate risk. IA-2 addresses identification and authentication requirements for access to information systems by organizational users.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-14">AC-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-4">IA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-3">RA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-8">SC-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">IA-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS) | ACCEPTANCE OF PIV CREDENTIALS FROM OTHER AGENCIES<br>
+                                <strong>The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials from other federal agencies.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to logical access control systems (LACS) and physical access control systems (PACS). Personal Identity Verification (PIV) credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. OMB Memorandum 11-11 requires federal agencies to continue implementing the requirements specified in HSPD-12 to enable agency-wide use of PIV credentials.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="PE-3.html">PE-3</a>, <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">IA-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS) | ACCEPTANCE OF THIRD-PARTY CREDENTIALS<br>
+                                <strong>The information system accepts only FICAM-approved third-party credentials.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement typically applies to organizational information systems that are accessible to the general public, for example, public-facing websites. Third-party credentials are those credentials issued by nonfederal government entities approved by the Federal Identity, Credential, and Access Management (FICAM) Trust Framework Solutions initiative. Approved third-party credentials meet or exceed the set of minimum federal government-wide technical, security, privacy, and organizational maturity requirements. This allows federal government relying parties to trust such credentials at their approved assurance levels.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">IA-8(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-8%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS) | USE OF FICAM-APPROVED PRODUCTS<br>
+                                <strong>The organization employs only FICAM-approved information system components in [Assignment: organization-defined information systems] to accept third-party credentials.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement typically applies to information systems that are accessible to the general public, for example, public-facing websites. FICAM-approved information system components include, for example, information technology products and software libraries that have been approved by the Federal Identity, Credential, and Access Management conformance program.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">IA-8(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-8%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS) | USE OF FICAM-ISSUED PROFILES<br>
+                                <strong>The information system conforms to FICAM-issued profiles.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses open identity management standards. To ensure that these standards are viable, robust, reliable, sustainable (e.g., available in commercial information technology products), and interoperable as documented, the United States Government assesses and scopes identity management standards and technology implementations against applicable federal legislation, directives, policies, and requirements.  The result is FICAM-issued implementation profiles of approved protocols (e.g., FICAM authentication protocols such as SAML 2.0 and OpenID 2.0, as well as other protocols such as the FICAM Backend Attribute Exchange).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">IA-8(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-8%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS) | ACCEPTANCE OF PIV-I CREDENTIALS<br>
+                                <strong>The information system accepts and electronically verifies Personal Identity Verification-I (PIV-I) credentials.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement: (i) applies to logical and physical access control systems; and (ii) addresses Non-Federal Issuers (NFIs) of identity cards that desire to interoperate with United States Government Personal Identity Verification (PIV) information systems and that can be trusted by federal government-relying parties. The X.509 certificate policy for the Federal Bridge Certification Authority (FBCA) addresses PIV-I requirements. The PIV-I card is suitable for Assurance Level 4 as defined in OMB Memorandum 04-04 and NIST Special Publication 800-63, and multifactor authentication as defined in NIST Special Publication 800-116. PIV-I credentials are those credentials issued by a PIV-I provider whose PIV-I certificate policy maps to the Federal Bridge PIV-I Certificate Policy. A PIV-I provider is cross-certified (directly or through another PKI bridge) with the FBCA with policies that have been mapped and approved as meeting the requirements of the PIV-I policies defined in the FBCA certificate policy.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>OMB Memorandum 04-04</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy04/m04-04.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy04/m04-04.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>OMB Memorandum 11-11</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf">http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>OMB Memorandum 10-06-2011</th>
+                    <td><a href="#"></a></td>
+                </tr>
+            
+                <tr>
+                    <th>FICAM Roadmap and Implementation Guidance</th>
+                    <td><a href="http://www.idmanagement.gov/documents/ficam-roadmap-and-implementation-guidance">http://www.idmanagement.gov/documents/ficam-roadmap-and-implementation-guidance</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 201</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#201">http://csrc.nist.gov/publications/PubsFIPS.html#201</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-63</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-63">http://csrc.nist.gov/publications/PubsSPs.html#800-63</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-116</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-116">http://csrc.nist.gov/publications/PubsSPs.html#800-116</a></td>
+                </tr>
+            
+                <tr>
+                    <th>National Strategy for Trusted Identities in Cyberspace</th>
+                    <td><a href="http://www.nist.gov/nstic">http://www.nist.gov/nstic</a></td>
+                </tr>
+            
+                <tr>
+                    <th>http://idmanagement.gov</th>
+                    <td><a href="http://idmanagement.gov/">http://idmanagement.gov</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+</html>

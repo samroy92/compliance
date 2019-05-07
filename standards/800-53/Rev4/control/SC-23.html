@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-23 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-23" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-23 <small>SESSION AUTHENTICITY</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SC-23
+                                        </td>
+                                        <td>
+                                            SC-23
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-23</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system protects the authenticity of communications sessions.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control addresses communications protection at the session, versus packet level (e.g., sessions in service-oriented architectures providing web-based services) and establishes grounds for confidence at both ends of communications sessions in ongoing identities of other parties and in the validity of information transmitted. Authenticity protection includes, for example, protecting against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-8">SC-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-10">SC-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-11">SC-11</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-23(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-23%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SESSION AUTHENTICITY | INVALIDATE SESSION IDENTIFIERS AT LOGOUT<br>
+                                <strong>The information system invalidates session identifiers upon user logout or other session termination.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement curtails the ability of adversaries from capturing and continuing to employ previously valid session IDs.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-23(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-23%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SESSION AUTHENTICITY | USER-INITIATED LOGOUTS / MESSAGE DISPLAYS<br>
+                                <strong>[Withdrawn: Incorporated into AC-12 (1)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-23(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-23%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SESSION AUTHENTICITY | UNIQUE SESSION IDENTIFIERS WITH RANDOMIZATION<br>
+                                <strong>The information system generates a unique session identifier for each session with [Assignment: organization-defined randomness requirements] and recognizes only session identifiers that are system-generated.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement curtails the ability of adversaries from reusing previously valid session IDs. Employing the concept of randomness in the generation of unique session identifiers helps to protect against brute-force attacks to determine future session identifiers.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-23(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-23%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SESSION AUTHENTICITY | UNIQUE SESSION IDENTIFIERS WITH RANDOMIZATION<br>
+                                <strong>[Withdrawn: Incorporated into SC-23 (3)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-23(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-23%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SESSION AUTHENTICITY | ALLOWED CERTIFICATE AUTHORITIES<br>
+                                <strong>The information system only allows the use of [Assignment: organization-defined certificate authorities] for verification of the establishment of protected sessions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Reliance on certificate authorities (CAs) for the establishment of secure sessions includes, for example, the use of Secure Socket Layer (SSL) and/or Transport Layer Security (TLS) certificates. These certificates, after verification by the respective certificate authorities, facilitate the establishment of protected sessions between web clients and web servers.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-52</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-52">http://csrc.nist.gov/publications/PubsSPs.html#800-52</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-77</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-77">http://csrc.nist.gov/publications/PubsSPs.html#800-77</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-95</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-95">http://csrc.nist.gov/publications/PubsSPs.html#800-95</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-23 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

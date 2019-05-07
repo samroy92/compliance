@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CM-10" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CM-10 <small>SOFTWARE USAGE RESTRICTIONS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM - CONFIGURATION MANAGEMENT</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CM-10
+                                        </td>
+                                        <td>
+                                            CM-10
+                                        </td>
+                                        <td>
+                                            CM-10
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM</a>
+                    &gt; <strong>CM-10</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Uses software and associated documentation in accordance with contract agreements and copyright laws;
+</p>
+<p>
+b.
+Tracks the use of software and associated documentation protected by quantity licenses to control copying and distribution; and
+</p>
+<p>
+c.
+Controls and documents the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Software license tracking can be accomplished by manual methods (e.g., simple spreadsheets) or automated methods (e.g., specialized tracking applications) depending on organizational needs.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CM-10(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-10%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE USAGE RESTRICTIONS | OPEN SOURCE SOFTWARE<br>
+                                <strong>The organization establishes the following restrictions on the use of open source software: [Assignment: organization-defined restrictions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Open source software refers to software that is available in source code form. Certain software rights normally reserved for copyright holders are routinely provided under software license agreements that permit individuals to study, change, and improve the software. From a security perspective, the major advantage of open source software is that it provides organizations with the ability to examine the source code. However, there are also various licensing issues associated with open source software including, for example, the constraints on derivative use of such software.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

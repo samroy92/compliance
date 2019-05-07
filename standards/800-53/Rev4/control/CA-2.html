@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CA-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:22 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CA-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CA-2 <small>SECURITY ASSESSMENTS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SECURITY%20ASSESSMENT%20AND%20AUTHORIZATION-2.html">CA - SECURITY ASSESSMENT AND AUTHORIZATION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CA-2
+                                        </td>
+                                        <td>
+                                            CA-2 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            CA-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SECURITY%20ASSESSMENT%20AND%20AUTHORIZATION-2.html">CA</a>
+                    &gt; <strong>CA-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops a security assessment plan that describes the scope of the assessment including:
+</p>
+<p>
+1.
+Security controls and control enhancements under assessment;
+</p>
+<p>
+2.
+Assessment procedures to be used to determine security control effectiveness; and
+</p>
+<p>
+3.
+Assessment environment, assessment team, and assessment roles and responsibilities;
+</p>
+
+
+<p>
+b.
+Assesses the security controls in the information system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements;
+</p>
+<p>
+c.
+Produces a security assessment report that documents the results of the assessment; and
+</p>
+<p>
+d.
+Provides the results of the security control assessment to [Assignment: organization-defined individuals or roles].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations assess security controls in organizational information systems and the environments in which those systems operate as part of: (i) initial and ongoing security authorizations; (ii) FISMA annual assessments; (iii) continuous monitoring; and (iv) system development life cycle activities. Security assessments: (i) ensure that information security is built into organizational information systems; (ii) identify weaknesses and deficiencies early in the development process; (iii) provide essential information needed to make risk-based decisions as part of security authorization processes; and (iv) ensure compliance to vulnerability mitigation procedures. Assessments are conducted on the implemented security controls from Appendix F (main catalog) and Appendix G (Program Management controls) as documented in System Security Plans and Information Security Program Plans. Organizations can use other types of assessment activities such as vulnerability scanning and system monitoring to maintain the security posture of information systems during the entire life cycle. Security assessment reports document assessment results in sufficient detail as deemed necessary by organizations, to determine the accuracy and completeness of the reports and whether the security controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting security requirements. The FISMA requirement for assessing security controls at least annually does not require additional assessment activities to those activities already in place in organizational security authorization processes. Security assessment results are provided to the individuals or roles appropriate for the types of assessments being conducted. For example, assessments conducted in support of security authorization decisions are provided to authorizing officials or authorizing official designated representatives.
+To satisfy annual assessment requirements, organizations can use assessment results from the following sources: (i) initial or ongoing information system authorizations; (ii) continuous monitoring; or (iii)   system development life cycle activities. Organizations ensure that security assessment results are current, relevant to the determination of security control effectiveness, and obtained with the appropriate level of assessor independence. Existing security control assessment results can be reused to the extent that the results are still valid and can also be supplemented with additional assessments as needed. Subsequent to initial authorizations and in accordance with OMB policy, organizations assess security controls during continuous monitoring. Organizations establish the frequency for ongoing security control assessments in accordance with organizational continuous monitoring strategies. Information Assurance Vulnerability Alerts provide useful examples of vulnerability mitigation procedures. External audits (e.g., audits by external entities such as regulatory agencies) are outside the scope of this control.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-5">CA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-6">CA-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-9">PM-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-5">RA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-11">SA-11</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CA-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY ASSESSMENTS | INDEPENDENT ASSESSORS<br>
+                                <strong>The organization employs assessors or assessment teams with [Assignment: organization-defined level of independence] to conduct security control assessments.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Independent assessors or assessment teams are individuals or groups who conduct impartial assessments of organizational information systems. Impartiality implies that assessors are free from any perceived or actual conflicts of interest with regard to the development, operation, or management of the organizational information systems under assessment or to the determination of security control effectiveness. To achieve impartiality, assessors should not: (i) create a mutual or conflicting interest with the organizations where the assessments are being conducted; (ii) assess their own work; (iii) act as management or employees of the organizations they are serving; or (iv) place themselves in positions of advocacy for the organizations acquiring their services. Independent assessments can be obtained from elements within organizations or can be contracted to public or private sector entities outside of organizations. Authorizing officials determine the required level of independence based on the security categories of information systems and/or the ultimate risk to organizational operations, organizational assets, or individuals. Authorizing officials also determine if the level of assessor independence provides sufficient assurance that the results are sound and can be used to make credible, risk-based decisions. This includes determining whether contracted security assessment services have sufficient independence, for example, when information system owners are not directly involved in contracting processes or cannot unduly influence the impartiality of assessors conducting assessments. In special situations, for example, when organizations that own the information systems are small or organizational structures require that assessments are conducted by individuals that are in the developmental, operational, or management chain of system owners, independence in assessment processes can be achieved by ensuring that assessment results are carefully reviewed and analyzed by independent teams of experts to validate the completeness, accuracy, integrity, and reliability of the results. Organizations recognize that assessments performed for purposes other than direct support to authorization decisions are, when performed by assessors with sufficient independence, more likely to be useable for such decisions, thereby reducing the need to repeat assessments.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CA-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY ASSESSMENTS | SPECIALIZED ASSESSMENTS<br>
+                                <strong>The organization includes as part of security control assessments, [Assignment: organization-defined frequency], [Selection: announced; unannounced], [Selection (one or more): in-depth monitoring; vulnerability scanning; malicious user testing; insider threat assessment; performance/load testing; [Assignment: organization-defined other forms of security assessment]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can employ information system monitoring, insider threat assessments, malicious user testing, and other forms of testing (e.g., verification and validation) to improve readiness by exercising organizational capabilities and indicating current performance levels as a means of focusing actions to improve security. Organizations conduct assessment activities in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards. Authorizing officials approve the assessment methods in coordination with the organizational risk executive function. Organizations can incorporate vulnerabilities uncovered during assessments into vulnerability remediation processes.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-3.html">PE-3</a>, <a href="SI-2.html">SI-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CA-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY ASSESSMENTS | EXTERNAL ORGANIZATIONS<br>
+                                <strong>The organization accepts the results of an assessment of [Assignment: organization-defined information system] performed by [Assignment: organization-defined external organization] when the assessment meets [Assignment: organization-defined requirements].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may often rely on assessments of specific information systems by other (external) organizations. Utilizing such existing assessments (i.e., reusing existing assessment evidence) can significantly decrease the time and resources required for organizational assessments by limiting the amount of independent assessment activities that organizations need to perform. The factors that organizations may consider in determining whether to accept assessment results from external organizations can vary. Determinations for accepting assessment results can be based on, for example, past assessment experiences one organization has had with another organization, the reputation that organizations have with regard to assessments, the level of detail of supporting assessment documentation provided, or mandates imposed upon organizations by federal legislation, policies, or directives.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>Executive Order 13587</th>
+                    <td><a href="http://www.whitehouse.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net">http://www.whitehouse.gov/the-press-office/2011/10/07/executive-order-13587-structural-reforms-improve-security-classified-net</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-37</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-37">http://csrc.nist.gov/publications/PubsSPs.html#800-37</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-39</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-39">http://csrc.nist.gov/publications/PubsSPs.html#800-39</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-53A</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-53A">http://csrc.nist.gov/publications/PubsSPs.html#800-53A</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-115</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-115">http://csrc.nist.gov/publications/PubsSPs.html#800-115</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-137</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-137">http://csrc.nist.gov/publications/PubsSPs.html#800-137</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CA-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:22 GMT -->
+</html>

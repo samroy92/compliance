@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MP-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MP-6 <small>MEDIA SANITIZATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP - MEDIA PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            MP-6
+                                        </td>
+                                        <td>
+                                            MP-6
+                                        </td>
+                                        <td>
+                                            MP-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP</a>
+                    &gt; <strong>MP-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Sanitizes [Assignment: organization-defined information system media] prior to disposal, release out of organizational control, or release for reuse using [Assignment: organization-defined sanitization techniques and procedures] in accordance with applicable federal and organizational standards and policies; and
+</p>
+<p>
+b.
+Employs sanitization mechanisms with the strength and integrity commensurate with the security category or classification of the information.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to all information system media, both digital and non-digital, subject to disposal or reuse, whether or not the media is considered removable. Examples include media found in scanners, copiers, printers, notebook computers, workstations, network components, and mobile devices. The sanitization process removes information from the media such that the information cannot be retrieved or reconstructed. Sanitization techniques, including clearing, purging, cryptographic erase, and destruction, prevent the disclosure of information to unauthorized individuals when such media is reused or released for disposal. Organizations determine the appropriate sanitization methods recognizing that destruction is sometimes necessary when other methods cannot be applied to media requiring sanitization. Organizations use discretion on the employment of approved sanitization techniques and procedures for media containing information deemed to be in the public domain or publicly releasable, or deemed to have no adverse impact on organizations or individuals if released for reuse or disposal. Sanitization of non-digital media includes, for example, removing a classified appendix from an otherwise unclassified document, or redacting selected sections or words from a document by obscuring the redacted sections/words in a manner equivalent in effectiveness to removing them from the document. NSA standards and policies control the sanitization process for media containing classified information.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-2">MA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-3">RA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-4">SC-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MP-6(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | REVIEW / APPROVE / TRACK / DOCUMENT / VERIFY<br>
+                                <strong>The organization reviews, approves, tracks, documents, and verifies media sanitization and disposal actions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations review and approve media to be sanitized to ensure compliance with records-retention policies. Tracking/documenting actions include, for example, listing personnel who reviewed and approved sanitization and disposal actions, types of media sanitized, specific files stored on the media, sanitization methods used, date and time of the sanitization actions, personnel who performed the sanitization, verification actions taken, personnel who performed the verification, and disposal action taken. Organizations verify that the sanitization of the media was effective prior to disposal.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-12.html">SI-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MP-6(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | EQUIPMENT TESTING<br>
+                                <strong>The organization tests sanitization equipment and procedures [Assignment: organization-defined frequency] to verify that the intended sanitization is being achieved.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Testing of sanitization equipment and procedures may be conducted by qualified and authorized external entities (e.g., other federal agencies or external service providers).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">MP-6(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | NONDESTRUCTIVE TECHNIQUES<br>
+                                <strong>The organization applies nondestructive sanitization techniques to portable storage devices prior to connecting such devices to the information system under the following circumstances: [Assignment: organization-defined circumstances requiring sanitization of portable storage devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to digital media containing classified information and Controlled Unclassified Information (CUI). Portable storage devices can be the source of malicious code insertions into organizational information systems. Many of these devices are obtained from unknown and potentially untrustworthy sources and may contain malicious code that can be readily transferred to information systems through USB ports or other entry portals. While scanning such storage devices is always recommended, sanitization provides additional assurance that the devices are free of malicious code to include code capable of initiating zero-day attacks. Organizations consider nondestructive sanitization of portable storage devices when such devices are first purchased from the manufacturer or vendor prior to initial use or when organizations lose a positive chain of custody for the devices.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-3.html">SI-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">MP-6(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | CONTROLLED UNCLASSIFIED INFORMATION<br>
+                                <strong>[Withdrawn: Incorporated into MP-6].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">MP-6(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | CLASSIFIED INFORMATION<br>
+                                <strong>[Withdrawn: Incorporated into MP-6].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">MP-6(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | MEDIA DESTRUCTION<br>
+                                <strong>[Withdrawn: Incorporated into MP-6].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">MP-6(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | DUAL AUTHORIZATION<br>
+                                <strong>The organization enforces dual authorization for the sanitization of [Assignment: organization-defined information system media].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations employ dual authorization to ensure that information system media sanitization cannot occur unless two technically qualified individuals conduct the task. Individuals sanitizing information system media possess sufficient skills/expertise to determine if the proposed sanitization reflects applicable federal/organizational standards, policies, and procedures. Dual authorization also helps to ensure that sanitization occurs as intended, both protecting against errors and false claims of having performed the sanitization actions. Dual authorization may also be known as two-person control.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="MP-2.html">MP-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">MP-6(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-6%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA SANITIZATION | REMOTE PURGING / WIPING OF INFORMATION<br>
+                                <strong>The organization provides the capability to purge/wipe information from [Assignment: organization-defined information systems, system components, or devices] either remotely or under the following conditions: [Assignment: organization-defined conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement protects data/information on organizational information systems, system components, or devices (e.g., mobile devices) if such systems, components, or devices are obtained by unauthorized individuals. Remote purge/wipe commands require strong authentication to mitigate the risk of unauthorized individuals purging/wiping the system/component/device. The purge/wipe function can be implemented in a variety of ways including, for example, by overwriting data/information multiple times or by destroying the key necessary to decrypt encrypted data.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-60</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-60">http://csrc.nist.gov/publications/PubsSPs.html#800-60</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-88</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-88">http://csrc.nist.gov/publications/PubsSPs.html#800-88</a></td>
+                </tr>
+            
+                <tr>
+                    <th>http://www.nsa.gov/ia/mitigation_guidance/media_destruction_guidance/index.shtml</th>
+                    <td><a href="http://www.nsa.gov/ia/mitigation_guidance/media_destruction_guidance/index.shtml">http://www.nsa.gov/ia/mitigation_guidance/media_destruction_guidance/index.shtml</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+</html>

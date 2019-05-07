@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CM-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CM-2 <small>BASELINE CONFIGURATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM - CONFIGURATION MANAGEMENT</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CM-2
+                                        </td>
+                                        <td>
+                                            CM-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-7">7</a>)
+                                        </td>
+                                        <td>
+                                            CM-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-7">7</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM</a>
+                    &gt; <strong>CM-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control establishes baseline configurations for information systems and system components including communications and connectivity-related aspects of systems. Baseline configurations are documented, formally reviewed and agreed-upon sets of specifications for information systems or configuration items within those systems. Baseline configurations serve as a basis for future builds, releases, and/or changes to information systems. Baseline configurations include information about information system components (e.g., standard software packages installed on workstations, notebook computers, servers, network components, or mobile devices; current version numbers and patch information on operating systems and applications; and configuration settings/parameters), network topology, and the logical placement of those components within the system architecture. Maintaining baseline configurations requires creating new baselines as organizational information systems change over time. Baseline configurations of information systems reflect the current enterprise architecture.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-3">CM-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-9">CM-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-10">SA-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-5">PM-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CM-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | REVIEWS AND UPDATES<br>
+                                <strong>The organization reviews and updates the baseline configuration of the information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CM-2 (1)(a)<a name="//apple_ref/cpp/Modifier/CM-2%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>[Assignment: organization-defined frequency];</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-2 (1)(b)<a name="//apple_ref/cpp/Modifier/CM-2%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>When required due to [Assignment organization-defined circumstances]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-2 (1)(c)<a name="//apple_ref/cpp/Modifier/CM-2%20%281%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>As an integral part of information system component installations and upgrades.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-5.html">CM-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CM-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | AUTOMATION SUPPORT FOR ACCURACY / CURRENCY<br>
+                                <strong>The organization employs automated mechanisms to maintain an up-to-date, complete, accurate, and readily available baseline configuration of the information system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Automated mechanisms that help organizations maintain consistent baseline configurations for information systems include, for example, hardware and software inventory tools, configuration management tools, and network management tools. Such tools can be deployed and/or allocated as common controls, at the information system level, or at the operating system or component level (e.g., on workstations, servers, notebook computers, network components, or mobile devices). Tools can be used, for example, to track version numbers on operating system applications, types of software installed, and current patch levels. This control enhancement can be satisfied by the implementation of CM-8 (2) for organizations that choose to combine information system component inventory and baseline configuration activities.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-7.html">CM-7</a>, <a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CM-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | RETENTION OF PREVIOUS CONFIGURATIONS<br>
+                                <strong>The organization retains [Assignment: organization-defined previous versions of baseline configurations of the information system] to support rollback.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Retaining previous versions of baseline configurations to support rollback may include, for example, hardware, software, firmware, configuration files, and configuration records.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CM-2(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | UNAUTHORIZED SOFTWARE<br>
+                                <strong>[Withdrawn: Incorporated into CM-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CM-2(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | AUTHORIZED SOFTWARE<br>
+                                <strong>[Withdrawn: Incorporated into CM-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CM-2(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | DEVELOPMENT AND TEST ENVIRONMENTS<br>
+                                <strong>The organization maintains a baseline configuration for information system development and test environments that is managed separately from the operational baseline configuration.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Establishing separate baseline configurations for development, testing, and operational environments helps protect information systems from unplanned/unexpected events related to development and testing activities. Separate baseline configurations allow organizations to apply the configuration management that is most appropriate for each type of configuration. For example, management of operational configurations typically emphasizes the need for stability, while management of development/test configurations requires greater flexibility. Configurations in the test environment mirror the configurations in the operational environment to the extent practicable so that the results of the testing are representative of the proposed changes to the operational systems. This control enhancement requires separate configurations but not necessarily separate physical environments.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-4.html">CM-4</a>, <a href="SC-3.html">SC-3</a>, <a href="SC-7.html">SC-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">CM-2(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-2%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                BASELINE CONFIGURATION | CONFIGURE SYSTEMS, COMPONENTS, OR DEVICES FOR HIGH-RISK AREAS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CM-2 (7)(a)<a name="//apple_ref/cpp/Modifier/CM-2%20%287%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Issues [Assignment: organization-defined information systems, system components, or devices] with [Assignment: organization-defined configurations] to individuals traveling to locations that the organization deems to be of significant risk; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-2 (7)(b)<a name="//apple_ref/cpp/Modifier/CM-2%20%287%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Applies [Assignment: organization-defined security safeguards] to the devices when the individuals return.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                When it is known that information systems, system components, or devices (e.g., notebook computers, mobile devices) will be located in high-risk areas, additional security controls may be implemented to counter the greater threat in such areas coupled with the lack of physical security relative to organizational-controlled areas. For example, organizational policies and procedures for notebook computers used by individuals departing on and returning from travel include, for example, determining which locations are of concern, defining required configurations for the devices, ensuring that the devices are configured as intended before travel is initiated, and applying specific safeguards to the device after travel is completed. Specially configured notebook computers include, for example, computers with sanitized hard drives, limited applications, and additional hardening (e.g., more stringent configuration settings). Specified safeguards applied to mobile devices upon return from travel include, for example, examining the device for signs of physical tampering and purging/reimaging the hard disk drive. Protecting information residing on mobile devices is covered in the media protection family.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-128</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-128">http://csrc.nist.gov/publications/PubsSPs.html#800-128</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

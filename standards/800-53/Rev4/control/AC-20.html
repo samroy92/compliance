@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-20 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-20" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-20 <small>USE OF EXTERNAL INFORMATION SYSTEMS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-20
+                                        </td>
+                                        <td>
+                                            AC-20 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            AC-20 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-20</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization establishes terms and conditions, consistent with any trust relationships established with other organizations owning, operating, and/or maintaining external information systems, allowing authorized individuals to:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Access the information system from external information systems; and
+</p>
+<p>
+b.
+Process, store, or transmit organization-controlled information using external information systems.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>External information systems are information systems or components of information systems that are outside of the authorization boundary established by organizations and for which organizations typically have no direct supervision and authority over the application of required security controls or the assessment of control effectiveness. External information systems include, for example: (i) personally owned information systems/devices (e.g., notebook computers, smart phones, tablets, personal digital assistants); (ii) privately owned computing and communications devices resident in commercial or public facilities (e.g., hotels, train stations, convention centers, shopping malls, or airports); (iii) information systems owned or controlled by nonfederal governmental organizations; and (iv) federal information systems that are not owned by, operated by, or under the direct supervision and authority of organizations. This control also addresses the use of external information systems for the processing, storage, or transmission of organizational information, including, for example, accessing cloud services (e.g., infrastructure as a service, platform as a service, or software as a service) from organizational information systems.
+For some external information systems (i.e., information systems operated by other federal agencies, including organizations subordinate to those agencies), the trust relationships that have been established between those organizations and the originating organization may be such, that no explicit terms and conditions are required. Information systems within these organizations would not be considered external. These situations occur when, for example, there are pre-existing sharing/trust agreements (either implicit or explicit) established between federal agencies or organizations subordinate to those agencies, or when such trust agreements are specified by applicable laws, Executive Orders, directives, or policies. Authorized individuals include, for example, organizational personnel, contractors, or other individuals with authorized access to organizational information systems and over which organizations have the authority to impose rules of behavior with regard to system access. Restrictions that organizations impose on authorized individuals need not be uniform, as those restrictions may vary depending upon the trust relationships between organizations. Therefore, organizations may choose to impose different security restrictions on contractors than on state, local, or tribal governments.
+This control does not apply to the use of external information systems to access public interfaces to organizational information systems (e.g., individuals accessing federal information through www.usa.gov). Organizations establish terms and conditions for the use of external information systems in accordance with organizational security policies and procedures. Terms and conditions address as a minimum: types of applications that can be accessed on organizational information systems from external information systems; and the highest security category of information that can be processed, stored, or transmitted on external information systems. If terms and conditions with the owners of external information systems cannot be established, organizations may impose restrictions on organizational personnel using those external systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-9">SA-9</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-20(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-20%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | LIMITS ON AUTHORIZED USE<br>
+                                <strong>The organization permits authorized individuals to use an external information system to access the information system or to process, store, or transmit organization-controlled information only when the organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-20 (1)(a)<a name="//apple_ref/cpp/Modifier/AC-20%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Verifies the implementation of required security controls on the external system as specified in the organization�s information security policy and security plan; or</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-20 (1)(b)<a name="//apple_ref/cpp/Modifier/AC-20%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Retains approved information system connection or processing agreements with the organizational entity hosting the external information system.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement recognizes that there are circumstances where individuals using external information systems (e.g., contractors, coalition partners) need to access organizational information systems. In those situations, organizations need confidence that the external information systems contain the necessary security safeguards (i.e., security controls), so as not to compromise, damage, or otherwise harm organizational information systems. Verification that the required security controls have been implemented can be achieved, for example, by third-party, independent assessments, attestations, or other means, depending on the confidence level required by organizations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-2.html">CA-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-20(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-20%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | PORTABLE STORAGE DEVICES<br>
+                                <strong>The organization [Selection: restricts; prohibits] the use of organization-controlled portable storage devices by authorized individuals on external information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Limits on the use of organization-controlled portable storage devices in external information systems include, for example, complete prohibition of the use of such devices or restrictions on how the devices may be used and under what conditions the devices may be used.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-20(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-20%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | NON-ORGANIZATIONALLY OWNED SYSTEMS / COMPONENTS / DEVICES<br>
+                                <strong>The organization [Selection: restricts; prohibits] the use of non-organizationally owned information systems, system components, or devices to process, store, or transmit organizational information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Non-organizationally owned devices include devices owned by other organizations (e.g., federal/state agencies, contractors) and personally owned devices. There are risks to using non-organizationally owned devices. In some cases, the risk is sufficiently high as to prohibit such use. In other cases, it may be such that the use of non-organizationally owned devices is allowed but restricted in some way. Restrictions include, for example: (i) requiring the implementation of organization-approved security controls prior to authorizing such connections; (ii) limiting access to certain types of information, services, or applications; (iii) using virtualization techniques to limit processing and storage activities to servers or other system components provisioned by the organization; and (iv) agreeing to terms and conditions for usage. For personally owned devices, organizations consult with the Office of the General Counsel regarding legal issues associated with using such devices in operational environments, including, for example, requirements for conducting forensic analyses during investigations after an incident.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-20(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-20%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                USE OF EXTERNAL INFORMATION SYSTEMS | NETWORK ACCESSIBLE STORAGE DEVICES<br>
+                                <strong>The organization prohibits the use of [Assignment: organization-defined network accessible storage devices] in external information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Network accessible storage devices in external information systems include, for example, online storage devices in public, hybrid, or community cloud-based systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-20 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MA-5" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MA-5 <small>MAINTENANCE PERSONNEL</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MAINTENANCE-2.html">MA - MAINTENANCE</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            MA-5
+                                        </td>
+                                        <td>
+                                            MA-5
+                                        </td>
+                                        <td>
+                                            MA-5 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MAINTENANCE-2.html">MA</a>
+                    &gt; <strong>MA-5</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes a process for maintenance personnel authorization and maintains a list of authorized maintenance organizations or personnel;
+</p>
+<p>
+b.
+Ensures that non-escorted personnel performing maintenance on the information system have required access authorizations; and
+</p>
+<p>
+c.
+Designates organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to individuals performing hardware or software maintenance on organizational information systems, while PE-2 addresses physical access for individuals whose maintenance duties place them within the physical protection perimeter of the systems (e.g., custodial staff, physical plant maintenance personnel). Technical competence of supervising individuals relates to the maintenance performed on the information systems while having required access authorizations refers to maintenance on and near the systems. Individuals not previously identified as authorized maintenance personnel, such as information technology manufacturers, vendors, systems integrators, and consultants, may require privileged access to organizational information systems, for example, when required to conduct maintenance activities with little or no notice. Based on organizational assessments of risk, organizations may issue temporary credentials to these individuals. Temporary credentials may be for one-time use or for very limited time periods.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-2">PE-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-4">PE-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-3">RA-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MA-5(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-5%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE PERSONNEL | INDIVIDUALS WITHOUT APPROPRIATE ACCESS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>MA-5 (1)(a)<a name="//apple_ref/cpp/Modifier/MA-5%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Implements procedures for the use of maintenance personnel that lack appropriate security clearances or are not U.S. citizens, that include the following requirements:</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>MA-5 (1)(b)<a name="//apple_ref/cpp/Modifier/MA-5%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Develops and implements alternate security safeguards in the event an information system component cannot be sanitized, removed, or disconnected from the system.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement denies individuals who lack appropriate security clearances (i.e., individuals who do not possess security clearances or possess security clearances at a lower level than required) or who are not U.S. citizens, visual and electronic access to any classified information, Controlled Unclassified Information (CUI), or any other sensitive information contained on organizational information systems. Procedures for the use of maintenance personnel can be documented in security plans for the information systems.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="MP-6.html">MP-6</a>, <a href="PL-2.html">PL-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MA-5(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-5%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE PERSONNEL | SECURITY CLEARANCES FOR CLASSIFIED SYSTEMS<br>
+                                <strong>The organization ensures that personnel performing maintenance and diagnostic activities on an information system processing, storing, or transmitting classified information possess security clearances and formal access approvals for at least the highest classification level and for all compartments of information on the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PS-3.html">PS-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">MA-5(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-5%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE PERSONNEL | CITIZENSHIP REQUIREMENTS FOR CLASSIFIED SYSTEMS<br>
+                                <strong>The organization ensures that personnel performing maintenance and diagnostic activities on an information system processing, storing, or transmitting classified information are U.S. citizens.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PS-3.html">PS-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">MA-5(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-5%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE PERSONNEL | FOREIGN NATIONALS<br>
+                                <strong>The organization ensures that:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>MA-5 (4)(a)<a name="//apple_ref/cpp/Modifier/MA-5%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Cleared foreign nationals (i.e., foreign nationals with appropriate security clearances), are used to conduct maintenance and diagnostic activities on classified information systems only when the systems are jointly owned and operated by the United States and foreign allied governments, or owned and operated solely by foreign allied governments; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>MA-5 (4)(b)<a name="//apple_ref/cpp/Modifier/MA-5%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Approvals, consents, and detailed operational conditions regarding the use of foreign nationals to conduct maintenance and diagnostic activities on classified information systems are fully documented within Memoranda of Agreements.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PS-3.html">PS-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">MA-5(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-5%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE PERSONNEL | NONSYSTEM-RELATED MAINTENANCE<br>
+                                <strong>The organization ensures that non-escorted personnel performing maintenance activities not directly associated with the information system but in the physical proximity of the system, have required access authorizations.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Personnel performing maintenance activities in other capacities not directly related to the information system include, for example, physical plant personnel and janitorial personnel.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CM-5" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1JiIcHq6JECAhbSbCzvIUNcXiaBvu451oS9SiFrYYYkpuuzkQscG8SXOTgHp2z69hIpgRCqWDzaeEje/AaVX1RJnyQLyolEM3jwHtNBbKpiK6UiruLjhI5/PdhGQjgcI2ynxWhx7kQFa04+tOU9PLsMcG3Jjltr9vk3QlJQ5LumrVQVewyXJRQgPoUKwUR945c5kWc62oGyPyuDvrE9GnNh21isrvGseezDfnM7JKY27gFwHP+M3g0V40APmFWZcz5LMr7FacVSJjNWdoSPhFCqwNnExOBs6EJYBlnTtMmzaPa9b4OwxNMXRA0jpti32AF1lGG0E6tq16ZIILNXlnRAKiYS8+qeN/EXtWPW5cBckOrLFLhp1BEceWkym0pE7HrhYdkLF4Q8gUUxM4tBbJV6cnBlGUzDjdoi9SK21odvk/RbswUg6J8JhTAwejc4uoJwVxSRcSUsqqSpqkWquEYHGdOXwoE2mEcy1EKBmN1DIbNHzNpVUSDmltWx5kCa0FENyU+N/1x9D4IdIv9s66PFcjUZdnexuk4E71kJQGz5lBOrT+SEE7VH7URmyVbePK/CLX+np3iwiTThNis08pkDMtSTfargIfXpm3Okrji1xwhdAoh1jA2SarEf1rTEDBej3Px9nlR0ivpk/3SgaqHco62xdmphZ/rgfCNR3Ps3xKS3bHy0EzvsXmmw68nWFDMLbswVniTBBtRP8lPsMOWP6K1SMHbqfF2aoddvH6gSh0fKRnuwpwmT/KWqSmhlJVLAFLPOce8VRcVUT9Adh/NW6Kw8uiv+b6IKeF8YE7FzExf+Da8+NvvW8Y+C7pMHchykb3qP7XLxQmlfqxIGj6ODegAlI7SHMkYswRZ6OiGKCfHWSBvtJYAY1wp382PEyJBUzieSOU5NchgLtNM28nrSVIP0cqKcZD1I9WCzFHyRjJ8I5OkEtqGe8Wxe2Zqwre3wh5nV5H5VLXAIEoob8qe5IpCNsXxdF1q/V9nkx8bkvgsQFV7fZ9JdnwG5/La+RapI8tPEIs5p4Z3ipimBdVTXAwZ5q0tUd2tCF7PcBMRFrme18jPqD0Un62bjITIhcF5OkAJVjMvCLJ/TdyEBVIDAj/x7JBH8Ng8K33cO95z5x5sDi3iCXTb996OVmKN/hu78asL6o0GWBzHd6t99rQ16bHSFyE1eEaBCxHbkjoxqkslQp+kqf6vPrJcUVIpCyfW3wMWPYmVXYb7Gny2oB9/OlEeJKGhh6D1f3KAXSyuNxp0w7hvLl8Ep10QI49KLCqqHrQvFH6i7QHSXeSgdfvIhPqOpFE4MnaRIlESjNf82YVtu+3eRTPu1E4webzLPBv86vytBZSRmBd6vwsEnQYHjGHFakZglcgtBAvjIst4W0MWky35ivCRyQjTQW0ZGWGLQPtH3vt6hRkrRsUXIO5NRKEhkdsq4a1haULPORGdtuo9tKWS3WDELgSqmxTqLc8UUUmt5IkiqmUCp6Xsv0g19qXMJterM0uphEuSgi4nkHxDA83Eaji2kK9Ap9Rorx5w0hJ/WTku871pr7DDO6WoeTp9aRgRGj39cI1ENZ//kNUO0d1RYqRvJPttL6ZxDlTWEpGRarUYfahqr0fokvpzB+m55vwPVZDX1RTP1D9tp2TrHxeXcDKyu1UjdRJBYgX+2LeeQYYTRP7hVZ1h0Po30woQVeA6RrnqaAdi6o1xYDo8K461HMGAsX6kbtR329LcTZCfQUXun15hBoYlHEm5yl/ZDHHIYyJkPCGcldbdKCjZzTW0/qU6bAO6JNEhjjTsKsiMJ1ri6hLhMnWKP+9A+mwfXehlObvj3naAzihrzWhBR51FpAjv6ghYwtkW5aLJn9aPI9IEpJqEdZkDOeAwCgvEKuZUn+z8KcWwED6Cnd2onxEhxzYJJmi+3AdhIzO5bBgYrQx/m9KRvf/ZDxLi5Bb9VGDJ9iSxKrkJ8aaeKbZ1BebaHLR0pZy06rcpMWtg15NADEf2ro9Vvn9vlU99mNcWa8VJvpi2HcKNu11TUt54fncnTHyCeFHJjRaXZDqM1jfPJ2ebtyqwMDv9hzSN3CedFF8cDlO64AIxnW6muigIA5j+9PbyEqBTpipscZVDoG2CLOonOSPYKFZ0mJ31d66bDhYx/TliRx8oICMm2lXEXY6+GYm98nLfWeafRsuOtF91vPqM2Ibd1QMlLyvDt+esJxg4sOaWIVV2tDwX9Q/REkHhoL+cKkvn7c6puhHEdXVQVysESIzjvSRmDSq+7lwR0LcSBpdAOmm8ohTAVcWl6cawpmJoeROFE120u/jgPwB6YcT5jXE36WtL+iuv4grhPgh/rYTKBeuCp10k+W+WplvMG5rf6nfLBGQ2UdVGDd7ITJuom9DiZ9d7B+cgkufB0bOZSvJYEbK9YRD3wl69XXlz7NwnixkAMQq1ZCMvI3JXW0ofglmdmYgKjgujNieHrx/XX660W7rycOLEHOWet4Uo4cKteHqYJAGmiuy3LyI08Ysuh96OAPywOei09qgwTOlMCkfzTp97Lq82fzMfD/If9ZisZ1oMlB9Vspr11yJKUqaG7atjG5xazmSiM70R60UMWJVI4D2WyIww7cWSDM0oa3olfVQLOSqRour2RTHcbj5EpBmUu2M/sE5BlMcC6TuMX16bXKNhRzjbjcP7nYcty5v+AO8ZC3eFjyyGAIu5Cl6QnhwVWfGXKcynJC1ae8MDmQrM1shFI6X5sEFjispnc0Sf/WfGV9wNbaXTGriNT18ZJCkUZp4+KqHkxT9F/rtv4uxnt7h4QxMlti9t5YXdXRSRYXyjKqd2tQpGZYfyW9J/TJGu9NJgtaOzu1d/QXqa8WHZEiqpX0HxMr9Nm09cVCkoSWpJAj+Xks3TYRan2UiPVLPQdPHuLLMYJTNved9zZZNidDaxDoevApn6d+BXW9DQc9YvRrFhxgYF8bxfDosp7qalT/BnEPzmVW11G8Y7VtnJQDZDJQpJhxKmy2HxeHIiv1cepHFOP+CE9o0LwRp6cnkIHM/WUOy5RoCOnzcgZctmoNOnKgBOL01cJ6fprJNfGdHfBrrLB8gDes08xgLXAloSHrSLz26rzeRSDgNW5xbkdX0L+sfKBBIELH/rJK4v2SpeR/8tLMe6Xk6b15nBDC7KSQ7JQbbEwLD5zDSWbdCrmoz3XudlpQuaEBCcSlh7EnXMp5CagsXjWN8X9qIvFSCYivTcIFFve017VI0XZMpEv1aHRT5+w9vMCJv5yvArjCVLPEiD2Y8+CUIvrL4Sbwlx3UzRCK51qPh/1RmhuOEbRCs3Rs7DNixri2VVu35O7yfc3GW0c9/9Dhb0VxD50GaDTgepbqfJlacCktfweD0jZ8c56coPxWqOsX2DtJhJ1E+D8xpbRt9+3qH+ITi6CrVPN4BDUv4mS2OLKgmwkLnRPcPrAplC03I2GNif8vYCt7iH/2BxvV6D6Anw4mjZdaUpAHjPOCz+PNF2J3SVqn1z8LUgFGRtaB8C59c5Ra/PXlGkTeOUG7aePwGS7BULd4jup3aZwNljEBpvOjlL4URoknN0lio8DEeMVUKJA9jPi4XFwJqMcYb1KWpRti9ckGk03bjJuQ74K7GJg57HvCg5WLeJ3vcoWhbv+I0uX01DC2gen6nQdkiW0i0PDlVVnFZ7dH9svgBQwMmHL46voGu0jXwVDdpOZBqZLaTmd3KLfjhmXyxYStiW0TuExAqUI1JCtngxysrhHpYZNHW1mY5KflHpSL3xjYIq/GhN5SNVGQJBgRevfsXYnIpe5pE8uK2BS1pj5zDF5hHCcLe7pS0/jCvzo37sFQ+zLnkMvKixChZ2D38wSn6gWFbvta9oZwiPYdOd5UtKgDRVcAzNOP9clSHIrP+jq7Kn4COizzCUsaac3LCam8p5mxd6ScpZgZtnG75yFh1Hn/EYvA/jQNVDPgwdSHUVsxj4jIvJNoLl27pRC/c+TdwoFLTVZRhsiV8BT3MX/7AbvwfkzwFunST+rRKtgBFxCkcJnDPGfgsroRADNi0o+jWafJ16CU2KVAbzOTYPAHn9/4JVtTDRebGG0iz6spBcNIBAXXmWD0M0kV+ubqiBuJ5iT9k4JCBNUNCo9HucSBHKDUT4/345HjO5UmOFhDOMVJZrwqnrCARv4yxTnlutd145cYeomHyNurNN4hwKl0I0tQHjRmN2KlDjKqo9RKKxojJZUGMzmCpQUjVCmbFOS7Q1vytSL0bz9VBqTCa6QX1deLyqaJP5gH0ydqeeordvUJBYYh39YIiWONqE15Xn1kSOHilw1toI+trI3iNjrxqt0YfexPtpBT9JZUvlbR0WQbnr/6fe4DkHzCR/xR4gxWhQEDSokO4M5PuKZsFEdAWw0BTpSc+cHsBfO5g2a96ErwC+MZpjaGySPoc9A8EwdlCdCNlqqKTJL9BOA11knwrnaqAqpMYYfiGJrwZyO4TE1qKfVc6W4wTVBwncYEqs4wx3lQ+JPPuYtqBpB6Q59y7xHNUiMe9JNYemNeUk4PRUMNh8oymPEnRFWOOp3+QYmGqKxsiERuXU/7daWQSn9vOfQxiV499vZVWD0rFOVEWmvS66R7z6T9Td68bt9TOZrzMrOOkE+D+0lR2+POL/dJFQVRtWlq/jSdFBlhiuw927PimLrjNUgRraC11iRHKXogXTMmWS83X8VKOdwW6n8RfY1g1GMaFvyvVZOTz7jd+fmWHYlNNzny2eS4RN3PNDWBIOq00P2qk/9Vp53/K0UPJ7wd2EXTRMcF7fNIlcbw/ezSmLhyn4KM+1a7ZHX64kRaBMFSdaqm/n3HaJXkZe40+d1wYSJ/8NnhUWOBjjMMDLM8xYXp6Qb0QATFHYaq3gmyr0XgIE2nOaXHi2fMfGIIsT8qrUJntIzxjoGblIAswrSenGhF90pdLglqy4gxHrls8xAVCQQER51WCKb0UOVbCwmCWEc8PWKDQapXyxLGLG4Pc5JCYj7DvSVJcaZGR+/iKt3kGzTtM1WNr7IAykm2hcSZ17wyEu5GtIfl+TN/H5s5llMTA1GC5PakV9Lnf/Ioh8mDIcexPoREYwaRppHG9ssuhWd0aqVVMZlXa6OJhgzHTJR4pfRuAoPpX/HLhmJQdCp/aVbI/k0NMgz69ciMnrFBxS9AAA0s4HH18V7vLWJW7QfAEeZbn9wmCv9y/gS3UDC4S0oqfw1Mc1Y+a3eTjYBB47/jl6OLbm9ARtz0M3ThDwfS3hIiHuQNgoLQE4Ogm7ATFno481M9y0Zu/pUuGJXETeJ0tSTgsrZ4AvTkmTJf1hRoCTOddw/gu2lU/7chB18iVtTESHVa9wYhC2+gUBO9vVWaEuCxHj+4wD4G+Pv4r5Em9ayiVt0dr92ilEhL8IhXe3geK8Kdy/g4XFFpLzGTb9bmk2XZEY+WGJukCUuy7M0JwSbb8TbGY8XoWNbiydmyE3PES5qaqMCxkjl42GtgMueFA9CNEvqvUCBuuQ+uwNsvmdQWGEgtFipIWGKqq8qZ0kZM27nY2BePoRfzZHO1WA8Gtu/6RbvG+nWZV/2lyODJTPLmRvGFENsjFM7eIZSZYkCi000geZfJ6k8s/lYAMzlZDKoar0USJpPUNWKXUnWYw1QekLs8CnBmJin88gYOilbEdb+xI4FaOqBmDyOTqpSx3PUUIEYOeLna2u4yp1GtzAPOMmXXbei7avC3ABdUt9fphoIYu9poMmzpikuONy/sDuvOF8XKg3C6tiaj0+nCph82DwTueDxkrbjyiSFVxGd/qc4Lof2biLlDZ9zs6bA0TsbDmh7dfoFkKxNrlLr2OFfOFVmD5cc0rzzZZMYxNZ50nMwzFQWJHWxiYLYpSvDXw1Y7wBpBVhU8e7IKNUFeldhi6xQqUOVnH1/6NGNlQIRwmDpLsdO00R/0ZyqBZpCMN9Szy/doMU3dhwutHeBBM2FbqGyZCw5XXwBv52uLTs4P0CYeLbUca9gTE5tUzp8DAaGiZZPpwPPv/PkeH0j9fa9gliVw2OySo/0ALDx2CbhmMe0Hw5gyN5GaHbWya7mLYdcnAJLf+n9PvnlnUMzM7LEladrio3ITXwwZ1KkHm4YB40xKbPFBqAK7eYCX7Rv5KwbR46UUMfJw6hyxzsiCl/OI99E92N6J7QCGFYIV0JDv7vvz4OrxEDnBaqzEwcjThTZisIWWPAZqGqngzbgUM+fFcdXkBMJ9c/WouKFmm+75w+DfxaficJ9z8pWvBS36LTh0tBI6vuqtOgNyhQTyK9HvxntYJtFsz3LdF8h8FckF18A6x4uAT58u2FvoUYgPU8/wC0fv63TbNGZI8LAynbQd6bl3NQJWwXrrZsAahKFZWz1mlTIr0xjMNHGR2BZ8MQf2JOGjXEFtHxDvkMwTL58Vs9g633L9aBD3LdEmorgs9PNJe+cTYZUWujEQjn2JmOGg+M5feygAkJ01GOLkLZOdi0yFZnXSGgnJozp7MlcGaUjCVkH3FOX5Cs7YYjgUmMi3/zhVnePGa8bmNNvMa4ErCG+4WJtm8d2vX91jMKSkmmuq9KvyxnI5U8cmflMk1z2BEyJpJrFsRatfaJUWqPkklvwZft+lVisQtY7wZobdk1hk57vgeqz0wnDi554hK074VuDwBTRmj6ssHQG+hIcqQFcREkS6ImeB3N1UWkAiNK0ARR5WAMW1vHlhV3eeJnE7gODmPsKzsIiJ/AlVeZrwIs/o0ACx46/nSWLtjvOI4oJ95ZIk5DxD/kMgDfSXu96Fn7YDTqbXxKE3vFQdRHT/G8qD0ZDqT8LHUktYSiY42BlhShloOH2ldSlC97Vq1Sv9H1RfTT7sAXQ4f5MlLzSfen3/MYJASAecNzHdawvuj2gLQd7alAkDiUHomWxL92GZlq6xTq1w0Yr/Kqox///dcMH/8CK5SUNEeMvbPaWF1IPywWLJrOuq+xOeKtqxKScOoWV9z7a5t3CRAtG5E0EUVtWcYp++B38yTsE+7Hv/ACELIgtgFNe7mIh8V/GLopnMzMOYNet2RceQZuRscqYdVAIrhEOTc5Pk+1Ll2QgvUH7tzhsGjYX8akQPkZNcoxF18TQq0kxByCruEtAEpWVVdnVJFAawYdznwRIe0uCzz5wx085+Lv3wNOmS/s9ehJnRTJ8z/UKC+0mpnTUhNVWbljCbzVuA3xHxGaFlceowHkHuER3vzijMznHehENJ4LkuA/KJFBiX9Se74EvpwFc+FvB+XWbFerYjSPOn2VloKGPvVLN4YSF/ALsiAxSwte61caQ7e73w3F7Upd0+F8d/35pA6QYw6y74BQG2WrUlF2CYZ+vBCSRZnbnZtR4dc/wiI4OXEY+7UDNbfmc/8lg+jN2nKwEWAgCEI5C/tnFBhKKtznSJlQK8IqGlLoGBlLd9poDkB9uWAbsSujBCjNB4uNSMKHV1DYuBF+JrtkUTZN74I7Z2XrD3H/PgWiQEaIzlCiUrhdZcOgHLRB8GfE/2AdlyQdUBfNm1cjA16BQBs0pZHGjeV2DlO/AZ0fnW+l9LhBmSD+nhQhX6/hF15ezUh1CLjHvHyOI6yJyjsN49kpzXC6FxAEQki/SKMhWkoHsSwvTjQEinNWQLVM7+ds7IMH4oA5YcLWDZwdJZdxYFYfbqJMq90dj91Rjx6TLjYswzFaEZurlbTkliJvOGBYs0WdstF1YsGkPN2siEQ4pm6QPBvi56zga63tA305kENsA92nxhdOD//M5bjCtVMeH0L95+Cz9MyinGOs6REkurEy4sFo5E8Lhia2l8yRcA9DQUVOGAB4nT0glGUD0RFa6aeTNS9PKaZCTgMNih3K3Y3hrXg70ZpMXI64RmsXh7dceYgk8KimSNks4Rm3lwZUDAXPQCYiaEdLFSGnfV8EzTjo0XherMi7lkLJtivxQGUJeNwzaOg/O/rlQDPrWyv47ehjTNTCADDIS9KI8aJ0UlaI94m4LLcqQyTDFA+wsbHWsUdVHlz6RzWSgBU+gFO1+P1srtZplVzqLpu8/hu4MFBosM68Xmh9Nh0EXsvt3/i5dBYRpPDD9ZGJkPO1LJedp5oODLPpDGEYJTm4AQVhhohZLdl8O0qqvfCzqpgiw/AWIstjBgW7to1yPt81HV4BmbhvMcrXIUi1tYaNe5LyvMJDjUz/LzW/khWpW19l7lwBxbiSt8sMJ5cuR/eBMJk044MNz8inYWxuf/HHYJ1aAypsW8qEp8tsXYh6oHcTUfZm98UvrDroAEQLtXYwf97I1ZuCG879hKQ3vf5gOjE88PCr57rrKAgK73vpV+1/uEm6mYAzr7IKMMrAbzEcKLwJluszgkfzzZoVgoVdtUVwMTC97hdFrzZ/XePIJsGYRimC0HZA0fTv0s1U9R/ONR6a1GTKdtPmC6RbUfcAYLPTAmLI5v5gejOdgqZ517ML295R9ws6dHqrN5wIVD2WIXee3eT8WmtEf7xEEpQ62533EbgjvjRYEe/EpyxdZjGxk3Z8fk9pKqqL0/5zqslHf4KEUdcot8hZm9dmEd3rVlJBtK/sHHIlk0zz8k7URSjtKnAki+9NJcRSNYRyAs3+hnSQH5EEizuJhCFdfQYVyP/5yRoS6QPnfB/sLLNTDqQmvIkGorKzqn9MtjTC8TH4jreYQe/P0zAUdY8th3J8ReL+vz5IvaX8Vr5JNuTo2orAv6TSOvzUNsUabK4G2ZekPSg2nYPE1Avv6pqWt9qCAQ46n/McG3Rf2XKD61iVXYIG4TXE1M39o+5CvdUsG45nR1LGLjI8jAh3O4vaYWSupi1AkWkYR1PqZ/IPcD0as2PVQn2ZrL/xU3by0vldynF15dDKqnL2LhXy1PcDKjHNlmMXFsRWBkUHsKKIedtTwF5azq4E1YBbeyKfqxwD70Z1BmFt58/boto+DKVpOTqS3AjnD8LewFAomo2HW1Xd7sJLkB8hwQIh7UnKiVvmZKus7oRm6yVSFIOt0GBZM6NKJnTzVy/ns3cZD1i9+DiQ==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CM-5 <small>ACCESS RESTRICTIONS FOR CHANGE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM - CONFIGURATION MANAGEMENT</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            CM-5
+                                        </td>
+                                        <td>
+                                            CM-5 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM</a>
+                    &gt; <strong>CM-5</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization defines, documents, approves, and enforces physical and logical access restrictions associated with changes to the information system.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Any changes to the hardware, software, and/or firmware components of information systems can potentially have significant effects on the overall security of the systems. Therefore, organizations permit only qualified and authorized individuals to access information systems for purposes of initiating changes, including upgrades and modifications. Organizations maintain records of access to ensure that configuration change control is implemented and to support after-the-fact actions should organizations discover any unauthorized changes. Access restrictions for change also include software libraries. Access restrictions include, for example, physical and logical access controls (see AC-3 and PE-3), workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover).</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CM-5(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | AUTOMATED ACCESS ENFORCEMENT / AUDITING<br>
+                                <strong>The information system enforces access restrictions and supports auditing of the enforcement actions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="AU-12.html">AU-12</a>, <a href="AU-6.html">AU-6</a>, <a href="CM-3.html">CM-3</a>, <a href="CM-6.html">CM-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CM-5(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | REVIEW SYSTEM CHANGES<br>
+                                <strong>The organization reviews information system changes [Assignment: organization-defined frequency] and [Assignment: organization-defined circumstances] to determine whether unauthorized changes have occurred.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Indications that warrant review of information system changes and the specific circumstances justifying such reviews may be obtained from activities carried out by organizations during the configuration change process.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-6.html">AU-6</a>, <a href="AU-7.html">AU-7</a>, <a href="CM-3.html">CM-3</a>, <a href="CM-5.html">CM-5</a>, <a href="PE-6.html">PE-6</a>, <a href="PE-8.html">PE-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CM-5(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | SIGNED COMPONENTS<br>
+                                <strong>The information system prevents the installation of [Assignment: organization-defined software and firmware components] without verification that the component has been digitally signed using a certificate that is recognized and approved by the organization.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Software and firmware components prevented from installation unless signed with recognized and approved certificates include, for example, software and firmware version updates, patches, service packs, device drivers, and basic input output system (BIOS) updates. Organizations can identify applicable software and firmware components by type, by specific items, or a combination of both. Digital signatures and organizational verification of such signatures, is a method of code authentication.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-7.html">CM-7</a>, <a href="SC-13.html">SC-13</a>, <a href="SI-7.html">SI-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CM-5(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | DUAL AUTHORIZATION<br>
+                                <strong>The organization enforces dual authorization for implementing changes to [Assignment: organization-defined information system components and system-level information].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations employ dual authorization to ensure that any changes to selected information system components and information cannot occur unless two qualified individuals implement such changes. The two individuals possess sufficient skills/expertise to determine if the proposed changes are correct implementations of approved changes. Dual authorization may also be known as two-person control.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-5.html">AC-5</a>, <a href="CM-3.html">CM-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CM-5(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | LIMIT PRODUCTION / OPERATIONAL PRIVILEGES<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CM-5 (5)(a)<a name="//apple_ref/cpp/Modifier/CM-5%20%285%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Limits privileges to change information system components and system-related information within a production or operational environment; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-5 (5)(b)<a name="//apple_ref/cpp/Modifier/CM-5%20%285%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Reviews and reevaluates privileges [Assignment: organization-defined frequency].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In many organizations, information systems support multiple core missions/business functions. Limiting privileges to change information system components with respect to operational systems is necessary because changes to a particular information system component may have far-reaching effects on mission/business processes supported by the system where the component resides. The complex, many-to-many relationships between systems and mission/business processes are in some cases, unknown to developers.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CM-5(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | LIMIT LIBRARY PRIVILEGES<br>
+                                <strong>The organization limits privileges to change software resident within software libraries.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Software libraries include privileged programs.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">CM-5(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-5%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS RESTRICTIONS FOR CHANGE | AUTOMATIC IMPLEMENTATION OF SECURITY SAFEGUARDS<br>
+                                <strong>[Withdrawn: Incorporated into SI-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

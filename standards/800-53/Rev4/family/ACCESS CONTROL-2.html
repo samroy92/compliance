@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/family/ACCESS CONTROL by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Family
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/family/ACCESS%20CONTROL" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Family</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+
+    
+    <h4>Access Control Control Family</h4>
+
+      
+    
+<p>Showing <strong>25</strong> controls:</p>
+  
+
+		<table class="table table-hover table-striped table-smaller">
+			<thead>
+				<tr>
+					<th>No.</th>
+					<th>Control</th>
+					<th>Priority</th>
+					<th>Low</th>
+					<th>Moderate</th>
+					<th>High</th>
+				</tr>
+			</thead>
+			<tbody>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-1.html">AC-1</a></td>
+            <td>ACCESS CONTROL POLICY AND PROCEDURES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_LowNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_ModerateNumberLabel">AC-1</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl01_HighNumberLabel">AC-1</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-2.html">AC-2</a></td>
+            <td>ACCOUNT MANAGEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_LowNumberLabel">AC-2</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModerateNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-2.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighNumberLabel">AC-2</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-2.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-2.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-2.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-2.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl04_PriorityLink" href="../control/AC-2.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl05_PriorityLink" href="../control/AC-2.html#enhancement-11">11</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl06_PriorityLink" href="../control/AC-2.html#enhancement-12">12</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl02_HighPriorityRepeater_ctl07_PriorityLink" href="../control/AC-2.html#enhancement-13">13</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-3.html">AC-3</a></td>
+            <td>ACCESS ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_LowNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_ModerateNumberLabel">AC-3</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl03_HighNumberLabel">AC-3</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-4.html">AC-4</a></td>
+            <td>INFORMATION FLOW ENFORCEMENT</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_ModerateNumberLabel">AC-4</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl04_HighNumberLabel">AC-4</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-5.html">AC-5</a></td>
+            <td>SEPARATION OF DUTIES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_ModerateNumberLabel">AC-5</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl05_HighNumberLabel">AC-5</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-6.html">AC-6</a></td>
+            <td>LEAST PRIVILEGE</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModerateNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_ModeratePriorityRepeater_ctl04_PriorityLink" href="../control/AC-6.html#enhancement-10">10</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighNumberLabel">AC-6</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-6.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-6.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-6.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-6.html#enhancement-5">5</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl04_PriorityLink" href="../control/AC-6.html#enhancement-9">9</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl06_HighPriorityRepeater_ctl05_PriorityLink" href="../control/AC-6.html#enhancement-10">10</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-7.html">AC-7</a></td>
+            <td>UNSUCCESSFUL LOGON ATTEMPTS</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_LowNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_ModerateNumberLabel">AC-7</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl07_HighNumberLabel">AC-7</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-8.html">AC-8</a></td>
+            <td>SYSTEM USE NOTIFICATION</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_LowNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_ModerateNumberLabel">AC-8</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl08_HighNumberLabel">AC-8</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-9.html">AC-9</a></td>
+            <td>PREVIOUS LOGON (ACCESS) NOTIFICATION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl09_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-10.html">AC-10</a></td>
+            <td>CONCURRENT SESSION CONTROL</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl10_HighNumberLabel">AC-10</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-11.html">AC-11</a></td>
+            <td>SESSION LOCK</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModerateNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-11.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighNumberLabel">AC-11</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl11_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-11.html#enhancement-1">1</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-12.html">AC-12</a></td>
+            <td>SESSION TERMINATION</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_ModerateNumberLabel">AC-12</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl12_HighNumberLabel">AC-12</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-13.html">AC-13</a></td>
+            <td>SUPERVISION AND REVIEW - ACCESS CONTROL</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl13_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-14.html">AC-14</a></td>
+            <td>PERMITTED ACTIONS WITHOUT IDENTIFICATION OR AUTHENTICATION</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_LowNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_ModerateNumberLabel">AC-14</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl14_HighNumberLabel">AC-14</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-15.html">AC-15</a></td>
+            <td>AUTOMATED MARKING</td>
+            <td nowrap></td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl15_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-16.html">AC-16</a></td>
+            <td>SECURITY ATTRIBUTES</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl16_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-17.html">AC-17</a></td>
+            <td>REMOTE ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_LowNumberLabel">AC-17</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModerateNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl02_PriorityLink" href="../control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_ModeratePriorityRepeater_ctl03_PriorityLink" href="../control/AC-17.html#enhancement-4">4</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighNumberLabel">AC-17</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-17.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-17.html#enhancement-2">2</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-17.html#enhancement-3">3</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl17_HighPriorityRepeater_ctl03_PriorityLink" href="../control/AC-17.html#enhancement-4">4</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-18.html">AC-18</a></td>
+            <td>WIRELESS ACCESS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_LowNumberLabel">AC-18</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModerateNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-18.html#enhancement-1">1</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighNumberLabel">AC-18</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-18.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-18.html#enhancement-4">4</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl18_HighPriorityRepeater_ctl02_PriorityLink" href="../control/AC-18.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-19.html">AC-19</a></td>
+            <td>ACCESS CONTROL FOR MOBILE DEVICES</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_LowNumberLabel">AC-19</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModerateNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-19.html#enhancement-5">5</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighNumberLabel">AC-19</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl19_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-19.html#enhancement-5">5</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-20.html">AC-20</a></td>
+            <td>USE OF EXTERNAL INFORMATION SYSTEMS</td>
+            <td nowrap>P1</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_LowNumberLabel">AC-20</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModerateNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl00_PriorityLink" href="../control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_ModeratePriorityRepeater_ctl01_PriorityLink" href="../control/AC-20.html#enhancement-2">2</a>)
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighNumberLabel">AC-20</span>
+                 (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl00_PriorityLink" href="../control/AC-20.html#enhancement-1">1</a>) (<a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl20_HighPriorityRepeater_ctl01_PriorityLink" href="../control/AC-20.html#enhancement-2">2</a>)
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-21.html">AC-21</a></td>
+            <td>INFORMATION SHARING</td>
+            <td nowrap>P2</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_ModerateNumberLabel">AC-21</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl21_HighNumberLabel">AC-21</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-22.html">AC-22</a></td>
+            <td>PUBLICLY ACCESSIBLE CONTENT</td>
+            <td nowrap>P3</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_LowNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_ModerateNumberLabel">AC-22</span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl22_HighNumberLabel">AC-22</span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-23.html">AC-23</a></td>
+            <td>DATA MINING PROTECTION</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl23_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-24.html">AC-24</a></td>
+            <td>ACCESS CONTROL DECISIONS</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl24_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+		<tr>
+		    <td nowrap><a href="../control/AC-25.html">AC-25</a></td>
+            <td>REFERENCE MONITOR</td>
+            <td nowrap>P0</td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_LowNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_ModerateNumberLabel"></span>
+                
+            </td>
+            <td>
+                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Family_WP80053Controls_ClassFamilyRepeater_ctl25_HighNumberLabel"></span>
+                
+            </td>
+		</tr>
+	
+			</tbody>
+		</table>
+    
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/family/ACCESS CONTROL by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

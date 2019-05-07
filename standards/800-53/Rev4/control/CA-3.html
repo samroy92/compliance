@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CA-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:22 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CA-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CA-3 <small>SYSTEM INTERCONNECTIONS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SECURITY%20ASSESSMENT%20AND%20AUTHORIZATION-2.html">CA - SECURITY ASSESSMENT AND AUTHORIZATION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CA-3
+                                        </td>
+                                        <td>
+                                            CA-3 (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                        <td>
+                                            CA-3 (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SECURITY%20ASSESSMENT%20AND%20AUTHORIZATION-2.html">CA</a>
+                    &gt; <strong>CA-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Authorizes connections from the information system to other information systems through the use of Interconnection Security Agreements;
+</p>
+<p>
+b.
+Documents, for each interconnection, the interface characteristics, security requirements, and the nature of the information communicated; and
+</p>
+<p>
+c.
+Reviews and updates Interconnection Security Agreements [Assignment: organization-defined frequency].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to dedicated connections between information systems (i.e., system interconnections) and does not apply to transitory, user-controlled connections such as email and website browsing. Organizations carefully consider the risks that may be introduced when information systems are connected to other systems with different security requirements and security controls, both within organizations and external to organizations. Authorizing officials determine the risk associated with information system connections and the appropriate controls employed. If interconnecting systems have the same authorizing official, organizations do not need to develop Interconnection Security Agreements. Instead, organizations can describe the interface characteristics between those interconnecting systems in their respective security plans. If interconnecting systems have different authorizing officials within the same organization, organizations can either develop Interconnection Security Agreements or describe the interface characteristics between systems in the security plans for the respective systems. Organizations may also incorporate Interconnection Security Agreement information into formal contracts, especially for interconnections established between federal agencies and nonfederal (i.e., private sector) organizations. Risk considerations also include information systems sharing the same networks. For certain technologies (e.g., space, unmanned aerial vehicles, and medical devices), there may be specialized connections in place during preoperational testing. Such connections may require Interconnection Security Agreements and be subject to additional security controls.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-2">AU-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-12">AU-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-16">AU-16</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-9">SA-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CA-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM INTERCONNECTIONS | UNCLASSIFIED NATIONAL SECURITY SYSTEM CONNECTIONS<br>
+                                <strong>The organization prohibits the direct connection of an [Assignment: organization-defined unclassified, national security system] to an external network without the use of [Assignment: organization-defined boundary protection device].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations typically do not have control over external networks (e.g., the Internet). Approved boundary protection devices (e.g., routers, firewalls) mediate communications (i.e., information flows) between unclassified national security systems and external networks. This control enhancement is required for organizations processing, storing, or transmitting Controlled Unclassified Information (CUI).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CA-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM INTERCONNECTIONS | CLASSIFIED NATIONAL SECURITY SYSTEM CONNECTIONS<br>
+                                <strong>The organization prohibits the direct connection of a classified, national security system to an external network without the use of [Assignment: organization-defined boundary protection device].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations typically do not have control over external networks (e.g., the Internet). Approved boundary protection devices (e.g., routers, firewalls) mediate communications (i.e., information flows) between classified national security systems and external networks. In addition, approved boundary protection devices (typically managed interface/cross-domain systems) provide information flow enforcement from information systems to external networks.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CA-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM INTERCONNECTIONS | UNCLASSIFIED NON-NATIONAL SECURITY SYSTEM CONNECTIONS<br>
+                                <strong>The organization prohibits the direct connection of an [Assignment: organization-defined unclassified, non-national security system] to an external network without the use of [Assignment; organization-defined boundary protection device].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations typically do not have control over external networks (e.g., the Internet). Approved boundary protection devices (e.g., routers, firewalls) mediate communications (i.e., information flows) between unclassified non-national security systems and external networks. This control enhancement is required for organizations processing, storing, or transmitting Controlled Unclassified Information (CUI).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CA-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM INTERCONNECTIONS | CONNECTIONS TO PUBLIC NETWORKS<br>
+                                <strong>The organization prohibits the direct connection of an [Assignment: organization-defined information system] to a public network.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                A public network is any network accessible to the general public including, for example, the Internet and organizational extranets with public access.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CA-3(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CA-3%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SYSTEM INTERCONNECTIONS | RESTRICTIONS ON EXTERNAL SYSTEM CONNECTIONS<br>
+                                <strong>The organization employs [Selection: allow-all, deny-by-exception; deny-all, permit-by-exception] policy for allowing [Assignment: organization-defined information systems] to connect to external information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can constrain information system connectivity to external domains (e.g., websites) by employing one of two policies with regard to such connectivity: (i) allow-all, deny by exception, also known as blacklisting (the weaker of the two policies); or (ii) deny-all, allow by exception, also known as whitelisting (the stronger of the two policies). For either policy, organizations determine what exceptions, if any, are acceptable.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-7.html">CM-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-47</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-47">http://csrc.nist.gov/publications/PubsSPs.html#800-47</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CA-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:22 GMT -->
+</html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-17 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-17" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-17 <small>DEVELOPER SECURITY ARCHITECTURE AND DESIGN</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SA-17
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-17</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization requires the developer of the information system, system component, or information system service to produce a design specification and security architecture that:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Is consistent with and supportive of the organization�s security architecture which is established within and is an integrated part of the organization�s enterprise architecture;
+</p>
+<p>
+b.
+Accurately and completely describes the required security functionality, and the allocation of security controls among physical and logical components; and
+</p>
+<p>
+c.
+Expresses how individual security functions, mechanisms, and services work together to provide required security capabilities and a unified approach to protection.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control is primarily directed at external developers, although it could also be used for internal (in-house) development. In contrast, PL-8 is primarily directed at internal developers to help ensure that organizations develop an information security architecture and such security architecture is integrated or tightly coupled to the enterprise architecture. This distinction is important if/when organizations outsource the development of information systems, information system components, or information system services to external entities, and there is a requirement to demonstrate consistency with the organization�s enterprise architecture and information security architecture.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-8">PL-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-3">SA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SA-17(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | FORMAL POLICY MODEL<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (1)(a)<a name="//apple_ref/cpp/Modifier/SA-17%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Produce, as an integral part of the development process, a formal policy model describing the [Assignment: organization-defined elements of organizational security policy] to be enforced; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (1)(b)<a name="//apple_ref/cpp/Modifier/SA-17%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Prove that the formal policy model is internally consistent and sufficient to enforce the defined elements of the organizational security policy when implemented.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Formal models describe specific behaviors or security policies using formal languages, thus enabling the correctness of those behaviors/policies to be formally proven. Not all components of information systems can be modeled, and generally, formal specifications are scoped to specific behaviors or policies of interest (e.g., nondiscretionary access control policies). Organizations choose the particular formal modeling language and approach based on the nature of the behaviors/policies to be described and the available tools. Formal modeling tools include, for example, Gypsy and Zed.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SA-17(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | SECURITY-RELEVANT COMPONENTS<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (2)(a)<a name="//apple_ref/cpp/Modifier/SA-17%20%282%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Define security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (2)(b)<a name="//apple_ref/cpp/Modifier/SA-17%20%282%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Provide a rationale that the definition for security-relevant hardware, software, and firmware is complete.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-relevant hardware, software, and firmware represent the portion of the information system, component, or service that must be trusted to perform correctly in order to maintain required security properties.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SA-17(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | FORMAL CORRESPONDENCE<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(a)<a name="//apple_ref/cpp/Modifier/SA-17%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Produce, as an integral part of the development process, a formal top-level specification that specifies the interfaces to security-relevant hardware, software, and firmware in terms of exceptions, error messages, and effects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(b)<a name="//apple_ref/cpp/Modifier/SA-17%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show via proof to the extent feasible with additional informal demonstration as necessary, that the formal top-level specification is consistent with the formal policy model;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(c)<a name="//apple_ref/cpp/Modifier/SA-17%20%283%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show via informal demonstration, that the formal top-level specification completely covers the interfaces to security-relevant hardware, software, and firmware;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(d)<a name="//apple_ref/cpp/Modifier/SA-17%20%283%29%28d%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show that the formal top-level specification is an accurate description of the implemented security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (3)(e)<a name="//apple_ref/cpp/Modifier/SA-17%20%283%29%28e%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Describe the security-relevant hardware, software, and firmware mechanisms not addressed in the formal top-level specification but strictly internal to the security-relevant hardware, software, and firmware.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Correspondence is an important part of the assurance gained through modeling. It demonstrates that the implementation is an accurate transformation of the model, and that any additional code or implementation details present have no impact on the behaviors or policies being modeled. Formal methods can be used to show that the high-level security properties are satisfied by the formal information system description, and that the formal system description is correctly implemented by a description of some lower level, for example a hardware description. Consistency between the formal top-level specification and the formal policy models is generally not amenable to being fully proven. Therefore, a combination of formal/informal methods may be needed to show such consistency. Consistency between the formal top-level specification and the implementation may require the use of an informal demonstration due to limitations in the applicability of formal methods to prove that the specification accurately reflects the implementation. Hardware, software, and firmware mechanisms strictly internal to security-relevant hardware, software, and firmware include, for example, mapping registers and direct memory input/output.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SA-17(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | INFORMAL CORRESPONDENCE<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(a)<a name="//apple_ref/cpp/Modifier/SA-17%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Produce, as an integral part of the development process, an informal descriptive top-level specification that specifies the interfaces to security-relevant hardware, software, and firmware in terms of exceptions, error messages, and effects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(b)<a name="//apple_ref/cpp/Modifier/SA-17%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show via [Selection: informal demonstration, convincing argument with formal methods as feasible] that the descriptive top-level specification is consistent with the formal policy model;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(c)<a name="//apple_ref/cpp/Modifier/SA-17%20%284%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show via informal demonstration, that the descriptive top-level specification completely  covers the interfaces to security-relevant hardware, software, and firmware;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(d)<a name="//apple_ref/cpp/Modifier/SA-17%20%284%29%28d%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Show that the descriptive top-level specification is an accurate description of the interfaces to security-relevant hardware, software, and firmware; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (4)(e)<a name="//apple_ref/cpp/Modifier/SA-17%20%284%29%28e%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Describe the security-relevant hardware, software, and firmware mechanisms not addressed in the descriptive top-level specification but strictly internal to the security-relevant hardware, software, and firmware.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Correspondence is an important part of the assurance gained through modeling. It demonstrates that the implementation is an accurate transformation of the model, and that any additional code or implementation details present has no impact on the behaviors or policies being modeled. Consistency between the descriptive top-level specification (i.e., high-level/low-level design) and the formal policy model is generally not amenable to being fully proven. Therefore, a combination of formal/informal methods may be needed to show such consistency. Hardware, software, and firmware mechanisms strictly internal to security-relevant hardware, software, and firmware include, for example, mapping registers and direct memory input/output.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SA-17(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | CONCEPTUALLY SIMPLE DESIGN<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-17 (5)(a)<a name="//apple_ref/cpp/Modifier/SA-17%20%285%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Design and structure the security-relevant hardware, software, and firmware to use a complete, conceptually simple protection mechanism with precisely defined semantics; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-17 (5)(b)<a name="//apple_ref/cpp/Modifier/SA-17%20%285%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Internally structure the security-relevant hardware, software, and firmware with specific regard for this mechanism.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-3.html">SC-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SA-17(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | STRUCTURE FOR TESTING<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to structure security-relevant hardware, software, and firmware to facilitate testing.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-11.html">SA-11</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SA-17(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-17%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPER SECURITY ARCHITECTURE AND DESIGN | STRUCTURE FOR LEAST PRIVILEGE<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to structure security-relevant hardware, software, and firmware to facilitate controlling access with least privilege.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-5.html">AC-5</a>, <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-17 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-9" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-9 <small>EXTERNAL INFORMATION SYSTEM SERVICES</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SA-9
+                                        </td>
+                                        <td>
+                                            SA-9 (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            SA-9 (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-9</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Requires that providers of external information system services comply with organizational information security requirements and employ [Assignment: organization-defined security controls] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance;
+</p>
+<p>
+b.
+Defines and documents government oversight and user roles and responsibilities with regard  to external information system services; and
+</p>
+<p>
+c.
+Employs [Assignment: organization-defined processes, methods, and techniques] to monitor security control compliance by external service providers on an ongoing basis.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>External information system services are services that are implemented outside of the authorization boundaries of organizational information systems. This includes services that are used by, but not a part of, organizational information systems. FISMA and OMB policy require that organizations using external service providers that are processing, storing, or transmitting federal information or operating information systems on behalf of the federal government ensure that such providers meet the same security requirements that federal agencies are required to meet. Organizations establish relationships with external service providers in a variety of ways including, for example, through joint ventures, business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, and supply chain exchanges. The responsibility for managing risks from the use of external information system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a level of confidence that each participating provider in the potentially complex consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust varies based on the relationships between organizations and the external providers. Organizations document the basis for trust relationships so the relationships can be monitored over time. External information system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define expectations of performance for security controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-7">IR-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-7">PS-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SA-9(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-9%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                EXTERNAL INFORMATION SYSTEM SERVICES | RISK ASSESSMENTS / ORGANIZATIONAL APPROVALS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-9 (1)(a)<a name="//apple_ref/cpp/Modifier/SA-9%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Conducts an organizational assessment of risk prior to the acquisition or outsourcing of dedicated information security services; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-9 (1)(b)<a name="//apple_ref/cpp/Modifier/SA-9%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Ensures that the acquisition or outsourcing of dedicated information security services is approved by [Assignment: organization-defined personnel or roles].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dedicated information security services include, for example, incident monitoring, analysis and response, operation of information security-related devices such as firewalls, or key management services.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-6.html">CA-6</a>, <a href="RA-3.html">RA-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SA-9(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-9%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                EXTERNAL INFORMATION SYSTEM SERVICES | IDENTIFICATION OF FUNCTIONS / PORTS / PROTOCOLS / SERVICES<br>
+                                <strong>The organization requires providers of [Assignment: organization-defined external information system services] to identify the functions, ports, protocols, and other services required for the use of such services.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be particularly useful when the need arises to understand the trade-offs involved in restricting certain functions/services or blocking certain ports/protocols.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-7.html">CM-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SA-9(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-9%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                EXTERNAL INFORMATION SYSTEM SERVICES | ESTABLISH / MAINTAIN TRUST RELATIONSHIP WITH PROVIDERS<br>
+                                <strong>The organization establishes, documents, and maintains trust relationships with external service providers based on [Assignment: organization-defined security requirements, properties, factors, or conditions defining acceptable trust relationships].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The degree of confidence that the risk from using external services is at an acceptable level depends on the trust that organizations place in the external providers, individually or in combination. Trust relationships can help organization to gain increased levels of confidence that participating service providers are providing adequate protection for the services rendered. Such relationships can be complicated due to the number of potential entities participating in the consumer-provider interactions, subordinate relationships and levels of trust, and the types of interactions between the parties. In some cases, the degree of trust is based on the amount of direct control organizations are able to exert on external service providers with regard to employment of security controls necessary for the protection of the service/information and the evidence brought forth as to the effectiveness of those controls. The level of control is typically established by the terms and conditions of the contracts or service-level agreements and can range from extensive control (e.g., negotiating contracts or agreements that specify security requirements for the providers) to very limited control (e.g., using contracts or service-level agreements to obtain commodity services such as commercial telecommunications services). In other cases, levels of trust are based on factors that convince organizations that required security controls have been employed and that determinations of control effectiveness exist. For example, separately authorized external information system services provided to organizations through well-established business relationships may provide degrees of trust in such services within the tolerable risk range of the organizations using the services. External service providers may also outsource selected services to other external entities, making the trust relationship more difficult and complicated to manage. Depending on the nature of the services, organizations may find it very difficult to place significant trust in external providers. This is not due to any inherent untrustworthiness on the part of providers, but to the intrinsic level of risk in the services.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SA-9(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-9%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                EXTERNAL INFORMATION SYSTEM SERVICES | CONSISTENT INTERESTS OF CONSUMERS AND PROVIDERS<br>
+                                <strong>The organization employs [Assignment: organization-defined security safeguards] to ensure that the interests of [Assignment: organization-defined external service providers] are consistent with and reflect organizational interests.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                As organizations increasingly use external service providers, the possibility exists that the interests of the service providers may diverge from organizational interests. In such situations, simply having the correct technical, procedural, or operational safeguards in place may not be sufficient if the service providers that implement and control those safeguards are not operating in a manner consistent with the interests of the consuming organizations. Possible actions that organizations might take to address such concerns include, for example, requiring background checks for selected service provider personnel, examining ownership records, employing only trustworthy service providers (i.e., providers with which organizations have had positive experiences), and conducting periodic/unscheduled visits to service provider facilities.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SA-9(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-9%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                EXTERNAL INFORMATION SYSTEM SERVICES | PROCESSING, STORAGE, AND SERVICE LOCATION<br>
+                                <strong>The organization restricts the location of [Selection (one or more): information processing; information/data; information system services] to [Assignment: organization-defined locations] based on [Assignment: organization-defined requirements or conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The location of information processing, information/data storage, or information system services that are critical to organizations can have a direct impact on the ability of those organizations to successfully execute their missions/business functions. This situation exists when external providers control the location of processing, storage or services. The criteria external providers use for the selection of processing, storage, or service locations may be different from organizational criteria. For example, organizations may want to ensure that data/information storage locations are restricted to certain locations to facilitate incident response activities (e.g., forensic analyses, after-the-fact investigations) in case of information security breaches/compromises. Such incident response activities may be adversely affected by the governing laws or protocols in the locations where processing and storage occur and/or the locations from which information system services emanate.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-35</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-35">http://csrc.nist.gov/publications/PubsSPs.html#800-35</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

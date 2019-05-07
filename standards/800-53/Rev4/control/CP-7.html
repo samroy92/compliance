@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CP-7" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CP-7 <small>ALTERNATE PROCESSING SITE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP - CONTINGENCY PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            CP-7 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                        <td>
+                                            CP-7 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP</a>
+                    &gt; <strong>CP-7</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes an alternate processing site including necessary agreements to permit the transfer and resumption of [Assignment: organization-defined information system operations] for essential missions/business functions within [Assignment: organization-defined time period consistent with recovery time and recovery point objectives] when the primary processing capabilities are unavailable;
+</p>
+<p>
+b.
+Ensures that equipment and supplies required to transfer and resume operations are available at the alternate processing site or contracts are in place to support delivery to the site within the organization-defined time period for transfer/resumption; and
+</p>
+<p>
+c.
+Ensures that the alternate processing site provides information security safeguards equivalent to those of the primary site.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Alternate processing sites are sites that are geographically distinct from primary processing sites. An alternate processing site provides processing capability in the event that the primary processing site is not available. Items covered by alternate processing site agreements include, for example, environmental conditions at alternate sites, access rules, physical and environmental protection requirements, and coordination for the transfer/assignment of personnel. Requirements are specifically allocated to alternate processing sites that reflect the requirements in contingency plans to maintain essential missions/business functions despite disruption, compromise, or failure in organizational information systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-6">CP-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-8">CP-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-9">CP-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-10">CP-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-6">MA-6</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CP-7(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | SEPARATION FROM PRIMARY SITE<br>
+                                <strong>The organization identifies an alternate processing site that is separated from the primary processing site to reduce susceptibility to the same threats.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Threats that affect alternate processing sites are typically defined in organizational assessments of risk and include, for example, natural disasters, structural failures, hostile cyber attacks, and errors of omission/commission. Organizations determine what is considered a sufficient degree of separation between primary and alternate processing sites based on the types of threats that are of concern. For one particular type of threat (i.e., hostile cyber attack), the degree of separation between sites is less relevant.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="RA-3.html">RA-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CP-7(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | ACCESSIBILITY<br>
+                                <strong>The organization identifies potential accessibility problems to the alternate processing site in the event of an area-wide disruption or disaster and outlines explicit mitigation actions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Area-wide disruptions refer to those types of disruptions that are broad in geographic scope (e.g., hurricane, regional power outage) with such determinations made by organizations based on organizational assessments of risk.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="RA-3.html">RA-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CP-7(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | PRIORITY OF SERVICE<br>
+                                <strong>The organization develops alternate processing site agreements that contain priority-of-service provisions in accordance with organizational availability requirements (including recovery time objectives).</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Priority-of-service agreements refer to negotiated agreements with service providers that ensure that organizations receive priority treatment consistent with their availability requirements and the availability of information resources at the alternate processing site.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CP-7(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | PREPARATION FOR USE<br>
+                                <strong>The organization prepares the alternate processing site so that the site is ready to be used as the operational site supporting essential missions and business functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Site preparation includes, for example, establishing configuration settings for information system components at the alternate processing site consistent with the requirements for such settings at the primary site and ensuring that essential supplies and other logistical considerations are in place.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-2.html">CM-2</a>, <a href="CM-6.html">CM-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CP-7(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | EQUIVALENT INFORMATION SECURITY SAFEGUARDS<br>
+                                <strong>[Withdrawn: Incorporated into CP-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CP-7(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-7%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ALTERNATE PROCESSING SITE | INABILITY TO RETURN TO PRIMARY SITE<br>
+                                <strong>The organization plans and prepares for circumstances that preclude returning to the primary processing site.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-34</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-34">http://csrc.nist.gov/publications/PubsSPs.html#800-34</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

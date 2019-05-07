@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SI-10" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SI-10 <small>INFORMATION INPUT VALIDATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI - SYSTEM AND INFORMATION INTEGRITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SI-10
+                                        </td>
+                                        <td>
+                                            SI-10
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI</a>
+                    &gt; <strong>SI-10</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system checks the validity of [Assignment: organization-defined information inputs].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Checking the valid syntax and semantics of information system inputs (e.g., character set, length, numerical range, and acceptable values) verifies that inputs match specified definitions for format and content. Software applications typically follow well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If software applications use attacker-supplied inputs to construct structured messages without properly encoding such messages, then the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the tainted output will perform the wrong operations or otherwise interpret the data incorrectly. Prescreening inputs prior to passing to interpreters prevents the content from being unintentionally interpreted as commands. Input validation helps to ensure accurate and correct inputs and prevent attacks such as cross-site scripting and a variety of injection attacks.</blockquote>
+    
+        <p>
+        Related to: 
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SI-10(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-10%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION INPUT VALIDATION | MANUAL OVERRIDE CAPABILITY<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-10 (1)(a)<a name="//apple_ref/cpp/Modifier/SI-10%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Provides a manual override capability for input validation of [Assignment: organization-defined inputs];</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-10 (1)(b)<a name="//apple_ref/cpp/Modifier/SI-10%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Restricts the use of the manual override capability to only [Assignment: organization-defined authorized individuals]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-10 (1)(c)<a name="//apple_ref/cpp/Modifier/SI-10%20%281%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Audits the use of the manual override capability.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-3.html">CM-3</a>, <a href="CM-5.html">CM-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SI-10(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-10%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION INPUT VALIDATION | REVIEW / RESOLUTION OF ERRORS<br>
+                                <strong>The organization ensures that input validation errors are reviewed and resolved within [Assignment: organization-defined time period].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Resolution of input validation errors includes, for example, correcting systemic causes of errors and resubmitting transactions with corrected input.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SI-10(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-10%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION INPUT VALIDATION | PREDICTABLE BEHAVIOR<br>
+                                <strong>The information system behaves in a predictable and documented manner that reflects organizational and system objectives when invalid inputs are received.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                A common vulnerability in organizational information systems is unpredictable behavior when invalid inputs are received. This control enhancement ensures that there is predictable behavior in the face of invalid inputs by specifying information system responses that facilitate transitioning the system to known states without adverse, unintended side effects.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SI-10(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-10%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION INPUT VALIDATION | REVIEW / TIMING INTERACTIONS<br>
+                                <strong>The organization accounts for timing interactions among information system components in determining appropriate responses for invalid inputs.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In addressing invalid information system inputs received across protocol interfaces, timing interactions become relevant, where one protocol needs to consider the impact of the error response on other protocols within the protocol stack. For example, 802.11 standard wireless network protocols do not interact well with Transmission Control Protocols (TCP) when packets are dropped (which could be due to invalid packet input). TCP assumes packet losses are due to congestion, while packets lost over 802.11 links are typically dropped due to collisions or noise on the link. If TCP makes a congestion response, it takes precisely the wrong action in response to a collision event. Adversaries may be able to use apparently acceptable individual behaviors of the protocols in concert to achieve adverse effects through suitable construction of invalid input.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SI-10(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-10%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION INPUT VALIDATION | RESTRICT INPUTS TO TRUSTED SOURCES AND APPROVED FORMATS<br>
+                                <strong>The organization restricts the use of information inputs to [Assignment: organization-defined trusted sources] and/or [Assignment: organization-defined formats].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies the concept of whitelisting to information inputs. Specifying known trusted sources for information inputs and acceptable formats for such inputs can reduce the probability of malicious activity.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+</html>

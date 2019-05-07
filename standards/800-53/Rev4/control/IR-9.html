@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IR-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/IR-9" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">IR-9 <small>INFORMATION SPILLAGE RESPONSE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/INCIDENT%20RESPONSE-2.html">IR - INCIDENT RESPONSE</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/INCIDENT%20RESPONSE-2.html">IR</a>
+                    &gt; <strong>IR-9</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization responds to information spills by:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Identifying the specific information involved in the information system contamination;
+</p>
+<p>
+b.
+Alerting [Assignment: organization-defined personnel or roles] of the information spill using a method of communication not associated with the spill;
+</p>
+<p>
+c.
+Isolating the contaminated information system or system component;
+</p>
+<p>
+d.
+Eradicating the information from the contaminated information system or component;
+</p>
+<p>
+e.
+Identifying other information systems or system components that may have been subsequently contaminated; and
+</p>
+<p>
+f.
+Performing other [Assignment: organization-defined actions].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information spillage refers to instances where either classified or sensitive information is inadvertently placed on information systems that are not authorized to process such information. Such information spills often occur when information that is initially thought to be of lower sensitivity is transmitted to an information system and then is subsequently determined to be of higher sensitivity. At that point, corrective action is required. The nature of the organizational response is generally based upon the degree of sensitivity of the spilled information (e.g., security category or classification level), the security capabilities of the information system, the specific nature of contaminated storage media, and the access authorizations (e.g., security clearances) of individuals with authorized access to the contaminated system. The methods used to communicate information about the spill after the fact do not involve methods directly associated with the actual spill to minimize the risk of further spreading the contamination before such contamination is isolated and eradicated.</blockquote>
+    
+        <p>
+        Related to: 
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">IR-9(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/IR-9%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SPILLAGE RESPONSE | RESPONSIBLE PERSONNEL<br>
+                                <strong>The organization assigns [Assignment: organization-defined personnel or roles] with responsibility for responding to information spills.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">IR-9(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/IR-9%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SPILLAGE RESPONSE | TRAINING<br>
+                                <strong>The organization provides information spillage response training [Assignment: organization-defined frequency].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">IR-9(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/IR-9%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SPILLAGE RESPONSE | POST-SPILL OPERATIONS<br>
+                                <strong>The organization implements [Assignment: organization-defined procedures] to ensure that organizational personnel impacted by information spills can continue to carry out assigned tasks while contaminated systems are undergoing corrective actions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Correction actions for information systems contaminated due to information spillages may be very time-consuming. During those periods, personnel may not have access to the contaminated systems, which may potentially affect their ability to conduct organizational business.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">IR-9(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/IR-9%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SPILLAGE RESPONSE | EXPOSURE TO UNAUTHORIZED PERSONNEL<br>
+                                <strong>The organization employs [Assignment: organization-defined security safeguards] for personnel exposed to information not within assigned access authorizations.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security safeguards include, for example, making personnel exposed to spilled information aware of the federal laws, directives, policies, and/or regulations regarding the information and the restrictions imposed based on exposure to such information.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IR-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+</html>

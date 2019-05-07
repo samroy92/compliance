@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MA-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MA-3 <small>MAINTENANCE TOOLS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MAINTENANCE-2.html">MA - MAINTENANCE</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P3 - Implement P3 security controls after implementation of P1 and P2 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            MA-3 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            MA-3 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MAINTENANCE-2.html">MA</a>
+                    &gt; <strong>MA-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization approves, controls, and monitors information system maintenance tools.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control addresses security-related issues associated with maintenance tools used specifically for diagnostic and repair actions on organizational information systems. Maintenance tools can include hardware, software, and firmware items. Maintenance tools are potential vehicles for transporting malicious code, either intentionally or unintentionally, into a facility and subsequently into organizational information systems. Maintenance tools can include, for example, hardware/software diagnostic test equipment and hardware/software packet sniffers. This control does not cover hardware/software components that may support information system maintenance, yet are a part of the system, for example, the software implementing �ping,� �ls,� �ipconfig,� or the hardware and software implementing the monitoring port of an Ethernet switch.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-2">MA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-5">MA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-6">MP-6</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MA-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE TOOLS | INSPECT TOOLS<br>
+                                <strong>The organization inspects the maintenance tools carried into a facility by maintenance personnel for improper or unauthorized modifications.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                If, upon inspection of maintenance tools, organizations determine that the tools have been modified in an improper/unauthorized manner or contain malicious code, the incident is handled consistent with organizational policies and procedures for incident handling.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-7.html">SI-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MA-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE TOOLS | INSPECT MEDIA<br>
+                                <strong>The organization checks media containing diagnostic and test programs for malicious code before the media are used in the information system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                If, upon inspection of media containing maintenance diagnostic and test programs, organizations determine that the media contain malicious code, the incident is handled consistent with organizational incident handling policies and procedures.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-3.html">SI-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">MA-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE TOOLS | PREVENT UNAUTHORIZED REMOVAL<br>
+                                <strong>The organization prevents the unauthorized removal of maintenance equipment containing organizational information by:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>MA-3 (3)(a)<a name="//apple_ref/cpp/Modifier/MA-3%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Verifying that there is no organizational information contained on the equipment;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>MA-3 (3)(b)<a name="//apple_ref/cpp/Modifier/MA-3%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Sanitizing or destroying the equipment;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>MA-3 (3)(c)<a name="//apple_ref/cpp/Modifier/MA-3%20%283%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Retaining the equipment within the facility; or</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>MA-3 (3)(d)<a name="//apple_ref/cpp/Modifier/MA-3%20%283%29%28d%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Obtaining an exemption from [Assignment: organization-defined personnel or roles] explicitly authorizing removal of the equipment from the facility.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational information includes all information specifically owned by organizations and information provided to organizations in which organizations serve as information stewards.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">MA-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MAINTENANCE TOOLS | RESTRICTED TOOL USE<br>
+                                <strong>The information system restricts the use of maintenance tools to authorized personnel only.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to information systems that are used to carry out maintenance functions.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>, <a href="AC-3.html">AC-3</a>, <a href="AC-5.html">AC-5</a>, <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-88</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-88">http://csrc.nist.gov/publications/PubsSPs.html#800-88</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+</html>

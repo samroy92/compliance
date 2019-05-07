@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CM-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CM-3 <small>CONFIGURATION CHANGE CONTROL</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM - CONFIGURATION MANAGEMENT</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            CM-3 (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            CM-3 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM</a>
+                    &gt; <strong>CM-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Determines the types of changes to the information system that are configuration-controlled;
+</p>
+<p>
+b.
+Reviews proposed configuration-controlled changes to the information system and approves or disapproves such changes with explicit consideration for security impact analyses;
+</p>
+<p>
+c.
+Documents configuration change decisions associated with the information system;
+</p>
+<p>
+d.
+Implements approved configuration-controlled changes to the information system;
+</p>
+<p>
+e.
+Retains records of configuration-controlled changes to the information system for [Assignment: organization-defined time period];
+</p>
+<p>
+f.
+Audits and reviews activities associated with configuration-controlled changes to the information system; and
+</p>
+<p>
+g.
+Coordinates and provides oversight for configuration change control activities through [Assignment: organization-defined configuration change control element (e.g., committee, board)] that convenes [Selection (one or more): [Assignment: organization-defined frequency]; [Assignment: organization-defined configuration change conditions]].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Configuration change controls for organizational information systems involve the systematic proposal, justification, implementation, testing, review, and disposition of changes to the systems, including system upgrades and modifications. Configuration change control includes changes to baseline configurations for components and configuration items of information systems, changes to configuration settings for information technology products (e.g., operating systems, applications, firewalls, routers, and mobile devices), unscheduled/unauthorized changes, and changes to remediate vulnerabilities. Typical processes for managing configuration changes to information systems include, for example, Configuration Control Boards that approve proposed changes to systems. For new development information systems or systems undergoing major upgrades, organizations consider including representatives from development organizations on the Configuration Control Boards. Auditing of changes includes activities before and after changes are made to organizational information systems and the auditing activities required to implement such changes.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-2">CM-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-4">CM-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-9">CM-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-10">SA-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-2">SI-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-12">SI-12</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CM-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | AUTOMATED DOCUMENT / NOTIFICATION / PROHIBITION OF CHANGES<br>
+                                <strong>The organization employs automated mechanisms to:</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CM-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | TEST / VALIDATE / DOCUMENT CHANGES<br>
+                                <strong>The organization tests, validates, and documents changes to the information system before implementing the changes on the operational system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Changes to information systems include modifications to hardware, software, or firmware components and configuration settings defined in CM-6. Organizations ensure that testing does not interfere with information system operations. Individuals/groups conducting tests understand organizational security policies and procedures, information system security policies and procedures, and the specific health, safety, and environmental risks associated with particular facilities/processes. Operational systems may need to be taken off-line, or replicated to the extent feasible, before testing can be conducted. If information systems must be taken off-line for testing, the tests are scheduled to occur during planned system outages whenever possible. If testing cannot be conducted on operational systems, organizations employ compensating controls (e.g., testing on replicated systems).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CM-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | AUTOMATED CHANGE IMPLEMENTATION<br>
+                                <strong>The organization employs automated mechanisms to implement changes to the current information system baseline and deploys the updated baseline across the installed base.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CM-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | SECURITY REPRESENTATIVE<br>
+                                <strong>The organization requires an information security representative to be a member of the [Assignment: organization-defined configuration change control element].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information security representatives can include, for example, senior agency information security officers, information system security officers, or information system security managers. Representation by personnel with information security expertise is important because changes to information system configurations can have unintended side effects, some of which may be security-relevant. Detecting such changes early in the process can help avoid unintended, negative consequences that could ultimately affect the security state of organizational information systems. The configuration change control element in this control enhancement reflects the change control elements defined by organizations in CM-3.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CM-3(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | AUTOMATED SECURITY RESPONSE<br>
+                                <strong>The information system implements [Assignment: organization-defined security responses] automatically if baseline configurations are changed in an unauthorized manner.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security responses include, for example, halting information system processing, halting selected system functions, or issuing alerts/notifications to organizational personnel when there is an unauthorized modification of a configuration item.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CM-3(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-3%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONFIGURATION CHANGE CONTROL | CRYPTOGRAPHY MANAGEMENT<br>
+                                <strong>The organization ensures that cryptographic mechanisms used to provide [Assignment: organization-defined security safeguards] are under configuration management.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Regardless of the cryptographic means employed (e.g., public key, private key, shared secrets), organizations ensure that there are processes and procedures in place to effectively manage those means. For example, if devices use certificates as a basis for identification and authentication, there needs to be a process in place to address the expiration of those certificates.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-128</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-128">http://csrc.nist.gov/publications/PubsSPs.html#800-128</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

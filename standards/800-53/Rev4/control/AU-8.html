@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-8 <small>TIME STAMPS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AU-8
+                                        </td>
+                                        <td>
+                                            AU-8 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            AU-8 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Uses internal system clocks to generate time stamps for audit records; and
+</p>
+<p>
+b.
+Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets [Assignment: organization-defined granularity of time measurement].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Time stamps generated by the information system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between information system clocks and reference clocks, for example, clocks synchronizing within hundreds of milliseconds or within tens of milliseconds. Organizations may define different time granularities for different system components. Time service can also be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-3">AU-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-12">AU-12</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TIME STAMPS | SYNCHRONIZATION WITH AUTHORITATIVE TIME SOURCE<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AU-8 (1)(a)<a name="//apple_ref/cpp/Modifier/AU-8%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Compares the internal information system clocks [Assignment: organization-defined frequency] with [Assignment: organization-defined authoritative time source]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AU-8 (1)(b)<a name="//apple_ref/cpp/Modifier/AU-8%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Synchronizes the internal system clocks to the authoritative time source when the time difference is greater than [Assignment: organization-defined time period].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement provides uniformity of time stamps for information systems with multiple system clocks and systems connected over a network.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TIME STAMPS | SECONDARY AUTHORITATIVE TIME SOURCE<br>
+                                <strong>The information system identifies a secondary authoritative time source that is located in a different geographic region than the primary authoritative time source.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

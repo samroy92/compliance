@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-3 <small>SECURITY FUNCTION ISOLATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SC-3
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system isolates security functions from nonsecurity functions.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>The information system isolates security functions from nonsecurity functions by means of an isolation boundary (implemented via partitions and domains). Such isolation controls access to and protects the integrity of the hardware, software, and firmware that perform those security functions. Information systems implement code separation (i.e., separation of security functions from nonsecurity functions) in a number of ways, including, for example, through the provision of security kernels via processor rings or processor modes. For non-kernel code, security function isolation is often achieved through file system protections that serve to protect the code on disk, and address space protections that protect executing code. Information systems restrict access to security functions through the use of access control mechanisms and by implementing least privilege capabilities. While the ideal is for all of the code within the security function isolation boundary to only contain security-relevant code, it is sometimes necessary to include nonsecurity functions within the isolation boundary as an exception.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-4">SA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-5">SA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-13">SA-13</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-2">SC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-39">SC-39</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY FUNCTION ISOLATION | HARDWARE SEPARATION<br>
+                                <strong>The information system utilizes underlying hardware separation mechanisms to implement security function isolation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Underlying hardware separation mechanisms include, for example, hardware ring architectures, commonly implemented within microprocessors, and hardware-enforced address segmentation used to support logically distinct storage objects with separate attributes (i.e., readable, writeable).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY FUNCTION ISOLATION | ACCESS / FLOW CONTROL FUNCTIONS<br>
+                                <strong>The information system isolates security functions enforcing access and information flow control from nonsecurity functions and from other security functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security function isolation occurs as a result of implementation; the functions can still be scanned and monitored. Security functions that are potentially isolated from access and flow control enforcement functions include, for example, auditing, intrusion detection, and anti-virus functions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY FUNCTION ISOLATION | MINIMIZE NONSECURITY FUNCTIONALITY<br>
+                                <strong>The organization minimizes the number of nonsecurity functions included within the isolation boundary containing security functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In those instances where it is not feasible to achieve strict isolation of nonsecurity functions from security functions, it is necessary to take actions to minimize the nonsecurity-relevant functions within the security function boundary. Nonsecurity functions contained within the isolation boundary are considered security-relevant because errors or maliciousness in such software, by virtue of being within the boundary, can impact the security functions of organizational information systems. The design objective is that the specific portions of information systems providing information security are of minimal size/complexity. Minimizing the number of nonsecurity functions in the security-relevant components of information systems allows designers and implementers to focus only on those functions which are necessary to provide the desired security capability (typically access enforcement). By minimizing nonsecurity functions within the isolation boundaries, the amount of code that must be trusted to enforce security policies is reduced, thus contributing to understandability.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY FUNCTION ISOLATION | MODULE COUPLING AND COHESIVENESS<br>
+                                <strong>The organization implements security functions as largely independent modules that maximize internal cohesiveness within modules and minimize coupling between modules.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The reduction in inter-module interactions helps to constrain security functions and to manage complexity. The concepts of coupling and cohesion are important with respect to modularity in software design. Coupling refers to the dependencies that one module has on other modules. Cohesion refers to the relationship between the different functions within a particular module. Good software engineering practices rely on modular decomposition, layering, and minimization to reduce and manage complexity, thus producing software modules that are highly cohesive and loosely coupled.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-3(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-3%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SECURITY FUNCTION ISOLATION | LAYERED STRUCTURES<br>
+                                <strong>The organization implements security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The implementation of layered structures with minimized interactions among security functions and non-looping layers (i.e., lower-layer functions do not depend on higher-layer functions) further enables the isolation of security functions and management of complexity.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

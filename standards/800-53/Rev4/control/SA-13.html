@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-13 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-13" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="N6WnUeUEMe/S8NKrJ6eBlBhlp5lCeHr+KtedCYkssSEwxXCUwsCT69qa+uB1oPRVhsf/dF5tjQqcjezOKJBYnfq+sR5PslgZu1htpR7/NomVTdU4itPEzTzB/ZtIcjRMw7/nR9VETUNNyIug51/AFf9Oh5b9MhRd3qb98nQNWXyavBUvABwGzeIKP+aJ4HzjvO5SHbW4kiVBsCsoIwvEzDvuye92UAY9Ck63J+ioChRQSm7HpHBhWAYHsXfhNI42HTeyOFu5N1kGgfRXkGgaomWcl6RkMDKSh/HcHDN1d9nuXPgZx1zdx1xYqefR+dLUdsmFpx1Oq1CbTKAluPh37f2v0Zw3qXsdSOHm0egKjivrFtEugvUxvcq4JHi5pd+KDofnl+NYZJnksgxFF+k4Q9fMoxeA3AzLs7K+nND6anDhHl5mWlfl+4oHjTxA41NKR0xwviUrQWtQZj4XBHy+5NIvyWLF7ARwmFAMOUowyJyvXvlXuHK6V7eZYYaaQz1mhO500NzCPSiVcn4o34axKTOaHhElNHB+IypqJgYxByw5O88rlbRsc/xZ/TMYK85RZfQmwEwvulT2978pjuLSOf95TXCIMVmakhj8oUj2Q+LTgxJuGJGb9mxFICdnpCmVZ4mzNoidySxjPA/GFBm0rZuF+0IlUwp/K8pBrdWL99sSEL1mG/2YGfLz6ok43SbMDAD4y3fZUClzruKzmBDv9qaRyBEPVBVI81a/+0ig81iv1ihluI/ZjGjOQKwWsVQIYTgkXYTTbfvwqAhpQAVR+naVuzSaozGHGywYTPWIXovwGpzPGHmnmCw39iehzNd7LMkt1YDxcsAvvlc4O5e9Ea48zMizvPDVRMG2GXVXLNa6Hm4Psin43vNDiJkFG7drw1F0My/NdROeZVlyqXOixrxpwx4oE8Tg34eO7vPIdeQat3ZFFJU3YE/HpqJcY8Cz7RAADLVGN5WjlZJfqX0Fw7jzNA2Hcpcol6RewfLlMwEqmifaroVYP+ufcnEq2odncXIxCs9Xdk/QrU32Gz3K52N9H5gmi4BZl+SJOwuoAGK8nvWJeDRNok2/3DVCMi9llE5LMTCaoiC5BnVwH8yHxn00U+TabBXwm2qwwdqLuZa4anydSbwNXEOI7LGfKoEQdkxI/fbI20lBKt6W0o+Ro7UnEFerk02FyKtXHA76gQFNuYvpK+ZrczSwXoFSZTDPvoBFV+AhCsUtmBcmnlyDAdcAk7Nwb22ih5THP+Tcez0m3X/Ue+gACsvm6cpLy+gLHR85W94Z6S8a87jSEVb9AU+RpvTAG9CFwVrKDW92pSxPRglUYVkwVOVLbaJ2gBSVM0f5AONIhI+avdS/OalTP5mmXMZboXQnximBiWsnRINdc/VEhLIFEOsg0h9dxqBWU9NQZniRHjnftZ2/biZp28uLFzv02rNTjAMDJmr6zh6pQQBuf4DjPuwz0kDpHUkm0kH1GcoGaR80yoTCcNVp0clCQuEDe44U+W7G8UzgM+cxdLOH7+OYoR4RX7j+rvG0q2Gyi7GZqM/UgAvQXm1PZ+5v2/QKT4RTIkBUiVcbs+p/fs/A27LhiGSZ+xm/HPdFg0wlT+xmRlbU4Dt2NwGA9QzR4BdoD4OZXQwimZrisWOndvZFs/tNfqiXC2WjrvQuRktbl5FGNA+H4vd8qTYkNcOwC6lLqURHSfEtKZ5igxq5Tm6vrbpFNG8RtrFEFWJxPi4rCVOaMsR8jf2dBbHfeEgQs0L0l9/2xmOA8WtHe5RjMiqgZs3RrAgLSAHQCHBUCfZ8EkP8ipkb602FhsQcYXk8j+Gq50JuiArZrSfVIVbop9lLcvx7/S+0mWNpWUF0tjrSnysu6KKoBCwQ3E9zxF1/P0IvC1xOmvLseYKp13PZotq5XwmIeEmiue4EfmYKlEDTwjhA3Y3StoQRc3Osu8sO1Q0aOnEM1K8ZZlOkyMynxyTlP16uBYQ0cQJ7sb2H7KAjr+3SebFAvXctCZle+zpR8ZGjlykaym3i4wsNzWnK8KZpo4UvPZH1JPrcfLVGfUJ1DtbB+wwOFC1v6vhu1OufPnOgA3VzE9Blzwc5Yz2MIbPF6XITX+ocs0Uboh4AnmgaAekiyM2SJurCs+11eK6JNWTEjCcqsqX+nR9hyfWUB8SZ7Sfg1Ynz6BKFPRmZZvkbi0TCJnKhufHz02UiJD/3F1MghVNTtPYSEhb/3CN/OXLymOsNgQgTeZRKPc1shN8OSG0UXIGeFPX1HtQ7SO+OTjYOIZ+9FhAtQxEVhtQrv05amg5AwJOdOZ3vfEWW/znvGe3NKsGLm01F1O5a4eBsl8Oy+P4hO//73AAvFypXr5BDKnZdrZ6qhn7zEt7Sudl6dR6LQ4aLB0Me3zozEjbANpGp0b1LlhC9mvv3KT9QALxIseD5RayANFOLg1TDmSVKXLf0DiCAEL9BSlD0otdP6RlHWm6qZ3j0HoTiacga+nYPWixReW/32Kip+zoahLyJmwy6XfzBe8baD+KNkt42C4+74l9h+hPrA8CQ2vE5kYOfKsCMAw4JxNmO4KsIZfJoyG6YqgZ3dgXGyma6s/X6/++o+K8BUrJV0AszjOfhdxpv7i9KzYKNZ+kI1wcQ3xv0u0JYDj4pSfb+vJciuGUWL09ngSJsq8GdTRKkmomloNM1lQGe0MA+cl34nu6pVWoXr7lY/L4CzRytdZyxI/bqflL2TohUbxAkYD44DoU3iBTBQgd2Ip379BRf4qKYaI6pc7I9kKPU+3cnklSCSxcCLE6Bcmyzs7Jz/d01kHdLyP5fC9paFSd5qNTlMRMkExB4iyw/QGOTjG+5CuMAq/pFqEBow6NFs69MK9QWPkjxVHfthujy7pEQqp8H5ghauERqimlL8Vw7gpJWAtCfO8yqTK8AaMqSbOC6p6P7QTWqKqYW/somOtQ8CZ5+mYkWhp4zcBJuuDen7nVoQwDaDu7tntDS517QxbGkmpmk+Kn2SOvA9QTmLN6iZRtte0CAWN2HMVM2F8FKptthV9yR/6kCj4ttUxsMN4LDG2yRV5iutO1FlsALSx4EPcr8d45GEAjp+eXjijjvzX3vKwVX7ZvsGqr+WoG3Pvc5gSSQ3ijux9ToqJw5RPUviMo0gMdXJeelUDpI74yJpB84EB7EgUTGhXtr0zo6nwQH3XflZUwLvH4ibSDpgHmFNUdU3YG5CQnVLm7Isk9uylzCKRvvgnIGV8j2RDOCUsR2Wqnq93u01wQqZfm0B87xzmCXI//Vh7MIfFGUp7FG/1v3GAy39OMDCMgqk7Cf17BhakmgvhgOve6gqZclEUzNq4BX2Otn+ipG9XdNfm7g2m1zfvdvYL+AJT+hvAHDXk6yop6PGnpqhj6fiHqVu2Om8GGFpX6+lwS+ACFrdt+1zq/iGQLgcIpOerzPV/3+bi6hKzQ7Ny1obNQQGDG4cn/APTbxJqzgI5bitEnuy9MowG5X8dJiTTEI5z/9/xwOP3q1UQU+pxbIGyOB9TU5Qty69kkom3B8YyfEzE5jPXiWEL7/yR3hhik8DNVf8B0AzVYTFSCLz8BM7/FwceLzUv3f5IBO6rnIwymRelT5GPvHHPfwfY913Y/eCPYUsFbr0wmCKxHObapVv1yVgJ6TDyANgtBQl1UPg6tEEt4EdH5qDbmzBx0Uo3xMy9nVXHCPtYKhVDkibRlUvymttXQSHYgIThRIRr3ZIGzpB1+O+Wloyd+MQ3ygsuJ95iXdLXbcBAsfgsnUmMEOpsZOPMDI4pWHRosqkVZvFZ84KnqnujqPQpX1awhAtR5YwbMGXDzz2b/gaKV2diMuAiMlddfeyO89Qe2iWauJT/PKkPD0qXvX4ju4Amtt6Ym+XLhhpoP2ZscvgDKaOHYLS87k1n0nAWykMmlRwet0RwZnIW7YcUbuKOfDrP7fAaq77IEYox9xJOXyg4Lrv04kuJS7PgDHtVHY4ErDoPI2+nUgTaDsgyMl23dlWQBvVSNXb6/5hjZfmPV68APsA/WsjgvBjOb2C6hDH8roberla2O0x7XH6xcAj/RXrVhb1t+vj26yl08QaGCWc059B/w8BD+TFGduNSoojz7UdN088DoXyUdWbovBrQNAAKQCtgD1zpnZa6xMfRX5vFdm4Jtj+ITkyvh79QeQjVGrIYhT0bUAUGjnY2HYAn3BofCtWT2eT3HK2j6PvX0S6ePMKl3b9NaNip+EdELT6BZ2VAV3/Cm+hzm3sK5s2fIq4X2IqnqgbdjVVkRSry8XECccuhTPW2/5TldfbA84FlwJ2knzeeFFMGF/qbao9/ZM7w2jA59KZFJs9te4284zsS2Lfait1h65YK2h+zG6xDevHN//BfJFTAFqfASkUN2SHauZ351atIkNCRK63lAGvEW8j3zqJyj0RHKwGE7thhk5/vhmO8c3KfXS/dVnkjMIloF5+GPIVVBw0MqWytc/k6o5vekkZv2r0hNmqpYvNSb+IDPmuy0H0SDT4cOXCRyz5Eiso7+c0WGu4AXVdT12YVFQqCKR8Q2dCtsGWWP40YVz8KZ7JvMZEr8yZJQkuuB20ikVroqGuN6QA52HBp1MWC+dOzsbWKGjVUCrZVy/lF/41tnYVQfeGHNigsUXdUUe2zHEMqfXPXRz8htBxdo+KL21Zexxk/bz7rmIloqNzBlrIiB57zw2/GlVx02JXjqAWlXGZ3HGb7nTJjVk57HWZz+mEFJ2Mv+f8l+epdVtm5s8FI3SG/UY4OuG2a8bcNNAZtbMj4cdQnEjKShpcUVRjcOcJZKyeJFBcrbbJIpPQ7SCRI/cqseqby6mQZllI/GsLYSJGPN0waBJd5GX/hwVaevOL9wviUv3UNbd5xkUZoHhoTyIwxJMfehAl8Lb+YLYPHX28ngtXsQ+g50UX4Xr0FASkbvgzX6EJkrS4QoIp2b22Dw55GawF/2hBsvsrkW4sR5c/ogXeAzhnqswCbPI/dC6g6rHrcLOqljqwxXb0Unvrd5gV9Pf/Qn312CFmxcBKoVi9ryNeA2dJnQb8zApbCXKLitbMmnPY8OxfoGT+B8NDr0uLsnBMCzoXS1kMXj28q4yWjkGlASkBk4wX1z7Kzad9Z3RN2FcGswValct29lFuk1O1g9BCnwPKA1J0lD5q5tSzYslkree6YAPGadv8mT9lew7IB+LB1DOt1yOdLOQzfVC7HZFK/RvUAmif5skvf7/AFJ8QhUiBeiK6OioNQlkP/JcJaykYHdo/KMxzPPPQD+hpkKyJ6QxPBINWeGUzFbNMFipJ7K5OaOk3ZCvDuvpOqHhdkilDSBFK9/rm880JMv7pY5Csyv1Zpk5pXyySapXozBhU296geM0X697SIoNQZgbAv5P4nt+uRq6BWZWTbyyO+Tp2myqVjtEavFvWOIp8Zgja0pXggYweZ9tzASolb4q+PaNbLOzEM1fq2qTLclg60dyMAekuHpldl+JCj83hCvCdDI3NQMyetxvklFhsiSEc9msBZk/d5rX2eS+rA8dDke2wgXZ5pwH8cbQbXhEdM+ndPeooXvA8x6V3QF1GwpavHMNbT7E2f5rGaMkrnuxGHF505deFSKO+E9ggopdupsDC5+cjv7ZPAmeHZ92hS9gY4KtvKyekVmz2hIGEjB0U5uCU1W+9pqxO0Hvr6RMKdTnJbsG/i/cD+nnxEWTtRsYyEA2E3f0lEjn2VEFol5Tp9IwEj71TGuZyzwyXxSbYw89LW4hBezwtdcRCgkrptQtG05+2c4BXsgOSeiZ1lLRQpKoBI/EKap9f8KTleYtuPjTLjxbp6byxiPfdlfEaFWb2VeafZPdNdxk3pJTklvYutPg+sIUX9td0wXHZjKJ7RerHhwRT51L/d5EtToBu07O7RhlIQAsGF2YWlehdthoG45h23azbX4NsATObjH+0qVkWHtCgrfk9HmNuGcK47PcP16dbqSxMoc6kQRGY2Ealpz+tSK7fzDJ+NwH2WO46ELdCkjaNuitRUl8hdZLQxut9VxEpgomvRHZVxvrtvdYfxHhUTmChnLnZAmISChJzwOsBdVmZyEz4xaqPQl5wOSK5//uWKSSQuwaUPxXtJeYuUJGXqaJmQauYzFInQGyXKNc/aanjg8Th207o4zHFeQq69gfjmApO/EvqDNyhm4A3++iSHbIBICmuoXdlYb0noTUL0wl9fyxFHF3T6BWa57xFGC9f3FRq307GaArZ+bZ0wdLwwa82ftEXHQsmQ+ekEw/02XP7dEFy9cd9sX2NhsUGDzdTf8PzXKts8kcLQSaWZ7FUnRT0z+bTWWrNVaHvtYJ1mkSwEkNhIBjQWHjnC2t0L5go4MrOVy7kARXIJGDPm0lU/9B0x3ptBLOZMr/rfEO86xcn39Sx2J/RWNQ/H2Tdv1GZPjoqz+UQKbQz5aoeAk0+hGDVOSNSvdpdyrNvHvrZwaPLLoQx/0qVmjyLCs=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-13 <small>TRUSTWORTHINESS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-13</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Describes the trustworthiness required in the [Assignment: organization-defined information system, information system component, or information system service] supporting its critical missions/business functions; and
+</p>
+<p>
+b.
+Implements [Assignment: organization-defined assurance overlay] to achieve such trustworthiness.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control helps organizations to make explicit trustworthiness decisions when designing, developing, and implementing information systems that are needed to conduct critical organizational missions/business functions. Trustworthiness is a characteristic/property of an information system that expresses the degree to which the system can be expected to preserve the confidentiality, integrity, and availability of the information it processes, stores, or transmits.  Trustworthy information systems are systems that are capable of being trusted to operate within defined levels of risk despite the environmental disruptions, human errors, and purposeful attacks that are expected to occur in the specified environments of operation. Trustworthy systems are important to mission/business success. Two factors affecting the trustworthiness of information systems include: (i) security functionality (i.e., the security features, functions, and/or mechanisms employed within the system and its environment of operation); and (ii) security assurance (i.e., the grounds for confidence that the security functionality is effective in its application). Developers, implementers, operators, and maintainers of organizational information systems can increase the level of assurance (and trustworthiness), for example, by employing well-defined security policy models, structured and rigorous hardware, software, and firmware development techniques, sound system/security engineering principles, and secure configuration settings (defined by a set of assurance-related security controls in Appendix E).
+Assurance is also based on the assessment of evidence produced during the system development life cycle. Critical missions/business functions are supported by high-impact systems and the associated assurance requirements for such systems. The additional assurance controls in Table E-4 in Appendix E (designated as optional) can be used to develop and implement high-assurance solutions for specific information systems and system components using the concept of overlays described in Appendix I. Organizations select assurance overlays that have been developed, validated, and approved for community adoption (e.g., cross-organization, governmentwide), limiting the development of such overlays on an organization-by-organization basis. Organizations can conduct criticality analyses as described in SA-14, to determine the information systems, system components, or information system services that require high-assurance solutions. Trustworthiness requirements and assurance overlays can be described in the security plans for organizational information systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-2">RA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-4">SA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-14">SA-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-3">SC-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		<p>None.</p>
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 200</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#200">http://csrc.nist.gov/publications/PubsFIPS.html#200</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-53</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-53">http://csrc.nist.gov/publications/PubsSPs.html#800-53</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-53A</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-53A">http://csrc.nist.gov/publications/PubsSPs.html#800-53A</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-60</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-60">http://csrc.nist.gov/publications/PubsSPs.html#800-60</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-64</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-64">http://csrc.nist.gov/publications/PubsSPs.html#800-64</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-13 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

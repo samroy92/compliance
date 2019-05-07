@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-9" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-9 <small>PROTECTION OF AUDIT INFORMATION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AU-9
+                                        </td>
+                                        <td>
+                                            AU-9 (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                        <td>
+                                            AU-9 (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-9</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system protects audit information and audit tools from unauthorized access, modification, and deletion.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. This control focuses on technical protection of audit information. Physical protection of audit information is addressed by media protection controls and physical and environmental protection controls.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-2">PE-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-6">PE-6</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-9(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | HARDWARE WRITE-ONCE MEDIA<br>
+                                <strong>The information system writes audit trails to hardware-enforced, write-once media.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to the initial generation of audit trails (i.e., the collection of audit records that represents the audit information to be used for detection, analysis, and reporting purposes) and to the backup of those audit trails. The enhancement does not apply to the initial generation of audit records prior to being written to an audit trail. Write-once, read-many (WORM) media includes, for example, Compact Disk-Recordable (CD-R) and Digital Video Disk-Recordable (DVD-R). In contrast, the use of switchable write-protection media such as on tape cartridges or Universal Serial Bus (USB) drives results in write-protected, but not write-once, media.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-4.html">AU-4</a>, <a href="AU-5.html">AU-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-9(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | AUDIT BACKUP ON SEPARATE PHYSICAL SYSTEMS / COMPONENTS<br>
+                                <strong>The information system backs up audit records [Assignment: organization-defined frequency] onto a physically different system or system component than the system or component being audited.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement helps to ensure that a compromise of the information system being audited does not also result in a compromise of the audit records.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-4.html">AU-4</a>, <a href="AU-5.html">AU-5</a>, <a href="AU-11.html">AU-11</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AU-9(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | CRYPTOGRAPHIC PROTECTION<br>
+                                <strong>The information system implements cryptographic mechanisms to protect the integrity of audit information and audit tools.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cryptographic mechanisms used for protecting the integrity of audit information include, for example, signed hash functions using asymmetric cryptography enabling distribution of the public key to verify the hash information while maintaining the confidentiality of the secret key used to generate the hash.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-10.html">AU-10</a>, <a href="SC-12.html">SC-12</a>, <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AU-9(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | ACCESS BY SUBSET OF PRIVILEGED USERS<br>
+                                <strong>The organization authorizes access to management of audit functionality to only [Assignment: organization-defined subset of privileged users].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Individuals with privileged access to an information system and who are also the subject of an audit by that system, may affect the reliability of audit information by inhibiting audit activities or modifying audit records. This control enhancement requires that privileged access be further defined between audit-related privileges and other privileges, thus limiting the users with audit-related privileges.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-5.html">AC-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AU-9(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | DUAL AUTHORIZATION<br>
+                                <strong>The organization enforces dual authorization for [Selection (one or more): movement; deletion] of [Assignment: organization-defined audit information].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose different selection options for different types of audit information. Dual authorization mechanisms require the approval of two authorized individuals in order to execute. Dual authorization may also be known as two-person control.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="MP-2.html">MP-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AU-9(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-9%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PROTECTION OF AUDIT INFORMATION | READ ONLY ACCESS<br>
+                                <strong>The organization authorizes read-only access to audit information to [Assignment: organization-defined subset of privileged users].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Restricting privileged user authorizations to read-only helps to limit the potential damage to organizations that could be initiated by such users (e.g., deleting audit records to cover up malicious activity).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

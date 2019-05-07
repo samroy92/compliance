@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PL-4" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PL-4 <small>RULES OF BEHAVIOR</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PLANNING-2.html">PL - PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PL-4
+                                        </td>
+                                        <td>
+                                            PL-4 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            PL-4 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PLANNING-2.html">PL</a>
+                    &gt; <strong>PL-4</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes and makes readily available to individuals requiring access to the information system, the rules that describe their responsibilities and expected behavior with regard to information and information system usage;
+</p>
+<p>
+b.
+Receives a signed acknowledgment from such individuals, indicating that they have read, understand, and agree to abide by the rules of behavior, before authorizing access to information and the information system;
+</p>
+<p>
+c.
+Reviews and updates the rules of behavior [Assignment: organization-defined frequency]; and
+</p>
+<p>
+d.
+Requires individuals who have signed a previous version of the rules of behavior to read and re-sign when the rules of behavior are revised/updated.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control enhancement applies to organizational users. Organizations consider rules of behavior based on individual user roles and responsibilities, differentiating, for example, between rules that apply to privileged users and rules that apply to general users. Establishing rules of behavior for some types of non-organizational users including, for example, individuals who simply receive data/information from federal information systems, is often not feasible given the large number of such users and the limited nature of their interactions with the systems. Rules of behavior for both organizational and non-organizational users can also be established in AC-8, System Use Notification. PL-4 b. (the signed acknowledgment portion of this control) may be satisfied by the security awareness training and role-based security training programs conducted by organizations if such training includes rules of behavior. Organizations can use electronic signatures for acknowledging rules of behavior.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-8">AC-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-9">AC-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-2">AT-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-3">AT-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-11">CM-11</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-4">IA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-7">MP-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-6">PS-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-8">PS-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-5">SA-5</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PL-4(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-4%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                RULES OF BEHAVIOR | SOCIAL MEDIA AND NETWORKING RESTRICTIONS<br>
+                                <strong>The organization includes in the rules of behavior, explicit restrictions on the use of social media/networking sites and posting organizational information on public websites.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses rules of behavior related to the use of social media/networking sites: (i) when organizational personnel are using such sites for official duties or in the conduct of official business; (ii) when organizational information is involved in social media/networking transactions; and (iii) when personnel are accessing social media/networking sites from organizational information systems. Organizations also address specific rules that prevent unauthorized entities from obtaining and/or inferring non-public organizational information (e.g., system account information, personally identifiable information) from social media/networking sites.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-18</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-18">http://csrc.nist.gov/publications/PubsSPs.html#800-18</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+</html>

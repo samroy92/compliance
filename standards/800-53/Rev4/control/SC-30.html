@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-30 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-30" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-30 <small>CONCEALMENT AND MISDIRECTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-30</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization employs [Assignment: organization-defined concealment and misdirection techniques] for [Assignment: organization-defined information systems] at [Assignment: organization-defined time periods] to confuse and mislead adversaries.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Concealment and misdirection techniques can significantly reduce the targeting capability of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete cyber attacks. For example, virtualization techniques provide organizations with the ability to disguise information systems, potentially reducing the likelihood of successful attacks without the cost of having multiple platforms. Increased use of concealment/misdirection techniques including, for example, randomness, uncertainty, and virtualization, may sufficiently confuse and mislead adversaries and subsequently increase the risk of discovery and/or exposing tradecraft. Concealment/misdirection techniques may also provide organizations additional time to successfully perform core missions and business functions. Because of the time and effort required to support concealment/misdirection techniques, it is anticipated that such techniques would be used by organizations on a very limited basis.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-26">SC-26</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-29">SC-29</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-14">SI-14</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-30(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-30%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONCEALMENT AND MISDIRECTION | VIRTUALIZATION TECHNIQUES<br>
+                                <strong>[Withdrawn: Incorporated into SC-29 (1)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-30(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-30%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONCEALMENT AND MISDIRECTION | RANDOMNESS<br>
+                                <strong>The organization employs [Assignment: organization-defined techniques] to introduce randomness into organizational operations and assets.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Randomness introduces increased levels of uncertainty for adversaries regarding the actions organizations take in defending against cyber attacks. Such actions may impede the ability of adversaries to correctly target information resources of organizations supporting critical missions/business functions. Uncertainty may also cause adversaries to hesitate before initiating or continuing attacks. Misdirection techniques involving randomness include, for example, performing certain routine actions at different times of day, employing different information technologies (e.g., browsers, search engines), using different suppliers, and rotating roles and responsibilities of organizational personnel.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-30(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-30%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONCEALMENT AND MISDIRECTION | CHANGE PROCESSING / STORAGE LOCATIONS<br>
+                                <strong>The organization changes the location of [Assignment: organization-defined processing and/or storage] [Selection: [Assignment: organization-defined time frequency]; at random time intervals]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Adversaries target critical organizational missions/business functions and the information resources supporting those missions and functions while at the same time, trying to minimize exposure of their existence and tradecraft. The static, homogeneous, and deterministic nature of organizational information systems targeted by adversaries, make such systems more susceptible to cyber attacks with less adversary cost and effort to be successful. Changing organizational processing and storage locations (sometimes referred to as moving target defense) addresses the advanced persistent threat (APT) using techniques such as virtualization, distributed processing, and replication. This enables organizations to relocate the information resources (i.e., processing and/or storage) supporting critical missions and business functions. Changing locations of processing activities and/or storage sites introduces uncertainty into the targeting activities by adversaries. This uncertainty increases the work factor of adversaries making compromises or breaches to organizational information systems much more difficult and time-consuming, and increases the chances that adversaries may inadvertently disclose aspects of tradecraft while attempting to locate critical organizational resources.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-30(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-30%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONCEALMENT AND MISDIRECTION | MISLEADING INFORMATION<br>
+                                <strong>The organization employs realistic, but misleading information in [Assignment: organization-defined information system components] with regard to its security state or posture.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement misleads potential adversaries regarding the nature and extent of security safeguards deployed by organizations. As a result, adversaries may employ incorrect (and as a result ineffective) attack techniques. One way of misleading adversaries is for organizations to place misleading information regarding the specific security controls deployed in external information systems that are known to be accessed or targeted by adversaries. Another technique is the use of deception nets (e.g., honeynets, virtualized environments) that mimic actual aspects of organizational information systems but use, for example, out-of-date software configurations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-30(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-30%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONCEALMENT AND MISDIRECTION | CONCEALMENT OF SYSTEM COMPONENTS<br>
+                                <strong>The organization employs [Assignment: organization-defined techniques] to hide or conceal [Assignment: organization-defined information system components].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                By hiding, disguising, or otherwise concealing critical information system components, organizations may be able to decrease the probability that adversaries target and successfully compromise those assets. Potential means for organizations to hide and/or conceal information system components include, for example, configuration of routers or the use of honeynets or virtualization techniques.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-30 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

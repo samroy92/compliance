@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PL-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PL-8 <small>INFORMATION SECURITY ARCHITECTURE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PLANNING-2.html">PL - PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            PL-8
+                                        </td>
+                                        <td>
+                                            PL-8
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PLANNING-2.html">PL</a>
+                    &gt; <strong>PL-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops an information security architecture for the information system that:
+</p>
+<p>
+1.
+Describes the overall philosophy, requirements, and approach to be taken with regard to protecting the confidentiality, integrity, and availability of organizational information;
+</p>
+<p>
+2.
+Describes how the information security architecture is integrated into and supports the enterprise architecture; and
+</p>
+<p>
+3.
+Describes any information security assumptions about, and dependencies on, external services;
+</p>
+
+
+<p>
+b.
+Reviews and updates the information security architecture [Assignment: organization-defined frequency] to reflect updates in the enterprise architecture; and
+</p>
+<p>
+c.
+Ensures that planned information security architecture changes are reflected in the security plan, the security Concept of Operations (CONOPS), and organizational procurements/acquisitions.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control addresses actions taken by organizations in the design and development of information systems. The information security architecture at the individual information system level is consistent with and complements the more global, organization-wide information security architecture described in PM-7 that is integral to and developed as part of the enterprise architecture. The information security architecture includes an architectural description, the placement/allocation of security functionality (including security controls), security-related information for external interfaces, information being exchanged across the interfaces, and the protection mechanisms associated with each interface. In addition, the security architecture can include other important security-related information, for example, user roles and access privileges assigned to each role, unique security requirements, the types of information processed, stored, and transmitted by the information system, restoration priorities of information and information system services, and any other specific protection needs.
+In today�s modern architecture, it is becoming less common for organizations to control all information resources. There are going to be key dependencies on external information services and service providers. Describing such dependencies in the information security architecture is important to developing a comprehensive mission/business protection strategy. Establishing, developing, documenting, and maintaining under configuration control, a baseline configuration for organizational information systems is critical to implementing and maintaining an effective information security architecture. The development of the information security architecture is coordinated with the Senior Agency Official for Privacy (SAOP)/Chief Privacy Officer (CPO) to ensure that security controls needed to support privacy requirements are identified and effectively implemented. PL-8 is primarily directed at organizations (i.e., internally focused) to help ensure that organizations develop an information security architecture for the information system, and that the security architecture is integrated with or tightly coupled to the enterprise architecture through the organization-wide information security architecture. In contrast, SA-17 is primarily directed at external information technology product/system developers and integrators (although SA-17 could be used internally within organizations for in-house system development). SA-17, which is complementary to PL-8, is selected when organizations outsource the development of information systems or information system components to external entities, and there is a need to demonstrate/show consistency with the organization�s enterprise architecture and information security architecture.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-2">CM-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-2">PL-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-5">SA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-17">SA-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=Appendix%20J">Appendix J</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PL-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SECURITY ARCHITECTURE | DEFENSE-IN-DEPTH<br>
+                                <strong>The organization designs its security architecture using a defense-in-depth approach that:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PL-8 (1)(a)<a name="//apple_ref/cpp/Modifier/PL-8%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Allocates [Assignment: organization-defined security safeguards] to [Assignment: organization-defined locations and architectural layers]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PL-8 (1)(b)<a name="//apple_ref/cpp/Modifier/PL-8%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Ensures that the allocated security safeguards operate in a coordinated and mutually reinforcing manner.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations strategically allocate security safeguards (procedural, technical, or both) in the security architecture so that adversaries have to overcome multiple safeguards to achieve their objective. Requiring adversaries to defeat multiple mechanisms makes it more difficult to successfully attack critical information resources (i.e., increases adversary work factor) and also increases the likelihood of detection. The coordination of allocated safeguards is essential to ensure that an attack that involves one safeguard does not create adverse unintended consequences (e.g., lockout, cascading alarms) by interfering with another safeguard. Placement of security safeguards is a key activity. Greater asset criticality or information value merits additional layering. Thus, an organization may choose to place anti-virus software at organizational boundary layers, email/web servers, notebook computers, and workstations to maximize the number of related safeguards adversaries must penetrate before compromising the information and information systems.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-29.html">SC-29</a>, <a href="SC-36.html">SC-36</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PL-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PL-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SECURITY ARCHITECTURE | SUPPLIER DIVERSITY<br>
+                                <strong>The organization requires that [Assignment: organization-defined security safeguards] allocated to [Assignment: organization-defined locations and architectural layers] are obtained from different suppliers.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Different information technology products have different strengths and weaknesses. Providing a broad spectrum of products complements the individual offerings. For example, vendors offering malicious code protection typically update their products at different times, often developing solutions for known viruses, Trojans, or worms according to their priorities and development schedules. By having different products at different locations (e.g., server, boundary, desktop) there is an increased likelihood that at least one will detect the malicious code.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-12.html">SA-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PL-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:21 GMT -->
+</html>

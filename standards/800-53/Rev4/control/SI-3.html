@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SI-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SI-3 <small>MALICIOUS CODE PROTECTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI - SYSTEM AND INFORMATION INTEGRITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SI-3
+                                        </td>
+                                        <td>
+                                            SI-3 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            SI-3 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI</a>
+                    &gt; <strong>SI-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Employs malicious code protection mechanisms at information system entry and exit points to detect and eradicate malicious code;
+</p>
+<p>
+b.
+Updates malicious code protection mechanisms whenever new releases are available in accordance with organizational configuration management policy and procedures;
+</p>
+<p>
+c.
+Configures malicious code protection mechanisms to:
+</p>
+<p>
+1.
+Perform periodic scans of the information system [Assignment: organization-defined frequency] and real-time scans of files from external sources at [Selection (one or more); endpoint; network entry/exit points] as the files are downloaded, opened, or executed in accordance with organizational security policy; and
+</p>
+<p>
+2.
+[Selection (one or more): block malicious code; quarantine malicious code;  send alert to administrator; [Assignment: organization-defined action]] in response to malicious code detection; and
+</p>
+
+
+<p>
+d.
+Addresses the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the information system.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information system entry and exit points include, for example, firewalls, electronic mail servers, web servers, proxy servers, remote-access servers, workstations, notebook computers, and mobile devices. Malicious code includes, for example, viruses, worms, Trojan horses, and spyware. Malicious code can also be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using steganography. Malicious code can be transported by different means including, for example, web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of information system vulnerabilities. Malicious code protection mechanisms include, for example, anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include, for example, logic bombs, back doors, and other types of cyber attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including, for example, secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. Organizations may determine that in response to the detection of malicious code, different actions may be warranted. For example, organizations can define actions in response to malicious code detection during periodic scans, actions in response to detection of malicious downloads, and/or actions in response to detection of maliciousness when attempting to open or execute files.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-3">CM-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-4">SA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-13">SA-13</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-26">SC-26</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-44">SC-44</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-2">SI-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-7">SI-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SI-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | CENTRAL MANAGEMENT<br>
+                                <strong>The organization centrally manages malicious code protection mechanisms.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Central management is the organization-wide management and implementation of malicious code protection mechanisms. Central management includes planning, implementing, assessing, authorizing, and monitoring the organization-defined, centrally managed flaw malicious code protection security controls.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="SI-8.html">SI-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SI-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | AUTOMATIC UPDATES<br>
+                                <strong>The information system automatically updates malicious code protection mechanisms.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Malicious code protection mechanisms include, for example, signature definitions. Due to information system integrity and availability concerns, organizations give careful consideration to the methodology used to carry out automatic updates.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-8.html">SI-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SI-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | NON-PRIVILEGED USERS<br>
+                                <strong>[Withdrawn: Incorporated into AC-6 (10)].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SI-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | UPDATES ONLY BY PRIVILEGED USERS<br>
+                                <strong>The information system updates malicious code protection mechanisms only when directed by a privileged user.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement may be appropriate for situations where for reasons of security or operational continuity, updates are only applied when selected/approved by designated organizational personnel.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>, <a href="CM-5.html">CM-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SI-3(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | PORTABLE STORAGE DEVICES<br>
+                                <strong>[Withdrawn: Incorporated into MP-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SI-3(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | TESTING / VERIFICATION<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-3 (6)(a)<a name="//apple_ref/cpp/Modifier/SI-3%20%286%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Tests malicious code protection mechanisms [Assignment: organization-defined frequency] by introducing a known benign, non-spreading test case into the information system; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-3 (6)(b)<a name="//apple_ref/cpp/Modifier/SI-3%20%286%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Verifies that both detection of the test case and associated incident reporting occur.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-2.html">CA-2</a>, <a href="CA-7.html">CA-7</a>, <a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SI-3(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | NONSIGNATURE-BASED DETECTION<br>
+                                <strong>The information system implements nonsignature-based malicious code detection mechanisms.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Nonsignature-based detection mechanisms include, for example, the use of heuristics to detect, analyze, and describe the characteristics or behavior of malicious code and to provide safeguards against malicious code for which signatures do not yet exist or for which existing signatures may not be effective. This includes polymorphic malicious code (i.e., code that changes signatures when it replicates). This control enhancement does not preclude the use of signature-based detection mechanisms.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">SI-3(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | DETECT UNAUTHORIZED COMMANDS<br>
+                                <strong>The information system detects [Assignment: organization-defined unauthorized operating system commands] through the kernel application programming interface at [Assignment: organization-defined information system hardware components] and [Selection (one or more): issues a warning; audits the command execution; prevents the execution of the command].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement can also be applied to critical interfaces other than kernel-based interfaces, including for example, interfaces with virtual machines and privileged applications. Unauthorized operating system commands include, for example, commands for kernel functions from information system processes that are not trusted to initiate such commands, or commands for kernel functions that are suspicious even though commands of that type are reasonable for processes to initiate. Organizations can define the malicious commands to be detected by a combination of command types, command classes, or specific instances of commands. Organizations can define hardware components by specific component, component type, location in the network, or combination therein. Organizations may select different actions for different types/classes/specific instances of potentially malicious commands.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-6.html">AU-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">SI-3(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | AUTHENTICATE REMOTE COMMANDS<br>
+                                <strong>The information system implements [Assignment: organization-defined security safeguards] to authenticate [Assignment: organization-defined remote commands].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement protects against unauthorized commands and replay of authorized commands. This capability is important for those remote information systems whose loss, malfunction, misdirection, or exploitation would have immediate and/or serious consequences (e.g., injury or death, property damage, loss of high-valued assets or sensitive information, or failure of important missions/business functions). Authentication safeguards for remote commands help to ensure that information systems accept and execute in the order intended, only authorized commands, and that unauthorized commands are rejected. Cryptographic mechanisms can be employed, for example, to authenticate remote commands.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-12.html">SC-12</a>, <a href="SC-13.html">SC-13</a>, <a href="SC-23.html">SC-23</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">SI-3(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-3%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MALICIOUS CODE PROTECTION | MALICIOUS CODE ANALYSIS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-3 (10)(a)<a name="//apple_ref/cpp/Modifier/SI-3%20%2810%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Employs [Assignment: organization-defined tools and techniques] to analyze the characteristics and behavior of malicious code; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-3 (10)(b)<a name="//apple_ref/cpp/Modifier/SI-3%20%2810%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Incorporates the results from malicious code analysis into organizational incident response and flaw remediation processes.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The application of selected malicious code analysis tools and techniques provides organizations with a more in-depth understanding of adversary tradecraft (i.e., tactics, techniques, and procedures) and the functionality and purpose of specific instances of malicious code. Understanding the characteristics of malicious code facilitates more effective organizational responses to current and future threats. Organizations can conduct malicious code analyses by using reverse engineering techniques or by monitoring the behavior of executing code.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-83</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-83">http://csrc.nist.gov/publications/PubsSPs.html#800-83</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+</html>

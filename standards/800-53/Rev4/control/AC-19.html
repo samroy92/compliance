@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-19 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-19" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-19 <small>ACCESS CONTROL FOR MOBILE DEVICES</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-19
+                                        </td>
+                                        <td>
+                                            AC-19 (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                        <td>
+                                            AC-19 (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-19</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes usage restrictions, configuration requirements, connection requirements, and implementation guidance for organization-controlled mobile devices; and
+</p>
+<p>
+b.
+Authorizes the connection of mobile devices to organizational information systems.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>A mobile device is a computing device that: (i) has a small form factor such that it can easily be carried by a single individual; (ii) is designed to operate without a physical connection (e.g., wirelessly transmit or receive information); (iii) possesses local, non-removable or removable data storage; and (iv) includes a self-contained power source. Mobile devices may also include voice communication capabilities, on-board sensors that allow the device to capture information, and/or built-in features for synchronizing local data with remote locations. Examples include smart phones, E-readers, and tablets. Mobile devices are typically associated with a single individual and the device is usually in close proximity to the individual; however, the degree of proximity can vary depending upon on the form factor and size of the device. The processing, storage, and transmission capability of the mobile device may be comparable to or merely a subset of desktop systems, depending upon the nature and intended purpose of the device. Due to the large variety of mobile devices with different technical characteristics and capabilities, organizational restrictions may vary for the different classes/types of such devices. Usage restrictions and specific implementation guidance for mobile devices include, for example, configuration management, device identification and authentication, implementation of mandatory protective software (e.g., malicious code detection, firewall), scanning devices for malicious code, updating virus protection software, scanning for critical software updates and patches, conducting primary operating system (and possibly other resident software) integrity checks, and disabling unnecessary hardware (e.g., wireless, infrared). Organizations are cautioned that the need to provide adequate security for mobile devices goes beyond the requirements in this control. Many safeguards and countermeasures for mobile devices are reflected in other security controls in the catalog allocated in the initial control baselines as starting points for the development of security plans and overlays using the tailoring process. There may also be some degree of overlap in the requirements articulated by the security controls within the different families of controls. AC-20 addresses mobile devices that are not organization-controlled.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-7">AC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-9">CA-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-2">CM-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-5">MP-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-43">SC-43</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-19(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-19%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR MOBILE DEVICES | USE OF  WRITABLE / PORTABLE STORAGE DEVICES<br>
+                                <strong>[Withdrawn: Incorporated into MP-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-19(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-19%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR MOBILE DEVICES | USE OF PERSONALLY OWNED PORTABLE STORAGE DEVICES<br>
+                                <strong>[Withdrawn: Incorporated into MP-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-19(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-19%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR MOBILE DEVICES | USE OF PORTABLE STORAGE DEVICES WITH NO IDENTIFIABLE OWNER<br>
+                                <strong>[Withdrawn: Incorporated into MP-7].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-19(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-19%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR MOBILE DEVICES | RESTRICTIONS FOR CLASSIFIED INFORMATION<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-19 (4)(a)<a name="//apple_ref/cpp/Modifier/AC-19%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Prohibits the use of unclassified mobile devices in facilities containing information systems processing, storing, or transmitting classified information unless specifically permitted by the authorizing official; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-19 (4)(b)<a name="//apple_ref/cpp/Modifier/AC-19%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Enforces the following restrictions on individuals permitted by the authorizing official to use unclassified mobile devices in facilities containing information systems processing, storing, or transmitting classified information:</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-19 (4)(c)<a name="//apple_ref/cpp/Modifier/AC-19%20%284%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Restricts the connection of classified mobile devices to classified information systems in accordance with [Assignment: organization-defined security policies].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-6.html">CA-6</a>, <a href="IR-4.html">IR-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-19(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-19%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR MOBILE DEVICES | FULL DEVICE / CONTAINER-BASED  ENCRYPTION<br>
+                                <strong>The organization employs [Selection: full-device encryption; container encryption] to protect the confidentiality and integrity of information on [Assignment: organization-defined mobile devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Container-based encryption provides a more fine-grained approach to the encryption of data/information on mobile devices, including for example, encrypting selected data structures such as files, records, or fields.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="MP-5.html">MP-5</a>, <a href="SC-13.html">SC-13</a>, <a href="SC-28.html">SC-28</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>OMB Memorandum 06-16</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2006/m06-16.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2006/m06-16.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-114</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-114">http://csrc.nist.gov/publications/PubsSPs.html#800-114</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-124</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-124">http://csrc.nist.gov/publications/PubsSPs.html#800-124</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-164</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-164">http://csrc.nist.gov/publications/PubsSPs.html#800-164</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-19 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CP-10" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CP-10 <small>INFORMATION SYSTEM RECOVERY AND RECONSTITUTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP - CONTINGENCY PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CP-10
+                                        </td>
+                                        <td>
+                                            CP-10 (<a href="#enhancement-2">2</a>)
+                                        </td>
+                                        <td>
+                                            CP-10 (<a href="#enhancement-2">2</a>) (<a href="#enhancement-4">4</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP</a>
+                    &gt; <strong>CP-10</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Recovery is executing information system contingency plan activities to restore organizational missions/business functions. Reconstitution takes place following recovery and includes activities for returning organizational information systems to fully operational states. Recovery and reconstitution operations reflect mission and business priorities, recovery point/time and reconstitution objectives, and established organizational metrics consistent with contingency plan requirements. Reconstitution includes the deactivation of any interim information system capabilities that may have been needed during recovery operations. Reconstitution also includes assessments of fully restored information system capabilities, reestablishment of continuous monitoring activities, potential information system reauthorizations, and activities to prepare the systems against future disruptions, compromises, or failures. Recovery/reconstitution capabilities employed by organizations can include both automated mechanisms and manual procedures.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-2">CA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-6">CA-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-6">CP-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-7">CP-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-9">CP-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-24">SC-24</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CP-10(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | CONTINGENCY PLAN TESTING<br>
+                                <strong>[Withdrawn: Incorporated into CP-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CP-10(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | TRANSACTION RECOVERY<br>
+                                <strong>The information system implements transaction recovery for systems that are transaction-based.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Transaction-based information systems include, for example, database management systems and transaction processing systems. Mechanisms supporting transaction recovery include, for example, transaction rollback and transaction journaling.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CP-10(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | COMPENSATING SECURITY CONTROLS<br>
+                                <strong>[Withdrawn: Addressed through tailoring procedures].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CP-10(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | RESTORE WITHIN TIME PERIOD<br>
+                                <strong>The organization provides the capability to restore information system components within [Assignment: organization-defined restoration time-periods] from configuration-controlled and integrity-protected information representing a known, operational state for the components.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Restoration of information system components includes, for example, reimaging which restores components to known, operational states.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-2.html">CM-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CP-10(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | FAILOVER CAPABILITY<br>
+                                <strong>[Withdrawn: Incorporated into SI-13].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CP-10(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-10%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM RECOVERY AND RECONSTITUTION | COMPONENT PROTECTION<br>
+                                <strong>The organization protects backup and restoration hardware, firmware, and software.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Protection of backup and restoration hardware, firmware, and software components includes both physical and technical safeguards. Backup and restoration software includes, for example, router tables, compilers, and other security-relevant system software.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="AC-6.html">AC-6</a>, <a href="PE-3.html">PE-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>Federal Continuity Directive 1</th>
+                    <td><a href="http://www.fema.gov/pdf/about/offices/fcd1.pdf">http://www.fema.gov/pdf/about/offices/fcd1.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-34</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-34">http://csrc.nist.gov/publications/PubsSPs.html#800-34</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-10 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

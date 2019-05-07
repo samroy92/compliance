@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-18" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-18 <small>WIRELESS ACCESS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-18
+                                        </td>
+                                        <td>
+                                            AC-18 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            AC-18 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-4">4</a>) (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-18</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes usage restrictions, configuration/connection requirements, and implementation guidance for wireless access; and
+</p>
+<p>
+b.
+Authorizes wireless access to the information system prior to allowing such connections.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Wireless technologies include, for example, microwave, packet radio (UHF/VHF), 802.11x, and Bluetooth. Wireless networks use authentication protocols (e.g., EAP/TLS, PEAP), which provide credential protection and mutual authentication.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-3">CA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-18(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-18%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                WIRELESS ACCESS | AUTHENTICATION AND ENCRYPTION<br>
+                                <strong>The information system protects wireless access to the system using authentication of [Selection (one or more): users; devices] and encryption.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-8.html">SC-8</a>, <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-18(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-18%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                WIRELESS ACCESS | MONITORING UNAUTHORIZED CONNECTIONS<br>
+                                <strong>[Withdrawn: Incorporated into SI-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-18(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-18%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                WIRELESS ACCESS | DISABLE WIRELESS NETWORKING<br>
+                                <strong>The organization disables, when not intended for use, wireless networking capabilities internally embedded within information system components prior to issuance and deployment.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-19.html">AC-19</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-18(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-18%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                WIRELESS ACCESS | RESTRICT CONFIGURATIONS BY USERS<br>
+                                <strong>The organization identifies and explicitly authorizes users allowed to independently configure wireless networking capabilities.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational authorizations to allow selected users to configure wireless networking capability are enforced in part, by the access enforcement mechanisms employed within organizational information systems.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="SC-15.html">SC-15</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-18(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-18%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                WIRELESS ACCESS | ANTENNAS / TRANSMISSION POWER LEVELS<br>
+                                <strong>The organization selects radio antennas and calibrates transmission power levels to reduce the probability that usable signals can be received outside of organization-controlled boundaries.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Actions that may be taken by organizations to limit unauthorized use of wireless communications outside of organization-controlled boundaries include, for example: (i) reducing the power of wireless transmissions so that the transmissions are less likely to emit a signal that can be used by adversaries outside of the physical perimeters of organizations; (ii) employing measures such as TEMPEST to control wireless emanations; and (iii) using directional/beam forming antennas that reduce the likelihood that unintended receivers will be able to intercept signals. Prior to taking such actions, organizations can conduct periodic wireless surveys to understand the radio frequency profile of organizational information systems as well as other systems that may be operating in the area.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-19.html">PE-19</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-48</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-48">http://csrc.nist.gov/publications/PubsSPs.html#800-48</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-94</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-94">http://csrc.nist.gov/publications/PubsSPs.html#800-94</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-97</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-97">http://csrc.nist.gov/publications/PubsSPs.html#800-97</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AU-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AU-6 <small>AUDIT REVIEW, ANALYSIS, AND REPORTING</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU - AUDIT AND ACCOUNTABILITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AU-6
+                                        </td>
+                                        <td>
+                                            AU-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>)
+                                        </td>
+                                        <td>
+                                            AU-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-6">6</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AUDIT%20AND%20ACCOUNTABILITY-2.html">AU</a>
+                    &gt; <strong>AU-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Reviews and analyzes information system audit records [Assignment: organization-defined frequency] for indications of [Assignment: organization-defined inappropriate or unusual activity]; and
+</p>
+<p>
+b.
+Reports findings to [Assignment: organization-defined personnel or roles].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Audit review, analysis, and reporting covers information security-related auditing performed by organizations including, for example, auditing that results from monitoring of account usage, remote access, wireless connectivity, mobile device connection, configuration settings, system component inventory, use of maintenance tools and nonlocal maintenance, physical access, temperature and humidity, equipment delivery and removal, communications at the information system boundaries, use of mobile code, and use of VoIP. Findings can be reported to organizational entities that include, for example, incident response team, help desk, information security group/department. If organizations are prohibited from reviewing and analyzing audit information or unable to conduct such activities (e.g., in certain national security applications or systems), the review/analysis may be carried out by other organizations granted such authority.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-3">AT-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-7">AU-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-16">AU-16</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CA-7">CA-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-10">CM-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-11">CM-11</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-5">IR-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-6">IR-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-6">PE-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-14">PE-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-16">PE-16</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=RA-5">RA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-18">SC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-19">SC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-4">SI-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-7">SI-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AU-6(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | PROCESS INTEGRATION<br>
+                                <strong>The organization employs automated mechanisms to integrate audit review, analysis, and reporting processes to support organizational processes for investigation and response to suspicious activities.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational processes benefiting from integrated audit review, analysis, and reporting include, for example, incident response, continuous monitoring, contingency planning, and Inspector General audits.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>, <a href="PM-7.html">PM-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AU-6(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | AUTOMATED SECURITY ALERTS<br>
+                                <strong>[Withdrawn: Incorporated into SI-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AU-6(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATE AUDIT REPOSITORIES<br>
+                                <strong>The organization analyzes and correlates audit records across different repositories to gain organization-wide situational awareness.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organization-wide situational awareness includes awareness across all three tiers of risk management (i.e., organizational, mission/business process, and information system) and supports cross-organization awareness.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>, <a href="IR-4.html">IR-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AU-6(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CENTRAL REVIEW AND ANALYSIS<br>
+                                <strong>The information system provides the capability to centrally review and analyze audit records from multiple components within the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Automated mechanisms for centralized reviews and analyses include, for example, Security Information Management products.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AU-6(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | INTEGRATION / SCANNING AND MONITORING CAPABILITIES<br>
+                                <strong>The organization integrates analysis of audit records with analysis of [Selection (one or more): vulnerability scanning information; performance data; information system monitoring information; [Assignment: organization-defined data/information collected from other sources]] to further enhance the ability to identify inappropriate or unusual activity.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement does not require vulnerability scanning, the generation of performance data, or information system monitoring. Rather, the enhancement requires that the analysis of information being otherwise produced in these areas is integrated with the analysis of audit information. Security Event and Information Management System tools can facilitate audit record aggregation/consolidation from multiple information system components as well as audit record correlation and analysis. The use of standardized audit record analysis scripts developed by organizations (with localized script adjustments, as necessary) provides more cost-effective approaches for analyzing audit record information collected. The correlation of audit record information with vulnerability scanning information is important in determining the veracity of vulnerability scans and correlating attack detection events with scanning results. Correlation with performance data can help uncover denial of service attacks or cyber attacks resulting in unauthorized use of resources. Correlation with system monitoring information can assist in uncovering attacks and in better relating audit information to operational situations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-12.html">AU-12</a>, <a href="IR-4.html">IR-4</a>, <a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AU-6(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATION WITH PHYSICAL MONITORING<br>
+                                <strong>The organization correlates information from audit records with information obtained from monitoring physical access to further enhance the ability to identify suspicious, inappropriate, unusual, or malevolent activity.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The correlation of physical audit information and audit logs from information systems may assist organizations in identifying examples of suspicious behavior or supporting evidence of such behavior. For example, the correlation of an individual�s identity for logical access to certain information systems with the additional physical security information that the individual was actually present at the facility when the logical access occurred, may prove to be useful in investigations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AU-6(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | PERMITTED ACTIONS<br>
+                                <strong>The organization specifies the permitted actions for each [Selection (one or more): information system process; role; user] associated with the review, analysis, and reporting of audit information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations specify permitted actions for information system processes, roles, and/or users associated with the review, analysis, and reporting of audit records through account management techniques. Specifying permitted actions on audit information is a way to enforce the principle of least privilege. Permitted actions are enforced by the information system and include, for example, read, write, execute, append, and delete.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AU-6(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | FULL TEXT ANALYSIS OF PRIVILEGED COMMANDS<br>
+                                <strong>The organization performs a full text analysis of audited privileged commands in a physically distinct component or subsystem of the information system, or other information system that is dedicated to that analysis.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires a distinct environment for the dedicated analysis of audit information related to privileged users without compromising such information on the information system where the users have elevated privileges including the capability to execute privileged commands. Full text analysis refers to analysis that considers the full text of privileged commands (i.e., commands and all parameters) as opposed to analysis that considers only the name of the command. Full text analysis includes, for example, the use of pattern matching and heuristics.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-3.html">AU-3</a>, <a href="AU-9.html">AU-9</a>, <a href="AU-11.html">AU-11</a>, <a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AU-6(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | CORRELATION WITH INFORMATION FROM NONTECHNICAL SOURCES<br>
+                                <strong>The organization correlates information from nontechnical sources with audit information to enhance organization-wide situational awareness.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Nontechnical sources include, for example, human resources records documenting organizational policy violations (e.g., sexual harassment incidents, improper use of organizational information assets). Such information can lead organizations to a more directed analytical effort to detect potential malicious insider activity. Due to the sensitive nature of the information available from nontechnical sources, organizations limit access to such information to minimize the potential for the inadvertent release of privacy-related information to individuals that do not have a need to know. Thus, correlation of information from nontechnical sources with audit information generally occurs only when individuals are suspected of being involved in a security incident. Organizations obtain legal advice prior to initiating such actions.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AT-2.html">AT-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AU-6(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/AU-6%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                AUDIT REVIEW, ANALYSIS, AND REPORTING | AUDIT LEVEL ADJUSTMENT<br>
+                                <strong>The organization adjusts the level of audit review, analysis, and reporting within the information system when there is a change in risk based on law enforcement information, intelligence information, or other credible sources of information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The frequency, scope, and/or depth of the audit review, analysis, and reporting may be adjusted to meet organizational needs based on new information received.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AU-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

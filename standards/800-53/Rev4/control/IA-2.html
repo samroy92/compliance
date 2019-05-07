@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/IA-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">IA-2 <small>IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA - IDENTIFICATION AND AUTHENTICATION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            IA-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-12">12</a>)
+                                        </td>
+                                        <td>
+                                            IA-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-8">8</a>) (<a href="#enhancement-11">11</a>) (<a href="#enhancement-12">12</a>)
+                                        </td>
+                                        <td>
+                                            IA-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>) (<a href="#enhancement-8">8</a>) (<a href="#enhancement-9">9</a>) (<a href="#enhancement-11">11</a>) (<a href="#enhancement-12">12</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA</a>
+                    &gt; <strong>IA-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizational users include employees or individuals that organizations deem to have equivalent status of employees (e.g., contractors, guest researchers). This control applies to all accesses other than: (i) accesses that are explicitly identified and documented in AC-14; and (ii) accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. Organizations employ passwords, tokens, or biometrics to authenticate user identities, or in the case multifactor authentication, or some combination thereof. Access to organizational information systems is defined as either local access or network access. Local access is any access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained by direct connections without the use of networks. Network access is access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks (e.g., the Internet). Internal networks include local area networks and wide area networks. In addition, the use of encrypted virtual private networks (VPNs) for network connections between organization-controlled endpoints and non-organization controlled endpoints may be treated as internal networks from the perspective of protecting the confidentiality and integrity of information traversing the network.
+Organizations can satisfy the identification and authentication requirements in this control by complying with the requirements in Homeland Security Presidential Directive 12 consistent with the specific organizational implementation plans. Multifactor authentication requires the use of two or more different factors to achieve authentication. The factors are defined as: (i) something you know (e.g., password, personal identification number [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii) something you are (e.g., biometric). Multifactor solutions that require devices separate from information systems gaining access include, for example, hardware tokens providing time-based or challenge-response authenticators and smart cards such as the U.S. Government Personal Identity Verification card and the DoD common access card. In addition to identifying and authenticating users at the information system level (i.e., at logon), organizations also employ identification and authentication mechanisms at the application level, when necessary, to provide increased information security. Identification and authentication requirements for other than organizational users are described in IA-8.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-14">AC-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-4">IA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">IA-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO PRIVILEGED ACCOUNTS<br>
+                                <strong>The information system implements multifactor authentication for network access to privileged accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">IA-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO NON-PRIVILEGED ACCOUNTS<br>
+                                <strong>The information system implements multifactor authentication for network access to non-privileged accounts.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">IA-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | LOCAL ACCESS TO PRIVILEGED ACCOUNTS<br>
+                                <strong>The information system implements multifactor authentication for local access to privileged accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">IA-2(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | LOCAL ACCESS TO NON-PRIVILEGED ACCOUNTS<br>
+                                <strong>The information system implements multifactor authentication for local access to non-privileged accounts.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">IA-2(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | GROUP AUTHENTICATION<br>
+                                <strong>The organization requires individuals to be authenticated with an individual authenticator when a group authenticator is employed.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Requiring individuals to use individual authenticators as a second level of authentication helps organizations to mitigate the risk of using group authenticators.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">IA-2(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO PRIVILEGED ACCOUNTS - SEPARATE DEVICE<br>
+                                <strong>The information system implements multifactor authentication for network access to privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [Assignment: organization-defined strength of mechanism requirements].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">IA-2(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO NON-PRIVILEGED ACCOUNTS - SEPARATE DEVICE<br>
+                                <strong>The information system implements multifactor authentication for network access to non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [Assignment: organization-defined strength of mechanism requirements].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">IA-2(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO PRIVILEGED ACCOUNTS - REPLAY RESISTANT<br>
+                                <strong>The information system implements replay-resistant authentication mechanisms for network access to privileged accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Authentication processes resist replay attacks if it is impractical to achieve successful authentications by replaying previous authentication messages. Replay-resistant techniques include, for example, protocols that use nonces or challenges such as Transport Layer Security (TLS) and time synchronous or challenge-response one-time authenticators.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">IA-2(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | NETWORK ACCESS TO NON-PRIVILEGED ACCOUNTS - REPLAY RESISTANT<br>
+                                <strong>The information system implements replay-resistant authentication mechanisms for network access to non-privileged accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Authentication processes resist replay attacks if it is impractical to achieve successful authentications by recording/replaying previous authentication messages. Replay-resistant techniques include, for example, protocols that use nonces or challenges such as Transport Layer Security (TLS) and time synchronous or challenge-response one-time authenticators.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">IA-2(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | SINGLE SIGN-ON<br>
+                                <strong>The information system provides a single sign-on capability for [Assignment: organization-defined information system accounts and services].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Single sign-on enables users to log in once and gain access to multiple information system resources. Organizations consider the operational efficiencies provided by single sign-on capabilities with the increased risk from disclosures of single authenticators providing access to multiple system resources.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">IA-2(11)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%2811%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | REMOTE ACCESS  - SEPARATE DEVICE<br>
+                                <strong>The information system implements multifactor authentication for remote access to privileged and non-privileged accounts such that one of the factors is provided by a device separate from the system gaining access and the device meets [Assignment: organization-defined strength of mechanism requirements].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                For remote access to privileged/non-privileged accounts, the purpose of requiring a device that is separate from the information system gaining access for one of the factors during multifactor authentication is to reduce the likelihood of compromising authentication credentials stored on the system. For example, adversaries deploying malicious code on organizational information systems can potentially compromise such credentials resident on the system and subsequently impersonate authorized users.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">IA-2(12)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%2812%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | ACCEPTANCE OF PIV CREDENTIALS<br>
+                                <strong>The information system accepts and electronically verifies Personal Identity Verification (PIV) credentials.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to organizations implementing logical access control systems (LACS) and physical access control systems (PACS). Personal Identity Verification (PIV) credentials are those credentials issued by federal agencies that conform to FIPS Publication 201 and supporting guidance documents. OMB Memorandum 11-11 requires federal agencies to continue implementing the requirements specified in HSPD-12 to enable agency-wide use of PIV credentials.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="PE-3.html">PE-3</a>, <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">IA-2(13)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-2%2813%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS) | OUT-OF-BAND AUTHENTICATION<br>
+                                <strong>The information system implements [Assignment: organization-defined out-of-band authentication] under [Assignment: organization-defined conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Out-of-band authentication (OOBA) refers to the use of two separate communication paths to identify and authenticate users or devices to an information system. The first path (i.e., the in-band path), is used to identify and authenticate users or devices, and generally is the path through which information flows. The second path (i.e., the out-of-band path) is used to independently verify the authentication and/or requested action. For example, a user authenticates via a notebook computer to a remote server to which the user desires access, and requests some action of the server via that communication path. Subsequently, the server contacts the user via the user�s cell phone to verify that the requested action originated from the user. The user may either confirm the intended action to an individual on the telephone or provide an authentication code via the telephone. This type of authentication can be employed by organizations to mitigate actual or suspected man-in the-middle attacks. The conditions for activation can include, for example, suspicious activities, new threat indicators or elevated threat levels, or the impact level or classification level of information in requested transactions.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IA-10.html">IA-10</a>, <a href="IA-11.html">IA-11</a>, <a href="SC-37.html">SC-37</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>HSPD-12</th>
+                    <td><a href="http://www.dhs.gov/homeland-security-presidential-directive-12">http://www.dhs.gov/homeland-security-presidential-directive-12</a></td>
+                </tr>
+            
+                <tr>
+                    <th>OMB Memorandum 04-04</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy04/m04-04.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy04/m04-04.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>OMB Memorandum 06-16</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2006/m06-16.pdf">http://www.whitehouse.gov/sites/default/files/omb/assets/omb/memoranda/fy2006/m06-16.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>OMB Memorandum 11-11</th>
+                    <td><a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf">http://www.whitehouse.gov/sites/default/files/omb/memoranda/2011/m11-11.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 201</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#201">http://csrc.nist.gov/publications/PubsFIPS.html#201</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-63</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-63">http://csrc.nist.gov/publications/PubsSPs.html#800-63</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-73</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-73">http://csrc.nist.gov/publications/PubsSPs.html#800-73</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-76</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-76">http://csrc.nist.gov/publications/PubsSPs.html#800-76</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-78</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-78">http://csrc.nist.gov/publications/PubsSPs.html#800-78</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FICAM Roadmap and Implementation Guidance</th>
+                    <td><a href="http://www.idmanagement.gov/documents/ficam-roadmap-and-implementation-guidance">http://www.idmanagement.gov/documents/ficam-roadmap-and-implementation-guidance</a></td>
+                </tr>
+            
+                <tr>
+                    <th>http://idmanagement.gov</th>
+                    <td><a href="http://idmanagement.gov/">http://idmanagement.gov</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+</html>

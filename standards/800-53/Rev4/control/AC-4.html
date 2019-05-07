@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-4" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-4 <small>INFORMATION FLOW ENFORCEMENT</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            AC-4
+                                        </td>
+                                        <td>
+                                            AC-4
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-4</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system enforces approved authorizations for controlling the flow of information within the system and between interconnected systems based on [Assignment: organization-defined information flow control policies].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to that information. Flow control restrictions include, for example, keeping export-controlled information from being transmitted in the clear to the Internet, blocking outside traffic that claims to be from within the organization, restricting web requests to the Internet that are not from the internal web proxy server, and limiting information transfers between organizations based on data structures and content. Transferring information between information systems representing different security domains with different security policies introduces risk that such transfers violate one or more domain security policies. In such situations, information owners/stewards provide guidance at designated policy enforcement points between interconnected systems. Organizations consider mandating specific architectural solutions when required to enforce specific security policies. Enforcement includes, for example: (i) prohibiting information transfers between interconnected systems (i.e., allowing access only); (ii) employing hardware mechanisms to enforce one-way information flows; and (iii) implementing trustworthy regrading mechanisms to reassign security attributes and security labels.
+Organizations commonly employ information flow control policies and enforcement mechanisms to control the flow of information between designated sources and destinations (e.g., networks, individuals, and devices) within information systems and between interconnected systems. Flow control is based on the characteristics of the information and/or the information path. Enforcement occurs, for example, in boundary protection devices (e.g., gateways, routers, guards, encrypted tunnels, firewalls) that employ rule sets or establish configuration settings that restrict information system services, provide a packet-filtering capability based on header information, or message-filtering capability based on message content (e.g., implementing key word searches or using document characteristics). Organizations also consider the trustworthiness of filtering/inspection mechanisms (i.e., hardware, firmware, and software components) that are critical to information flow enforcement. Control enhancements 3 through 22 primarily address cross-domain solution needs which focus on more advanced filtering techniques, in-depth analysis, and stronger flow enforcement mechanisms implemented in cross-domain products, for example, high-assurance guards. Such capabilities are generally not available in commercial off-the-shelf information technology products.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-21">AC-21</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-7">CM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-2">SC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-5">SC-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-18">SC-18</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-4(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | OBJECT SECURITY ATTRIBUTES<br>
+                                <strong>The information system uses [Assignment: organization-defined security attributes] associated with [Assignment: organization-defined information, source, and destination objects] to enforce [Assignment: organization-defined information flow control policies] as a basis for flow control decisions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information flow enforcement mechanisms compare security attributes associated with information (data content and data structure) and source/destination objects, and respond appropriately (e.g., block, quarantine, alert administrator) when the mechanisms encounter information flows not explicitly allowed by information flow policies. For example, an information object labeled Secret would be allowed to flow to a destination object labeled Secret, but an information object labeled Top Secret would not be allowed to flow to a destination object labeled Secret. Security attributes can also include, for example, source and destination addresses employed in traffic filter firewalls. Flow enforcement using explicit security attributes can be used, for example, to control the release of certain types of information.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-4(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | PROCESSING DOMAINS<br>
+                                <strong>The information system uses protected processing domains to enforce [Assignment: organization-defined information flow control policies] as a basis for flow control decisions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Within information systems, protected processing domains are processing spaces that have controlled interactions with other processing spaces, thus enabling control of information flows between these spaces and to/from data/information objects. A protected processing domain can be provided, for example, by implementing domain and type enforcement. In domain and type enforcement, information system processes are assigned to domains; information is identified by types; and information flows are controlled based on allowed information accesses (determined by domain and type), allowed signaling among domains, and allowed process transitions to other domains.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-4(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | DYNAMIC INFORMATION FLOW CONTROL<br>
+                                <strong>The information system enforces dynamic information flow control based on [Assignment: organization-defined policies].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational policies regarding dynamic information flow control include, for example, allowing or disallowing information flows based on changing conditions or mission/operational considerations. Changing conditions include, for example, changes in organizational risk tolerance due to changes in the immediacy of mission/business needs, changes in the threat environment, and detection of potentially harmful or adverse events.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-4(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | CONTENT CHECK ENCRYPTED INFORMATION<br>
+                                <strong>The information system prevents encrypted information from bypassing content-checking mechanisms by [Selection (one or more): decrypting the information; blocking the flow of the encrypted information; terminating communications sessions attempting to pass encrypted information; [Assignment: organization-defined procedure or method]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-4(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | EMBEDDED DATA TYPES<br>
+                                <strong>The information system enforces [Assignment: organization-defined limitations] on embedding data types within other data types.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Embedding data types within other data types may result in reduced flow control effectiveness. Data type embedding includes, for example, inserting executable files as objects within word processing files, inserting references or descriptive information into a media file, and compressed or archived data types that may include multiple embedded data types. Limitations on data type embedding consider the levels of embedding and prohibit levels of data type embedding that are beyond the capability of the inspection tools.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-4(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | METADATA<br>
+                                <strong>The information system enforces information flow control based on [Assignment: organization-defined metadata].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Metadata is information used to describe the characteristics of data. Metadata can include structural metadata describing data structures (e.g., data format, syntax, and semantics) or descriptive metadata describing data contents (e.g., age, location, telephone number). Enforcing allowed information flows based on metadata enables simpler and more effective flow control. Organizations consider the trustworthiness of metadata with regard to data accuracy (i.e., knowledge that the metadata values are correct with respect to the data), data integrity (i.e., protecting against unauthorized changes to metadata tags), and the binding of metadata to the data payload (i.e., ensuring sufficiently strong binding techniques with appropriate levels of assurance).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>, <a href="SI-7.html">SI-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-4(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | ONE-WAY FLOW MECHANISMS<br>
+                                <strong>The information system enforces [Assignment: organization-defined one-way information flows] using hardware mechanisms.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-4(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | SECURITY POLICY FILTERS<br>
+                                <strong>The information system enforces information flow control using [Assignment: organization-defined security policy filters] as a basis for flow control decisions for [Assignment: organization-defined information flows].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organization-defined security policy filters can address data structures and content. For example, security policy filters for data structures can check for maximum file lengths, maximum field sizes, and data/file types (for structured and unstructured data). Security policy filters for data content can check for specific words (e.g., dirty/clean word filters), enumerated values or data value ranges, and hidden content. Structured data permits the interpretation of data content by applications. Unstructured data typically refers to digital information without a particular data structure or with a data structure that does not facilitate the development of rule sets to address the particular sensitivity of the information conveyed by the data or the associated flow enforcement decisions. Unstructured data consists of: (i) bitmap objects that are inherently non language-based (i.e., image, video, or audio files); and (ii) textual objects that are based on written or printed languages (e.g., commercial off-the-shelf word processing documents, spreadsheets, or emails). Organizations can implement more than one security policy filter to meet information flow control objectives (e.g., employing clean word lists in conjunction with dirty word lists may help to reduce false positives).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-4(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | HUMAN REVIEWS<br>
+                                <strong>The information system enforces the use of human reviews for [Assignment: organization-defined information flows] under the following conditions: [Assignment: organization-defined conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations define security policy filters for all situations where automated flow control decisions are possible. When a fully automated flow control decision is not possible, then a human review may be employed in lieu of, or as a complement to, automated security policy filtering. Human reviews may also be employed as deemed necessary by organizations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AC-4(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | ENABLE / DISABLE SECURITY POLICY FILTERS<br>
+                                <strong>The information system provides the capability for privileged administrators to enable/disable [Assignment: organization-defined security policy filters] under the following conditions: [Assignment: organization-defined conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                For example, as allowed by the information system authorization, administrators can enable security policy filters to accommodate approved data types.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">AC-4(11)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2811%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | CONFIGURATION OF SECURITY POLICY FILTERS<br>
+                                <strong>The information system provides the capability for privileged administrators to configure [Assignment: organization-defined security policy filters] to support different security policies.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                For example, to reflect changes in security policies, administrators can change the list of �dirty words� that security policy mechanisms check in accordance with the definitions provided by organizations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">AC-4(12)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2812%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | DATA TYPE IDENTIFIERS<br>
+                                <strong>The information system, when transferring information between different security domains, uses [Assignment: organization-defined data type identifiers] to validate data essential for information flow decisions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Data type identifiers include, for example, filenames, file types, file signatures/tokens, and multiple internal file signatures/tokens. Information systems may allow transfer of data only if compliant with data type format specifications.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">AC-4(13)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2813%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | DECOMPOSITION INTO POLICY-RELEVANT SUBCOMPONENTS<br>
+                                <strong>The information system, when transferring information between different security domains, decomposes information into [Assignment: organization-defined policy-relevant subcomponents] for submission to policy enforcement mechanisms.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Policy enforcement mechanisms apply filtering, inspection, and/or sanitization rules to the policy-relevant subcomponents of information to facilitate flow enforcement prior to transferring such information to different security domains. Parsing transfer files facilitates policy decisions on source, destination, certificates, classification, attachments, and other security-related component differentiators.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-14">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_EnhancementNameDT">AC-4(14)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2814%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | SECURITY POLICY FILTER CONSTRAINTS<br>
+                                <strong>The information system, when transferring information between different security domains, implements [Assignment: organization-defined security policy filters] requiring fully enumerated formats that restrict data structure and content.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Data structure and content restrictions reduce the range of potential malicious and/or unsanctioned content in cross-domain transactions. Security policy filters that restrict data structures include, for example, restricting file sizes and field lengths. Data content policy filters include, for example: (i) encoding formats for character sets (e.g., Universal Character Set Transformation Formats, American Standard Code for Information Interchange); (ii) restricting character data fields to only contain alpha-numeric characters; (iii) prohibiting special characters; and (iv) validating schema structures.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-15">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_EnhancementNameDT">AC-4(15)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2815%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | DETECTION OF UNSANCTIONED INFORMATION<br>
+                                <strong>The information system, when transferring information between different security domains, examines the information for the presence of [Assignment: organized-defined unsanctioned information] and prohibits the transfer of such information in accordance with the [Assignment: organization-defined security policy].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Detection of unsanctioned information includes, for example, checking all information to be transferred for malicious code and dirty words.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-3.html">SI-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-16">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_EnhancementNameDT">AC-4(16)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2816%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | INFORMATION TRANSFERS ON INTERCONNECTED SYSTEMS<br>
+                                <strong>[Withdrawn: Incorporated into AC-4].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-17">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_EnhancementNameDT">AC-4(17)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2817%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | DOMAIN AUTHENTICATION<br>
+                                <strong>The information system uniquely identifies and authenticates source and destination points by [Selection (one or more): organization, system, application, individual] for information transfer.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl17_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Attribution is a critical component of a security concept of operations. The ability to identify source and destination points for information flowing in information systems, allows the forensic reconstruction of events when required, and encourages policy compliance by attributing policy violations to specific organizations/individuals. Successful domain authentication requires that information system labels distinguish among systems, organizations, and individuals involved in preparing, sending, receiving, or disseminating information.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IA-2.html">IA-2</a>, <a href="IA-3.html">IA-3</a>, <a href="IA-4.html">IA-4</a>, <a href="IA-5.html">IA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-18">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_EnhancementNameDT">AC-4(18)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2818%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | SECURITY ATTRIBUTE BINDING<br>
+                                <strong>The information system binds security attributes to information using [Assignment: organization-defined binding techniques] to facilitate information flow policy enforcement.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl18_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Binding techniques implemented by information systems affect the strength of security attribute binding to information. Binding strength and the assurance associated with binding techniques play an important part in the trust organizations have in the information flow enforcement process. The binding techniques affect the number and degree of additional reviews required by organizations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>, <a href="SC-16.html">SC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-19">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_EnhancementNameDT">AC-4(19)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2819%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | VALIDATION OF METADATA<br>
+                                <strong>The information system, when transferring information between different security domains, applies the same security policy filtering to metadata as it applies to data payloads.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl19_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement requires the validation of metadata and the data to which the metadata applies. Some organizations distinguish between metadata and data payloads (i.e., only the data to which the metadata is bound). Other organizations do not make such distinctions, considering metadata and the data to which the metadata applies as part of the payload. All information (including metadata and the data to which the metadata applies) is subject to filtering and inspection.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-20">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_EnhancementNameDT">AC-4(20)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2820%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | APPROVED SOLUTIONS<br>
+                                <strong>The organization employs [Assignment: organization-defined solutions in approved configurations] to control the flow of [Assignment: organization-defined information] across security domains.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl20_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations define approved solutions and configurations in cross-domain policies and guidance in accordance with the types of information flows across classification boundaries. The Unified Cross Domain Management Office (UCDMO) provides a baseline listing of approved cross-domain solutions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-21">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_EnhancementNameDT">AC-4(21)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2821%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | PHYSICAL / LOGICAL SEPARATION OF INFORMATION FLOWS<br>
+                                <strong>The information system separates information flows logically or physically using [Assignment: organization-defined mechanisms and/or techniques] to accomplish [Assignment: organization-defined required separations by types of information].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl21_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Enforcing the separation of information flows by type can enhance protection by ensuring that information is not commingled while in transit and by enabling flow control by transmission paths perhaps not otherwise achievable. Types of separable information include, for example, inbound and outbound communications traffic, service requests and responses, and information of differing security categories.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-22">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_EnhancementNameDT">AC-4(22)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-4%2822%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION FLOW ENFORCEMENT | ACCESS ONLY<br>
+                                <strong>The information system provides access from a single device to computing platforms, applications, or data residing on multiple different security domains, while preventing any information flow between the different security domains.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl22_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The information system, for example, provides a desktop for users to access each connected security domain without providing any mechanisms to allow transfer of information between the different security domains.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

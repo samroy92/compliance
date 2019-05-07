@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CM-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CM-8 <small>INFORMATION SYSTEM COMPONENT INVENTORY</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM - CONFIGURATION MANAGEMENT</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CM-8
+                                        </td>
+                                        <td>
+                                            CM-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                        <td>
+                                            CM-8 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>) (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONFIGURATION%20MANAGEMENT-2.html">CM</a>
+                    &gt; <strong>CM-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops and documents an inventory of information system components that:
+</p>
+<p>
+1.
+Accurately reflects the current information system;
+</p>
+<p>
+2.
+Includes all components within the authorization boundary of the information system;
+</p>
+<p>
+3.
+Is at the level of granularity deemed necessary for tracking and reporting; and
+</p>
+<p>
+4.
+Includes [Assignment: organization-defined information deemed necessary to achieve effective information system component accountability]; and
+</p>
+
+
+<p>
+b.
+Reviews and updates the information system component inventory [Assignment: organization-defined frequency].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations may choose to implement centralized information system component inventories that include components from all organizational information systems. In such situations, organizations ensure that the resulting inventories include system-specific information required for proper component accountability (e.g., information system association, information system owner). Information deemed necessary for effective accountability of information system components includes, for example, hardware inventory specifications, software license information, software version numbers, component owners, and for networked components or devices, machine names and network addresses. Inventory specifications include, for example, manufacturer, device type, model, serial number, and physical location.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-2">CM-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-5">PM-5</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CM-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | UPDATES DURING INSTALLATIONS / REMOVALS<br>
+                                <strong>The organization updates the inventory of information system components as an integral part of component installations, removals, and information system updates.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CM-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | AUTOMATED MAINTENANCE<br>
+                                <strong>The organization employs automated mechanisms to help maintain an up-to-date, complete, accurate, and readily available inventory of information system components.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations maintain information system inventories to the extent feasible. Virtual machines, for example, can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. This control enhancement can be satisfied by the implementation of CM-2 (2) for organizations that choose to combine information system component inventory and baseline configuration activities.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-7.html">SI-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CM-8(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | AUTOMATED UNAUTHORIZED COMPONENT DETECTION<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CM-8 (3)(a)<a name="//apple_ref/cpp/Modifier/CM-8%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Employs automated mechanisms [Assignment: organization-defined frequency] to detect the presence of unauthorized hardware, software, and firmware components within the information system; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-8 (3)(b)<a name="//apple_ref/cpp/Modifier/CM-8%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Takes the following actions when unauthorized components are detected: [Selection (one or more): disables network access by such components; isolates the components; notifies [Assignment: organization-defined personnel or roles]].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement is applied in addition to the monitoring for unauthorized remote connections and mobile devices. Monitoring for unauthorized system components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms can be implemented within information systems or in other separate devices. Isolation can be achieved, for example, by placing unauthorized information system components in separate domains or subnets or otherwise quarantining such components. This type of component isolation is commonly referred to as sandboxing.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-17.html">AC-17</a>, <a href="AC-18.html">AC-18</a>, <a href="AC-19.html">AC-19</a>, <a href="CA-7.html">CA-7</a>, <a href="SI-3.html">SI-3</a>, <a href="SI-4.html">SI-4</a>, <a href="SI-7.html">SI-7</a>, <a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CM-8(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | ACCOUNTABILITY INFORMATION<br>
+                                <strong>The organization includes in the information system component inventory information, a means for identifying by [Selection (one or more): name; position; role], individuals responsible/accountable for administering those components.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Identifying individuals who are both responsible and accountable for administering information system components helps to ensure that the assigned components are properly administered and organizations can contact those individuals if some action is required (e.g., component is determined to be the source of a breach/compromise, component needs to be recalled/replaced, or component needs to be relocated).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CM-8(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | NO DUPLICATE ACCOUNTING OF COMPONENTS<br>
+                                <strong>The organization verifies that all components within the authorization boundary of the information system are not duplicated in other information system component inventories.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses the potential problem of duplicate accounting of information system components in large or complex interconnected systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CM-8(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | ASSESSED CONFIGURATIONS / APPROVED DEVIATIONS<br>
+                                <strong>The organization includes assessed component configurations and any approved deviations to current deployed configurations in the information system component inventory.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement focuses on configuration settings established by organizations for information system components, the specific components that have been assessed to determine compliance with the required configuration settings, and any approved deviations from established configuration settings.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-2.html">CM-2</a>, <a href="CM-6.html">CM-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">CM-8(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | CENTRALIZED REPOSITORY<br>
+                                <strong>The organization provides a centralized repository for the inventory of information system components.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to implement centralized information system component inventories that include components from all organizational information systems. Centralized repositories of information system component inventories provide opportunities for efficiencies in accounting for organizational hardware, software, and firmware assets. Such repositories may also help organizations rapidly identify the location and responsible individuals of system components that have been compromised, breached, or are otherwise in need of mitigation actions. Organizations ensure that the resulting centralized inventories include system-specific information required for proper component accountability (e.g., information system association, information system owner).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">CM-8(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | AUTOMATED LOCATION TRACKING<br>
+                                <strong>The organization employs automated mechanisms to support tracking of information system components by geographic location.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The use of automated mechanisms to track the location of information system components can increase the accuracy of component inventories. Such capability may also help organizations rapidly identify the location and responsible individuals of system components that have been compromised, breached, or are otherwise in need of mitigation actions.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">CM-8(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/CM-8%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM COMPONENT INVENTORY | ASSIGNMENT OF COMPONENTS TO SYSTEMS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>CM-8 (9)(a)<a name="//apple_ref/cpp/Modifier/CM-8%20%289%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Assigns [Assignment: organization-defined acquired information system components] to an information system; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>CM-8 (9)(b)<a name="//apple_ref/cpp/Modifier/CM-8%20%289%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Receives an acknowledgement from the information system owner of this assignment.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations determine the criteria for or types of information system components (e.g., microprocessors, motherboards, software, programmable logic controllers, and network devices) that are subject to this control enhancement.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-128</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-128">http://csrc.nist.gov/publications/PubsSPs.html#800-128</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CM-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

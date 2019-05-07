@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-6 <small>LEAST PRIVILEGE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            AC-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-9">9</a>) (<a href="#enhancement-10">10</a>)
+                                        </td>
+                                        <td>
+                                            AC-6 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-9">9</a>) (<a href="#enhancement-10">10</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization employs the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) which are necessary to accomplish assigned tasks in accordance with organizational missions and business functions.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations employ least privilege for specific duties and information systems. The principle of least privilege is also applied to information system processes, ensuring that the processes operate at privilege levels no higher than necessary to accomplish required organizational missions/business functions. Organizations consider the creation of additional processes, roles, and information system accounts as necessary, to achieve least privilege. Organizations also apply least privilege to the development, implementation, and operation of organizational information systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-5">AC-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-7">CM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-2">PL-2</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-6(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | AUTHORIZE ACCESS TO SECURITY FUNCTIONS<br>
+                                <strong>The organization explicitly authorizes access to [Assignment: organization-defined security functions (deployed in hardware, software, and firmware) and security-relevant information].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security functions include, for example, establishing system accounts, configuring access authorizations (i.e., permissions, privileges), setting events to be audited, and setting intrusion detection parameters. Security-relevant information includes, for example, filtering rules for routers/firewalls, cryptographic key management information, configuration parameters for security services, and access control lists. Explicitly authorized personnel include, for example, security administrators, system and network administrators, system security officers, system maintenance personnel, system programmers, and other privileged users.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-17.html">AC-17</a>, <a href="AC-18.html">AC-18</a>, <a href="AC-19.html">AC-19</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-6(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | NON-PRIVILEGED ACCESS FOR NONSECURITY FUNCTIONS<br>
+                                <strong>The organization requires that users of information system accounts, or roles, with access to [Assignment: organization-defined security functions or security-relevant information], use non-privileged accounts or roles, when accessing nonsecurity functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies such as role-based access control and where a change of role provides the same degree of assurance in the change of access authorizations for both the user and all processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PL-4.html">PL-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-6(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | NETWORK ACCESS TO PRIVILEGED COMMANDS<br>
+                                <strong>The organization authorizes network access to [Assignment: organization-defined privileged commands] only for [Assignment: organization-defined compelling operational needs] and documents the rationale for such access in the security plan for the information system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Network access is any access across a network connection in lieu of local access (i.e., user being physically present at the device).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-17.html">AC-17</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-6(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | SEPARATE PROCESSING DOMAINS<br>
+                                <strong>The information system provides separate processing domains to enable finer-grained allocation of user privileges.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Providing separate processing domains for finer-grained allocation of user privileges includes, for example: (i) using virtualization techniques to allow additional privileges within a virtual machine while restricting privileges to other virtual machines or to the underlying actual machine; (ii) employing hardware and/or software domain separation mechanisms; and (iii) implementing separate physical domains.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-4.html">AC-4</a>, <a href="SC-3.html">SC-3</a>, <a href="SC-30.html">SC-30</a>, <a href="SC-32.html">SC-32</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-6(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | PRIVILEGED ACCOUNTS<br>
+                                <strong>The organization restricts privileged accounts on the information system to [Assignment: organization-defined personnel or roles].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from having access to privileged information/functions. Organizations may differentiate in the application of this control enhancement between allowed privileges for local accounts and for domain accounts provided organizations retain the ability to control information system configurations for key security parameters and as otherwise necessary to sufficiently mitigate risk.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-6.html">CM-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-6(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | PRIVILEGED ACCESS BY NON-ORGANIZATIONAL USERS<br>
+                                <strong>The organization prohibits privileged access to the information system by non-organizational users.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IA-8.html">IA-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-6(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | REVIEW OF USER PRIVILEGES<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-6 (7)(a)<a name="//apple_ref/cpp/Modifier/AC-6%20%287%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Reviews [Assignment: organization-defined frequency] the privileges assigned to [Assignment: organization-defined roles or classes of users] to validate the need for such privileges; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-6 (7)(b)<a name="//apple_ref/cpp/Modifier/AC-6%20%287%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Reassigns or removes privileges, if necessary, to correctly reflect organizational mission/business needs.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The need for certain assigned user privileges may change over time reflecting changes in organizational missions/business function, environments of operation, technologies, or threat. Periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-7.html">CA-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-6(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | PRIVILEGE LEVELS FOR CODE EXECUTION<br>
+                                <strong>The information system prevents [Assignment: organization-defined software] from executing at higher privilege levels than users executing the software.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In certain situations, software applications/programs need to execute with elevated privileges to perform required functions. However, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking such applications/programs, those users are indirectly provided with greater privileges than assigned by organizations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-6(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | AUDITING USE OF PRIVILEGED FUNCTIONS<br>
+                                <strong>The information system audits the execution of privileged functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Misuse of privileged functions, either intentionally or unintentionally by authorized users, or by unauthorized external entities that have compromised information system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Auditing the use of privileged functions is one way to detect such misuse, and in doing so, help mitigate the risk from insider threats and the advanced persistent threat (APT).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AC-6(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-6%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                LEAST PRIVILEGE | PROHIBIT NON-PRIVILEGED USERS FROM EXECUTING PRIVILEGED FUNCTIONS<br>
+                                <strong>The information system prevents non-privileged users from executing privileged functions to include disabling, circumventing, or altering implemented security safeguards/countermeasures.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Privileged functions include, for example, establishing information system accounts, performing system integrity checks, or administering cryptographic key management activities. Non-privileged users are individuals that do not possess appropriate authorizations. Circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms are examples of privileged functions that require protection from non-privileged users.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

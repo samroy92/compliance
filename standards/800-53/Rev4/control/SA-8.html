@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-8 <small>SECURITY ENGINEERING PRINCIPLES</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SA-8
+                                        </td>
+                                        <td>
+                                            SA-8
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization applies information system security engineering principles in the specification, design, development, implementation, and modification of the information system.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations apply security engineering principles primarily to new development information systems or systems undergoing major upgrades. For legacy systems, organizations apply security engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware within those systems. Security engineering principles include, for example: (i) developing layered protections; (ii) establishing sound security policy, architecture, and controls as the foundation for design; (iii) incorporating security requirements into the system development life cycle; (iv) delineating physical and logical security boundaries; (v) ensuring that system developers are trained on how to build secure software; (vi) tailoring security controls to meet organizational and operational needs; (vii) performing threat modeling to identify use cases, threat agents, attack vectors, and attack patterns as well as compensating controls and design patterns needed to mitigate risk; and (viii) reducing risk to acceptable levels, thus enabling informed risk management decisions.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-7">PM-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-3">SA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-4">SA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-17">SA-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-2">SC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-3">SC-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		<p>None.</p>
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-27</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-27">http://csrc.nist.gov/publications/PubsSPs.html#800-27</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

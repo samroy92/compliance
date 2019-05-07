@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-5" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="INz0ZZD30uvp15RL13uIWbugRjl99xg5BJtPTu0pPTifgLVhLbBwqYu7EeQVyOTXwOCwP9YiQ7r58TTB5dVv6iYtsL2GPdrgvgOyCiUzaSBaQdFTOKpoNwDes2BCjjq5nzqeStIAePxYE+lDVoGXP8CtLzdQluoMSXMIp4pipDJBHxkPpJQeA+r6g7xoKoFNVNRhh534a8hoFlG46y/C6IOx85cU71nT+lYBL6r5tkglOc8rawFfBz/mlUv5FcEu6aaZjGeAc94Mg/A47tgv0rAWq0vgach53ba2iZlM+XpCsvuhP+GR8ZV+8CF6846ZDpffk/B/oF577MpFF1w40CeIAWQn5BkOOAOLLrFQOojvxH+gB3/Zx4iFxKjii7InG7DeLy6qi3nsFuQVOsLFPrpe4Wz9qhYd19j3VmB/KS+DNZ1AuywUgHEdNfXVgV1Ht/r+im5dRJKw8JPO9cyLRN9xqFrB6m1FZnI81EAh8L94Lk6EctQjjB3uaKSCFKr6VfB8mX/XrqDJrzKV+Z82ToarXNC71tscUOZoM7cf6R17Z47bVwWQnmfXJm0ypy5qXcG60v7YkG4D1mYLijgRVwdP1Gx9j4EYEz4YHJLeJCENcw/TNpjI+aJa34jZa684FZ4qP7afsZXK3TK6xOoL5IGQoLVcnJHcD+RpGXiNriboeFPKYI73zNjz+IoZjCslW0EJcEerNFxNXWTCglVUsmK7uPExho5toPVA2BAQVlcCxukanqWIEdlrj9jByRpShXk1d+UoJer0l52iAkAd+7JdI2JPZa3VjRsVC5YSjqF1iI+W7J+TePCOh2XJlAm4bCgCrVGpiAfLz8aA34BoQwPsBPIV9KhZhf5e+Kj679HXWxFTKCQRDKm7LhrU5A+1OXfFeoUNyUnfuJdT5RfCjcZ7Bg4AwkKNRyRU3JzSkqUoQeJIUqZyRe6/x+PvDRhccA1kPtwp5KSMuurYlgehrjRDkjsOUwD4kJFpkCAvKn5LrcOcBXdA5B3egJ7tfhRrrNKQnwwdGnBNW6p3ujCX2OWf/9/I8EXxNW02p68508lBwCrRPEcgMeYLyVbVW7W0IQyQulvl7Uf8i7BkynN6ZH+YxS6Ua8/bTUWGMSXKHAUYAnzzwlPqCtES59y2229Nyrq1y0biSPgcCNyCS8jh/3XbqDAO44uA88f9hnQVdU+H6w5CV9QO9OPrU6sxK+qsUTREb6k+AqEAC7oCSScWYGTr6gSJNZRsC4/gzTCjmtJWNVGMT+Lsl7YqCjPyge5okKp72AK5JcKN+kHnRQIQXLaIXiuqwHI0xgYYdibUCtr9tt6fvpEtT0BUujyZIR8R7g7iOeAmnkuRy4eSBDQhAa/3acarf/xCnl/2pOIp0LPp258f/XuOty5Z+BxKQpKEtOHZs9O0YMAkY0SGYGheidtue84g169wLZBLM1ZO1ff0d0Mz+KJ2wYmxMR6N0TwvqM07EWOSILGN+zZyr6Hjp1T8eA8k4TNcbiCvCC92QdekXmwIAylguuTKacC5DjEWtP17pGFDdmqvlnvFf/KVH0QIT1L5ZGM/6EaDK4oiMnxuL991tJi5E3gFcnWXL71gUZbUKq6F/XF0aexE+Z/ue+WieKx/qf7M1IpVpPUn8BZ6WFds9Gbve4BGQPI86ifijbhm2XM2y7T1nfolDFznW+PU7ADXEeluqNoIyRxbiJ6i/+77rxbDqMH2hFJlCSJ01uF0O9pjGGHbWdBBN/OSDaYU6qQzfo/TuDJuCnjyF5dwWYXYLWMNMnAALgnkSpgvwc5TPwyJ8pSXuQowRicWKKm1fNkEPISR/Diuu/SCj43BjgfP9RUdzIImQQHgzvPxk/J/ViE/+MvG0xZsj2BJ6BgyArXbdEXNeKJOOFxIO1oZ9j7UgUfqTlCqSGKsczkFZCdR8Fp1e+IlNYEbR/Awak1l120WOaxP2uB4IxpwrrpJLjVXCanKEK6Ft32dtvErN4UGZlEuP25LAmkCfA4At9e2MHMzoyuTN9IN6/ekqG089DsSJtRll1y0pHKmz2JLDHa2KyBE/YxPL81PfCkWbzBwRG5RRzMAVrcVYC6oRQ4SNG3vnuO5SD8QoL7NR0wFOtQ0GqxI7QkFBocY00XhkL7MOxe54gVPflgvUHn7uTvP0J1XzIcmQChfuG7lm3seC6NgIssMRNTpBiVvTMyC8guhEoFv8DjWrgaSMzwqQy0JSQHk4bSvRCKoz/wxYQ+Q1ouvVY6HSR4BS5hpV2JoBemM/h0/7VnVaMWSCLYhsyHffBRA/yVp52mGKr0I5IXxYqGhslM8v5/4p0GTXkYakEQi2F0qP4hl2HHCtdzpc3kqAgEdPYkVGrvmsIkiZjDpyEBPfqt1I5YAwKekfm5bf/yUb0czPCLBu0eMcf0yeIMpP45lSmvPg851MnBl0FZJoHpGvKzWLm3rSi53y3dUNJdldBRXEciLI7YniCJ2qdO+e/7B9PTerBRozPc5lbsrWs40QAjriNK0KEcky31Hm0Zx81xTplUphtFoSEHjAOqBnRpDEZYaTX/rvGg85jbYheSk+/yY0LPiGpl6/maP7e8bkdCR2hG4X+YoiY3izu3akgp7cOG2pfkPiFUSxhOxPeNVuoE+Bm+ldAj3dQEUlEvSdrlCldiFTL+vmsxHr+LsCo7YEsEiyYo9i+RaqRkgBOBdOK9tJvh5RqrukQAJBrCPVTQDZJbH5j9clPCq2RXbEglaRaZvWHpLVunlatvYncG3Mbrp1f9sj5fQ56cEEaMDxm0FdaqD2iksNCBa42tCGJ1zFV1zRlRZ3O+D0ZMpkf1ISfGHprrEBiqXsK/7rViFjrNqVjYeStJ8Ffs4AIaw0lw8MScvmLq46y4SvaJQhABAyPVll7I42i3ZfgxxFZ6zv3gFBeIPHHJOZYjiDFcjKNukmuFSMunz9pKupTKxYJYM00hQUg0Wsvgoo/OxWrcDcIlVgvVcXolE92tj1cB30/qErjqjiGBuU1E5BSC+XPsjhfvbdHnycvuQsq6LHkLyORTw7WxREfKhy2S1lHRXFp+o5pLYBpU0icGIt3RR1ZD45cUVeKvEyqpVK2uOOXIWkP/MlXzXuyh1ilTOFvkcr6aLxbGADwGD/qriY1v6THLmw641s4wUrcA4+tdCKPBfAqYsElHfjt3obHHihEWtYVIHd57CznYh7whuiBMcR8bB/8HkyqRdhlfH5LQBlmajMeh7sCp1KqPmMHtyqi/wgZ+v9Hm+5pRrRoqZjIIL3UMjb90Li9aWIsWQCamJAhZIKhKrSxFsAirqKCl6sb4Q6ytqgBbcACjo/zUMGiYJ8dox5VPcaYNDD3nzNHs18I1XWAyGX3Jx9V3y7MoRl1BkKTrNx80DhkzV9J1jv/NNCbUA4IT9/tZ+yZ6ub3or8chZ36mK4g0kUzUswHcC3c4s+fsmPUf4fB+FajVuImJmEIZcTJcGeoh79L6z8rZyFYpYNlAxnsuvii9/KcEoetXRoMxZFnxrPlW3FOm70P5aBtbct8eWrEpayNU0LyNJbNiJMfutFIuZqodJ61/ZM017xW5xIbbhx0jXO+YZD846cNDCvVsEYoFKMr0X7pvBVwaMMEshbc/f7JeFbiYq4BE2omR7owNhW9oOHw4FtejS/V4fKjH597SH2mHWGwQzyREMWTtufk+zlM7QVwlMoLiTXlFzVdG4+fqPXi1MH9NnT+1m5ANsvlJslnXhkX6aDTW3Jdda4hO8oO2SQL9XlpORj/RAu//S7keCZyRdDldYLy79knR8g9A0kr8YIj1IusaY9SoNN9ocRhTGQVn+SwFOIq0wC9WxrrPltXZMpScZbDAkc1cr9jblqok6SPM7zV3ZK0Sn0qVDuedtjj4DoJ31j/qLVEs4JuFlu2Ep0UG2VorCafTvHjOwsf4xn4rCEndLS850FL07KTaawqAJ+K9UvnPVSJVwpkJ30hJYXg/s08vbsMYuR/94/aQl2T6SZcnZCW0dbtflngt76PLC9Db86/S4uW9YUXZ8GpDQViDH8v56QBQIY6p4grSp4L7iioZs/hH+nkwjk2MZbqiCGqo98eofO9gkpKvIhqL5JQTqlSen9Q+6YU0HShCWper1VNN+EH+Cq8s7Dn6gV4bPLWmwWRNVtaZv3DmnoCw2cCQNPOq2HqFg5hPGDt5zpFp08n3gzrvkadDdeRu4jb3kPuL1VYTJjQcftMXXeFG9Jv6eLa30Op9PvTW02i99y54rpSzeCFCwkJlX9SZZFLmaFLp4Z6zdfu14RfkcuwMRvgvyY+UnAPX/nCCDLWr2QmqBJIkbzIsw0hhHT3C+jI0cza1OmJkT96lNG5npWFq/LFN90OAxlEQJ2jj0Y1Tr6u+4ONVcG5lCbAOM+d5SG2VAn9Wb8No3hF0aJu1RhdiMEBPY+5k+XFBh+8E4+g/X3HaYvxquUi3731Ynh4RdRX/mh+Xq8A6+nIepyF5q7E/jw0MTYteLrmqCBGCrwuDSWOLQ+1ZDuF/EY5VVWONgR+tcHc1XqmJvBvc9oKBgM/j2D55g7VhhoB9qOPg32sGHN/TF7r4H30j1tV2PBOmyyA+oUmJZhsOKYHwjYrxtYaDrm441yeDw4xUPsELySfz+S6q+EoWhxn+cP9SJRcxAUD611QuZ3grlqm4fh6q1dWKGIBSDsaxGs1i3rhlv8rd6w4wmF0bBkCnVA2HUo0HoOdrDjrRTdalSYZl8XPAzcDYHRwwWvDsoiycET7LtUgzhAOIdcn959D+CkT9ifAFu5h4tEkTYWB8+X8pmph6bBefGPDRJodsdeFeUyux01SHOWqAWhV9Vnmpms17FF0kWSbLVo27YH28lRq5whtL7Wyq+2TVSDmYfi8sGHmzMPuw9KU0kiN9CrBOQ3ShUd2KWRcBlpAu3z/Q2YMD5FcruNXQN1u44B/5YiUiDmSRnzdQi08hApfUDpZfmSa3wEXs1egax6m8UDKZ85s1beQnjx9biP39LrsGciZvkJHmpZX8cs7b57GfycPvqJtc+KSKq4SPVpO9It01XwFWHrOSpO/rugc/3iJ5nhgO9aJNdXU/+ZguMPsv6RoQdXGfDSuhUjlPtdDItNh1jYqaihWglyTyaA0I+ZKSIUmZBwV87IszUIJ8yTIdct0qsdbfsZwZsXkYwPwDR/xlKHfJobWnPFdfd1Myszm4SKBYGsPuXsoW2XvLkxAFTTVfehHq1B50UNlVn4LK2dpA7keJeHodXEF+T75CdUKCPYjDHmBXS2tz+o2qhtwYtPte16848xxv3MhpVrYu7VssamDZDzlacqRm/ygQkk5zVqMEWaxCq1NZrhFWT+rpDSKOePbzuj7eX/aHtxS2O+tNogyeg5PyLkNNujLW/Sq3W9GRKgM7+wd6Nj/RANse0YEz2ocr2F/GemR6TWjiniFNMKjoIX63UzAunG1ys0lEOZSuTbOfn8+euK19ispOKd+2HB9wzMlaMobbgPmmzDGIqN09yqeT9aAI8+s6vk0H7GhTzqZ+DqSrWSI7QiDKzM4fu9+nwIRGHs1UDBbJW88h5L8t8C8l2EuQkURx/kMjcLaooKWW6UIPOT9aFnS0sSJMDLs3ojsBK0xX1ItpjZtxu6qDkAxQQGjSZaQP39J7PazTuQjTeTu6/cEJNRXliasLiOEhzexJT6h+tPGiVz38mvcZs3XBlKbw/w2djbmXnx1mxhjFO+k+JNtsUJmIeLZ4LUYUk89A+oJ3efWwCHrp/to1H1gJGlpqFFYQJrLPHfhO8mGfCfaIt+1EI/QXCW9Z4lwxlHafSe2Aiusupe29l1Rt3Wlvw1uMr22bInw8BSSNxRTJdX8m5QHNkgqKun9fB4LxyWN+Tgaf9selxucjmUve0B4A4qoO3ZpK/VEYZXHnoQ5wuoKJEm3mjaVTOwSKSMow2a0cJ0MlUazpe6TgOnx8Nhd/u9pJLFkjUbQ2evzOxCnqgjBYA8aG8xyhpvpTDOSEE2p+4h9oRLu38MgoLlpgZNptPj3f24X459BaDzYzBDMOsaKIefamj1o1fcPPpMXtd+LhKIkO9OAbQF4okjMrSzXn0IrNtBsvN7i7GBuIj4aXWP+jelhDxoYc5bHsZdxwzDR2wd7WiPESAP9JIo2NjXZ05h7UKRTFFvD03G8LHiPIkB1h0fcklR7HtxxB79Ur8TWPItrA9rI3jElrNb0MKCji/XIp/ueES5sp+iVj4CDAFsu2LSqrZJNXFoVnhM668AJJsJ4wNZj594HeREyxpbuzE6qWzwdgUvNgM1sz2M1ljKZ3rCpC2vZhJy/6hVc5GXlQ+PS5YSRbIUf52fpuieeNaAQaCobqWRdblu+z0Z6uZEcC18iBgb0cOCNsJb/UJSaw56gwqYXRBxdKM+nIchVQ/yhHibW5EmCQDvhDTtJRMp4PPFBO99+T/Z1y5t97K5BnOMH34dGE413b6/fe88Ke2MwEjWZCU">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-5 <small>DENIAL OF SERVICE PROTECTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            SC-5
+                                        </td>
+                                        <td>
+                                            SC-5
+                                        </td>
+                                        <td>
+                                            SC-5
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-5</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system protects against or limits the effects of the following types of denial of service attacks: [Assignment: organization-defined types of denial of service attacks or references to sources for such information] by employing [Assignment: organization-defined security safeguards].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>A variety of technologies exist to limit, or in some cases, eliminate the effects of denial of service attacks. For example, boundary protection devices can filter certain types of packets to protect information system components on internal organizational networks from being directly affected by denial of service attacks. Employing increased capacity and bandwidth combined with service redundancy may also reduce the susceptibility to denial of service attacks.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-6">SC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-7">SC-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-5(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-5%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DENIAL OF SERVICE PROTECTION | RESTRICT INTERNAL USERS<br>
+                                <strong>The information system restricts the ability of individuals to launch [Assignment: organization-defined denial of service attacks] against other information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Restricting the ability of individuals to launch denial of service attacks requires that the mechanisms used for such attacks are unavailable. Individuals of concern can include, for example, hostile insiders or external adversaries that have successfully breached the information system and are using the system as a platform to launch cyber attacks on third parties. Organizations can restrict the ability of individuals to connect and transmit arbitrary information on the transport medium (i.e., network, wireless spectrum). Organizations can also limit the ability of individuals to use excessive information system resources. Protection against individuals having the ability to launch denial of service attacks may be implemented on specific information systems or on boundary devices prohibiting egress to potential target systems.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-5(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-5%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DENIAL OF SERVICE PROTECTION | EXCESS CAPACITY / BANDWIDTH / REDUNDANCY<br>
+                                <strong>The information system manages excess capacity, bandwidth, or other redundancy to limit the effects of information flooding denial of service attacks.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Managing excess capacity ensures that sufficient capacity is available to counter flooding attacks. Managing excess capacity may include, for example, establishing selected usage priorities, quotas, or partitioning.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-5(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-5%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DENIAL OF SERVICE PROTECTION | DETECTION / MONITORING<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SC-5 (3)(a)<a name="//apple_ref/cpp/Modifier/SC-5%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Employs [Assignment: organization-defined monitoring tools] to detect indicators of denial of service attacks against the information system; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SC-5 (3)(b)<a name="//apple_ref/cpp/Modifier/SC-5%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Monitors [Assignment: organization-defined information system resources] to determine if sufficient resources exist to prevent effective denial of service attacks.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations consider utilization and capacity of information system resources when managing risk from denial of service due to malicious attacks. Denial of service attacks can originate from external or internal sources. Information system resources sensitive to denial of service include, for example, physical disk storage, memory, and CPU cycles. Common safeguards to prevent denial of service attacks related to storage utilization and capacity include, for example, instituting disk quotas, configuring information systems to automatically alert administrators when specific storage capacity thresholds are reached, using file compression technologies to maximize available storage space, and imposing separate partitions for system and user data.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CA-7.html">CA-7</a>, <a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

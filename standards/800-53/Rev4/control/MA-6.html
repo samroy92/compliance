@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MA-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MA-6 <small>TIMELY MAINTENANCE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MAINTENANCE-2.html">MA - MAINTENANCE</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            MA-6
+                                        </td>
+                                        <td>
+                                            MA-6
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MAINTENANCE-2.html">MA</a>
+                    &gt; <strong>MA-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization obtains maintenance support and/or spare parts for [Assignment: organization-defined information system components] within [Assignment: organization-defined time period] of failure.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations specify the information system components that result in increased risk to organizational operations and assets, individuals, other organizations, or the Nation when the functionality provided by those components is not operational. Organizational actions to obtain maintenance support typically include having appropriate contracts in place.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-8">CM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-7">CP-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-14">SA-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-15">SA-15</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MA-6(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-6%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TIMELY MAINTENANCE | PREVENTIVE MAINTENANCE<br>
+                                <strong>The organization performs preventive maintenance on [Assignment: organization-defined information system components] at [Assignment: organization-defined time intervals].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Preventive maintenance includes proactive care and servicing of organizational information systems components for the purpose of maintaining equipment and facilities in satisfactory operating condition. Such maintenance provides for the systematic inspection, tests, measurements, adjustments, parts replacement, detection, and correction of incipient failures either before they occur or before they develop into major defects. The primary goal of preventive maintenance is to avoid/mitigate the consequences of equipment failures. Preventive maintenance is designed to preserve and restore equipment reliability by replacing worn components before they actually fail. Methods of determining what preventive (or other) failure management policies to apply include, for example, original equipment manufacturer (OEM) recommendations, statistical failure records, requirements of codes, legislation, or regulations within a jurisdiction, expert opinion, maintenance that has already been conducted on similar equipment, or measured values and performance indications.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MA-6(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-6%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TIMELY MAINTENANCE | PREDICTIVE MAINTENANCE<br>
+                                <strong>The organization performs predictive maintenance on [Assignment: organization-defined information system components] at [Assignment: organization-defined time intervals].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Predictive maintenance, or condition-based maintenance, attempts to evaluate the condition of equipment by performing periodic or continuous (online) equipment condition monitoring. The goal of predictive maintenance is to perform maintenance at a scheduled point in time when the maintenance activity is most cost-effective and before the equipment loses performance within a threshold. The predictive component of predictive maintenance stems from the goal of predicting the future trend of the equipment's condition. This approach uses principles of statistical process control to determine at what point in the future maintenance activities will be appropriate. Most predictive maintenance inspections are performed while equipment is in service, thereby minimizing disruption of normal system operations. Predictive maintenance can result in substantial cost savings and higher system reliability. Predictive maintenance tends to include measurement of the item. To evaluate equipment condition, predictive maintenance utilizes nondestructive testing technologies such as infrared, acoustic (partial discharge and airborne ultrasonic), corona detection, vibration analysis, sound level measurements, oil analysis, and other specific online tests.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">MA-6(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/MA-6%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TIMELY MAINTENANCE | AUTOMATED SUPPORT FOR PREDICTIVE MAINTENANCE<br>
+                                <strong>The organization employs automated mechanisms to transfer predictive maintenance data to a computerized maintenance management system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                A computerized maintenance management system maintains a computer database of information about the maintenance operations of organizations and automates processing equipment condition data in order to trigger maintenance planning, execution, and reporting.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MA-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:18 GMT -->
+</html>

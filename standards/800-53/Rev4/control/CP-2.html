@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CP-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CP-2 <small>CONTINGENCY PLAN</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP - CONTINGENCY PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CP-2
+                                        </td>
+                                        <td>
+                                            CP-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-8">8</a>)
+                                        </td>
+                                        <td>
+                                            CP-2 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-4">4</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-8">8</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP</a>
+                    &gt; <strong>CP-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops a contingency plan for the information system that:
+</p>
+<p>
+1.
+Identifies essential missions and business functions and associated contingency requirements;
+</p>
+<p>
+2.
+Provides recovery objectives, restoration priorities, and metrics;
+</p>
+<p>
+3.
+Addresses contingency roles, responsibilities, assigned individuals with contact information;
+</p>
+<p>
+4.
+Addresses maintaining essential missions and business functions despite an information system disruption, compromise, or failure;
+</p>
+<p>
+5.
+Addresses eventual, full information system restoration without deterioration of the security safeguards originally planned and implemented; and
+</p>
+<p>
+6.
+Is reviewed and approved by [Assignment: organization-defined personnel or roles];
+</p>
+
+
+<p>
+b.
+Distributes copies of the contingency plan to [Assignment: organization-defined key contingency personnel (identified by name and/or by role) and organizational elements];
+</p>
+<p>
+c.
+Coordinates contingency planning activities with incident handling activities;
+</p>
+<p>
+d.
+Reviews the contingency plan for the information system [Assignment: organization-defined frequency];
+</p>
+<p>
+e.
+Updates the contingency plan to address changes to the organization, information system, or environment of operation and problems encountered during contingency plan implementation, execution, or testing;
+</p>
+<p>
+f.
+Communicates contingency plan changes to [Assignment: organization-defined key contingency personnel (identified by name and/or by role) and organizational elements]; and
+</p>
+<p>
+g.
+Protects the contingency plan from unauthorized disclosure and modification.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Contingency planning for information systems is part of an overall organizational program for achieving continuity of operations for mission/business functions. Contingency planning addresses both information system restoration and implementation of alternative mission/business processes when systems are compromised. The effectiveness of contingency planning is maximized by considering such planning throughout the phases of the system development life cycle. Performing contingency planning on hardware, software, and firmware development can be an effective means of achieving information system resiliency. Contingency plans reflect the degree of restoration required for organizational information systems since not all systems may need to fully recover to achieve the level of continuity of operations desired.  Information system recovery objectives reflect applicable laws, Executive Orders, directives, policies, standards, regulations, and guidelines. In addition to information system availability, contingency plans also address other security-related events resulting in a reduction in mission and/or business effectiveness, such as malicious attacks compromising the confidentiality or integrity of information systems. Actions addressed in contingency plans include, for example, orderly/graceful degradation, information system shutdown, fallback to a manual mode, alternate information flows, and operating in modes reserved for when systems are under attack. By closely coordinating contingency planning with incident handling activities, organizations can ensure that the necessary contingency planning activities are in place and activated in the event of a security incident.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-14">AC-14</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-6">CP-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-7">CP-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-8">CP-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-9">CP-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-10">CP-10</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-4">IR-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IR-8">IR-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-2">MP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-5">MP-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-8">PM-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PM-11">PM-11</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CP-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | COORDINATE WITH RELATED PLANS<br>
+                                <strong>The organization coordinates contingency plan development with organizational elements responsible for related plans.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Plans related to contingency plans for organizational information systems include, for example, Business Continuity Plans, Disaster Recovery Plans, Continuity of Operations Plans, Crisis Communications Plans, Critical Infrastructure Plans, Cyber Incident Response Plans, Insider Threat Implementation Plan, and Occupant Emergency Plans.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CP-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | CAPACITY PLANNING<br>
+                                <strong>The organization conducts capacity planning so that necessary capacity for information processing, telecommunications, and environmental support exists during contingency operations.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Capacity planning is needed because different types of threats (e.g., natural disasters, targeted cyber attacks) can result in a reduction of the available processing, telecommunications, and support services originally intended to support the organizational missions/business functions. Organizations may need to anticipate degraded operations during contingency operations and factor such degradation into capacity planning.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CP-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | RESUME ESSENTIAL MISSIONS / BUSINESS FUNCTIONS<br>
+                                <strong>The organization plans for the resumption of essential missions and business functions within [Assignment: organization-defined time period] of contingency plan activation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to carry out the contingency planning activities in this control enhancement as part of organizational business continuity planning including, for example, as part of business impact analyses. The time period for resumption of essential missions/business functions may be dependent on the severity/extent of disruptions to the information system and its supporting infrastructure.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-12.html">PE-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CP-2(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | RESUME ALL MISSIONS / BUSINESS FUNCTIONS<br>
+                                <strong>The organization plans for the resumption of all missions and business functions within [Assignment: organization-defined time period] of contingency plan activation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to carry out the contingency planning activities in this control enhancement as part of organizational business continuity planning including, for example, as part of business impact analyses. The time period for resumption of all missions/business functions may be dependent on the severity/extent of disruptions to the information system and its supporting infrastructure.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-12.html">PE-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CP-2(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | CONTINUE  ESSENTIAL MISSIONS / BUSINESS FUNCTIONS<br>
+                                <strong>The organization plans for the continuance of essential missions and business functions with little or no loss of operational continuity and sustains that continuity until full information system restoration at primary processing and/or storage sites.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to carry out the contingency planning activities in this control enhancement as part of organizational business continuity planning including, for example, as part of business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency (e.g., backup sites may become primary sites).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-12.html">PE-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CP-2(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | ALTERNATE PROCESSING / STORAGE SITE<br>
+                                <strong>The organization plans for the transfer of essential missions and business functions to alternate processing and/or storage sites with little or no loss of operational continuity and sustains that continuity through information system restoration to primary processing and/or storage sites.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to carry out the contingency planning activities in this control enhancement as part of organizational business continuity planning including, for example, as part of business impact analyses. Primary processing and/or storage sites defined by organizations as part of contingency planning may change depending on the circumstances associated with the contingency (e.g., backup sites may become primary sites).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-12.html">PE-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">CP-2(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | COORDINATE  WITH EXTERNAL SERVICE PROVIDERS<br>
+                                <strong>The organization coordinates its contingency plan with the contingency plans of external service providers to ensure that contingency requirements can be satisfied.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                When the capability of an organization to successfully carry out its core missions/business functions is dependent on external service providers, developing a timely and comprehensive contingency plan may become more challenging. In this situation, organizations coordinate contingency planning activities with the external entities to ensure that the individual plans reflect the overall contingency needs of the organization.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-9.html">SA-9</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">CP-2(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-2%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                CONTINGENCY PLAN | IDENTIFY CRITICAL ASSETS<br>
+                                <strong>The organization identifies critical information system assets supporting essential missions and business functions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may choose to carry out the contingency planning activities in this control enhancement as part of organizational business continuity planning including, for example, as part of business impact analyses. Organizations identify critical information system assets so that additional safeguards and countermeasures can be employed (above and beyond those safeguards and countermeasures routinely implemented) to help ensure that organizational missions/business functions can continue to be conducted during contingency operations. In addition, the identification of critical information assets facilitates the prioritization of organizational resources. Critical information system assets include technical and operational aspects. Technical aspects include, for example, information technology services, information system components, information technology products, and mechanisms. Operational aspects include, for example, procedures (manually executed operations) and personnel (individuals operating technical safeguards and/or executing manual procedures). Organizational program protection plans can provide assistance in identifying critical assets.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-14.html">SA-14</a>, <a href="SA-15.html">SA-15</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>Federal Continuity Directive 1</th>
+                    <td><a href="http://www.fema.gov/pdf/about/offices/fcd1.pdf">http://www.fema.gov/pdf/about/offices/fcd1.pdf</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-34</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-34">http://csrc.nist.gov/publications/PubsSPs.html#800-34</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PS-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PS-6" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PS-6 <small>ACCESS AGREEMENTS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PERSONNEL%20SECURITY-2.html">PS - PERSONNEL SECURITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P3 - Implement P3 security controls after implementation of P1 and P2 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PS-6
+                                        </td>
+                                        <td>
+                                            PS-6
+                                        </td>
+                                        <td>
+                                            PS-6
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PERSONNEL%20SECURITY-2.html">PS</a>
+                    &gt; <strong>PS-6</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops and documents access agreements for organizational information systems;
+</p>
+<p>
+b.
+Reviews and updates the access agreements [Assignment: organization-defined frequency]; and
+</p>
+<p>
+c.
+Ensures that individuals requiring access to organizational information and information systems:
+</p>
+<p>
+1.
+Sign appropriate access agreements prior to being granted access; and
+</p>
+<p>
+2.
+Re-sign access agreements to maintain access to organizational information systems when access agreements have been updated or [Assignment: organization-defined frequency].
+</p>
+
+
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Access agreements include, for example, nondisclosure agreements, acceptable use agreements, rules of behavior, and conflict-of-interest agreements. Signed access agreements include an acknowledgement that individuals have read, understand, and agree to abide by the constraints associated with organizational information systems to which access is authorized. Organizations can use electronic signatures to acknowledge access agreements unless specifically prohibited by organizational policy.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-2">PS-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-3">PS-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-4">PS-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-8">PS-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PS-6(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-6%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS AGREEMENTS | INFORMATION REQUIRING SPECIAL PROTECTION<br>
+                                <strong>[Withdrawn: Incorporated into PS-3].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PS-6(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-6%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS AGREEMENTS | CLASSIFIED INFORMATION REQUIRING SPECIAL PROTECTION<br>
+                                <strong>The organization ensures that access to classified information requiring special protection is granted only to individuals who:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PS-6 (2)(a)<a name="//apple_ref/cpp/Modifier/PS-6%20%282%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Have a valid access authorization that is demonstrated by assigned official government duties;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PS-6 (2)(b)<a name="//apple_ref/cpp/Modifier/PS-6%20%282%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Satisfy associated personnel security criteria; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PS-6 (2)(c)<a name="//apple_ref/cpp/Modifier/PS-6%20%282%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Have read, understood, and signed a nondisclosure agreement.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Classified information requiring special protection includes, for example, collateral information, Special Access Program (SAP) information, and Sensitive Compartmented Information (SCI). Personnel security criteria reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PS-6(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-6%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS AGREEMENTS | POST-EMPLOYMENT REQUIREMENTS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PS-6 (3)(a)<a name="//apple_ref/cpp/Modifier/PS-6%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Notifies individuals of applicable, legally binding post-employment requirements for protection of organizational information; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PS-6 (3)(b)<a name="//apple_ref/cpp/Modifier/PS-6%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Requires individuals to sign an acknowledgment of these requirements, if applicable, as part of granting initial access to covered information.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations consult with the Office of the General Counsel regarding matters of post-employment requirements on terminated individuals.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PS-6 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+</html>

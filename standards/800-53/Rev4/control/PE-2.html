@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PE-2" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PE-2 <small>PHYSICAL ACCESS AUTHORIZATIONS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE - PHYSICAL AND ENVIRONMENTAL PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PE-2
+                                        </td>
+                                        <td>
+                                            PE-2
+                                        </td>
+                                        <td>
+                                            PE-2
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE</a>
+                    &gt; <strong>PE-2</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Develops, approves, and maintains a list of individuals with authorized access to the facility where the information system resides;
+</p>
+<p>
+b.
+Issues authorization credentials for facility access;
+</p>
+<p>
+c.
+Reviews the access list detailing authorized facility access by individuals [Assignment: organization-defined frequency]; and
+</p>
+<p>
+d.
+Removes individuals from the facility access list when access is no longer required.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to organizational employees and visitors. Individuals (e.g., employees, contractors, and others) with permanent physical access authorization credentials are not considered visitors. Authorization credentials include, for example, badges, identification cards, and smart cards. Organizations determine the strength of authorization credentials needed (including level of forge-proof badges, smart cards, or identification cards) consistent with federal standards, policies, and procedures. This control only applies to areas within facilities that have not been designated as publicly accessible.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-4">PE-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-3">PS-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PE-2(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-2%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PHYSICAL ACCESS AUTHORIZATIONS | ACCESS BY POSITION / ROLE<br>
+                                <strong>The organization authorizes physical access to the facility where the information system resides based on position or role.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-2.html">AC-2</a>, <a href="AC-3.html">AC-3</a>, <a href="AC-6.html">AC-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PE-2(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-2%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PHYSICAL ACCESS AUTHORIZATIONS | TWO FORMS OF IDENTIFICATION<br>
+                                <strong>The organization requires two forms of identification from [Assignment: organization-defined list of acceptable forms of identification] for visitor access to the facility where the information system resides.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Acceptable forms of government photo identification include, for example, passports, Personal Identity Verification (PIV) cards, and drivers� licenses. In the case of gaining access to facilities using automated mechanisms, organizations may use PIV cards, key cards, PINs, and biometrics.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IA-2.html">IA-2</a>, <a href="IA-4.html">IA-4</a>, <a href="IA-5.html">IA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PE-2(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-2%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PHYSICAL ACCESS AUTHORIZATIONS | RESTRICT UNESCORTED ACCESS<br>
+                                <strong>The organization restricts unescorted access to the facility where the information system resides to personnel with [Selection (one or more): security clearances for all information contained within the system; formal access authorizations for all information contained within the system; need for access to all information contained within the system; [Assignment: organization-defined credentials]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Due to the highly sensitive nature of classified information stored within certain facilities, it is important that individuals lacking sufficient security clearances, access approvals, or need to know, be escorted by individuals with appropriate credentials to ensure that such information is not exposed or otherwise compromised.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PS-2.html">PS-2</a>, <a href="PS-6.html">PS-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-2 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+</html>

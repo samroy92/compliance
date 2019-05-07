@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PS-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PS-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PS-3 <small>PERSONNEL SCREENING</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PERSONNEL%20SECURITY-2.html">PS - PERSONNEL SECURITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            PS-3
+                                        </td>
+                                        <td>
+                                            PS-3
+                                        </td>
+                                        <td>
+                                            PS-3
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PERSONNEL%20SECURITY-2.html">PS</a>
+                    &gt; <strong>PS-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Screens individuals prior to authorizing access to the information system; and
+</p>
+<p>
+b.
+Rescreens individuals according to [Assignment: organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Personnel screening and rescreening activities reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, guidance, and specific criteria established for the risk designations of assigned positions. Organizations may define different rescreening conditions and frequencies for personnel accessing information systems based on types of information processed, stored, or transmitted by the systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-4">IA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-2">PE-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-2">PS-2</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PS-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PERSONNEL SCREENING | CLASSIFIED INFORMATION<br>
+                                <strong>The organization ensures that individuals accessing an information system processing, storing, or transmitting classified information are cleared and indoctrinated to the highest classification level of the information to which they have access on the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="AC-4.html">AC-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PS-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PERSONNEL SCREENING | FORMAL INDOCTRINATION<br>
+                                <strong>The organization ensures that individuals accessing an information system processing, storing, or transmitting types of classified information which require formal indoctrination, are formally indoctrinated for all of the relevant types of information to which they have access on the system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Types of classified information requiring formal indoctrination include, for example, Special Access Program (SAP), Restricted Data (RD), and Sensitive Compartment Information (SCI).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="AC-4.html">AC-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PS-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PS-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                PERSONNEL SCREENING | INFORMATION WITH SPECIAL PROTECTION MEASURES<br>
+                                <strong>The organization ensures that individuals accessing an information system processing, storing, or transmitting information requiring special protection:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PS-3 (3)(a)<a name="//apple_ref/cpp/Modifier/PS-3%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Have valid access authorizations that are demonstrated by assigned official government duties; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PS-3 (3)(b)<a name="//apple_ref/cpp/Modifier/PS-3%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Satisfy [Assignment: organization-defined additional personnel screening criteria].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizational information requiring special protection includes, for example, Controlled Unclassified Information (CUI) and Sources and Methods Information (SAMI).  Personnel security criteria include, for example, position sensitivity background screening requirements.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>5 C.F.R. 731.106</th>
+                    <td><a href="http://www.gpo.gov/fdsys/granule/CFR-2012-title5-vol2/CFR-2012-title5-vol2-sec731-106/content-detail.html">http://www.gpo.gov/fdsys/granule/CFR-2012-title5-vol2/CFR-2012-title5-vol2-sec731-106/content-detail.html</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>FIPS Publication 201</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#201">http://csrc.nist.gov/publications/PubsFIPS.html#201</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-60</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-60">http://csrc.nist.gov/publications/PubsSPs.html#800-60</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-73</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-73">http://csrc.nist.gov/publications/PubsSPs.html#800-73</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-76</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-76">http://csrc.nist.gov/publications/PubsSPs.html#800-76</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-78</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-78">http://csrc.nist.gov/publications/PubsSPs.html#800-78</a></td>
+                </tr>
+            
+                <tr>
+                    <th>ICD 704</th>
+                    <td><a href="http://www.dni.gov/index.php/intelligence-community/ic-policies-reports/intelligence-community-directives">http://www.dni.gov/index.php/intelligence-community/ic-policies-reports/intelligence-community-directives</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PS-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+</html>

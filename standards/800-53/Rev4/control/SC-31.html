@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-31 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-31" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-31 <small>COVERT CHANNEL ANALYSIS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-31</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Performs a covert channel analysis to identify those aspects of communications within the information system that are potential avenues for covert [Selection (one or more): storage; timing] channels; and
+</p>
+<p>
+b.
+Estimates the maximum bandwidth of those channels.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Developers are in the best position to identify potential areas within systems that might lead to covert channels. Covert channel analysis is a meaningful activity when there is the potential for unauthorized information flows across security domains, for example, in the case of information systems containing export-controlled information and having connections to external networks (i.e., networks not controlled by organizations). Covert channel analysis is also meaningful for multilevel secure (MLS) information systems, multiple security level (MSL) systems, and cross-domain systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-3">AC-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-2">PL-2</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-31(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-31%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                COVERT CHANNEL ANALYSIS | TEST COVERT CHANNELS FOR EXPLOITABILITY<br>
+                                <strong>The organization tests a subset of the identified covert channels to determine which channels are exploitable.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-31(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-31%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                COVERT CHANNEL ANALYSIS | MAXIMUM BANDWIDTH<br>
+                                <strong>The organization reduces the maximum bandwidth for identified covert [Selection (one or more); storage; timing] channels to [Assignment: organization-defined values].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information system developers are in the best position to reduce the maximum bandwidth for identified covert storage and timing channels.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-31(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-31%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                COVERT CHANNEL ANALYSIS | MEASURE BANDWIDTH IN OPERATIONAL ENVIRONMENTS<br>
+                                <strong>The organization measures the bandwidth of [Assignment: organization-defined subset of identified covert channels] in the operational environment of the information system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses covert channel bandwidth in operational environments versus developmental environments. Measuring covert channel bandwidth in operational environments helps organizations to determine how much information can be covertly leaked before such leakage adversely affects organizational missions/business functions. Covert channel bandwidth may be significantly different when measured in those settings that are independent of the particular environments of operation (e.g., laboratories or development environments).
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-31 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/IA-4" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">IA-4 <small>IDENTIFIER MANAGEMENT</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA - IDENTIFICATION AND AUTHENTICATION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            IA-4
+                                        </td>
+                                        <td>
+                                            IA-4
+                                        </td>
+                                        <td>
+                                            IA-4
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/IDENTIFICATION%20AND%20AUTHENTICATION-2.html">IA</a>
+                    &gt; <strong>IA-4</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization manages information system identifiers by:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, or device identifier;
+</p>
+<p>
+b.
+Selecting an identifier that identifies an individual, group, role, or device;
+</p>
+<p>
+c.
+Assigning the identifier to the intended individual, group, role, or device;
+</p>
+<p>
+d.
+Preventing reuse of identifiers for [Assignment: organization-defined time period]; and
+</p>
+<p>
+e.
+Disabling the identifier after [Assignment: organization-defined time period of inactivity].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Common device identifiers include, for example, media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared information system accounts (e.g., guest and anonymous accounts). Typically, individual identifiers are the user names of the information system accounts assigned to those individuals. In such instances, the account management activities of AC-2 use account names provided by IA-4. This control also addresses individual identifiers not necessarily associated with information system accounts (e.g., identifiers used in physical security control databases accessed by badge reader systems for access to information systems). Preventing reuse of identifiers implies preventing the assignment of previously used individual, group, role, or device identifiers to different individuals, groups, roles, or devices.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-2">IA-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-3">IA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-5">IA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=IA-8">IA-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-37">SC-37</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">IA-4(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | PROHIBIT ACCOUNT IDENTIFIERS AS PUBLIC IDENTIFIERS<br>
+                                <strong>The organization prohibits the use of information system account identifiers that are the same as public identifiers for individual electronic mail accounts.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Prohibiting the use of information systems account identifiers that are the same as some public identifier such as the individual identifier section of an electronic mail address, makes it more difficult for adversaries to guess user identifiers on organizational information systems.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AT-2.html">AT-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">IA-4(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | SUPERVISOR AUTHORIZATION<br>
+                                <strong>The organization requires that the registration process to receive an individual identifier includes supervisor authorization.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">IA-4(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | MULTIPLE FORMS OF CERTIFICATION<br>
+                                <strong>The organization requires multiple forms of certification of individual identification be presented to the registration authority.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Requiring multiple forms of identification, such as documentary evidence or a combination of documents and biometrics, reduces the likelihood of individuals using fraudulent identification to establish an identity, or at least increases the work factor of potential adversaries.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">IA-4(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | IDENTIFY USER STATUS<br>
+                                <strong>The organization manages individual identifiers by uniquely identifying each individual as [Assignment: organization-defined characteristic identifying individual status].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Characteristics identifying the status of individuals include, for example, contractors and foreign nationals. Identifying the status of individuals by specific characteristics provides additional information about the people with whom organizational personnel are communicating. For example, it might be useful for a government employee to know that one of the individuals on an email message is a contractor.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AT-2.html">AT-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">IA-4(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | DYNAMIC MANAGEMENT<br>
+                                <strong>The information system dynamically manages identifiers.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In contrast to conventional approaches to identification which presume static accounts for preregistered users, many distributed information systems including, for example, service-oriented architectures, rely on establishing identifiers at run time for entities that were previously unknown. In these situations, organizations anticipate and provision for the dynamic establishment of identifiers. Preestablished trust relationships and mechanisms with appropriate authorities to validate identities and related credentials are essential.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-16.html">AC-16</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">IA-4(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | CROSS-ORGANIZATION MANAGEMENT<br>
+                                <strong>The organization coordinates with [Assignment: organization-defined external organizations] for cross-organization management of identifiers.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cross-organization identifier management provides the capability for organizations to appropriately identify individuals, groups, roles, or devices when conducting cross-organization activities involving the processing, storage, or transmission of information.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">IA-4(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/IA-4%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                IDENTIFIER MANAGEMENT | IN-PERSON REGISTRATION<br>
+                                <strong>The organization requires that the registration process to receive an individual identifier be conducted in person before a designated registration authority.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                In-person registration reduces the likelihood of fraudulent identifiers being issued because it requires the physical presence of individuals and actual face-to-face interactions with designated registration authorities.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 201</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#201">http://csrc.nist.gov/publications/PubsFIPS.html#201</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-73</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-73">http://csrc.nist.gov/publications/PubsSPs.html#800-73</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-76</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-76">http://csrc.nist.gov/publications/PubsSPs.html#800-76</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-78</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-78">http://csrc.nist.gov/publications/PubsSPs.html#800-78</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/IA-4 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:17 GMT -->
+</html>

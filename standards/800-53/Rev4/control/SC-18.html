@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SC-18" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SC-18 <small>MOBILE CODE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC - SYSTEM AND COMMUNICATIONS PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SC-18
+                                        </td>
+                                        <td>
+                                            SC-18
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20COMMUNICATIONS%20PROTECTION-2.html">SC</a>
+                    &gt; <strong>SC-18</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Defines acceptable and unacceptable mobile code and mobile code technologies;
+</p>
+<p>
+b.
+Establishes usage restrictions and implementation guidance for acceptable mobile code and mobile code technologies; and
+</p>
+<p>
+c.
+Authorizes, monitors, and controls the use of mobile code within the information system.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Decisions regarding the employment of mobile code within organizational information systems are based on the potential for the code to cause damage to the systems if used maliciously. Mobile code technologies include, for example, Java, JavaScript, ActiveX, Postscript, PDF, Shockwave movies, Flash animations, and VBScript. Usage restrictions and implementation guidance apply to both the selection and use of mobile code installed on servers and mobile code downloaded and executed on individual workstations and devices (e.g., smart phones). Mobile code policy and procedures address preventing the development, acquisition, or introduction of unacceptable mobile code within organizational information systems.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-2">AU-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-12">AU-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-2">CM-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SC-18(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-18%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MOBILE CODE | IDENTIFY UNACCEPTABLE CODE / TAKE CORRECTIVE ACTIONS<br>
+                                <strong>The information system identifies [Assignment: organization-defined unacceptable mobile code] and takes [Assignment: organization-defined corrective actions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Corrective actions when unacceptable mobile code is detected include, for example, blocking, quarantine, or alerting administrators. Blocking includes, for example, preventing transmission of word processing files with embedded macros when such macros have been defined to be unacceptable mobile code.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SC-18(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-18%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MOBILE CODE | ACQUISITION / DEVELOPMENT / USE<br>
+                                <strong>The organization ensures that the acquisition, development, and use of mobile code to be deployed in the information system meets [Assignment: organization-defined mobile code requirements].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SC-18(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-18%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MOBILE CODE | PREVENT DOWNLOADING / EXECUTION<br>
+                                <strong>The information system prevents the download and execution of [Assignment: organization-defined unacceptable mobile code].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SC-18(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-18%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MOBILE CODE | PREVENT AUTOMATIC EXECUTION<br>
+                                <strong>The information system prevents the automatic execution of mobile code in [Assignment: organization-defined software applications] and enforces [Assignment: organization-defined actions] prior to executing the code.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Actions enforced before executing mobile code, include, for example, prompting users prior to opening electronic mail attachments. Preventing automatic execution of mobile code includes, for example, disabling auto execute features on information system components employing portable storage devices such as Compact Disks (CDs), Digital Video Disks (DVDs), and Universal Serial Bus (USB) devices.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SC-18(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SC-18%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MOBILE CODE | ALLOW EXECUTION ONLY IN CONFINED ENVIRONMENTS<br>
+                                <strong>The organization allows execution of permitted mobile code only in confined virtual machine environments.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-28</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-28">http://csrc.nist.gov/publications/PubsSPs.html#800-28</a></td>
+                </tr>
+            
+                <tr>
+                    <th>DoD Instruction 8552.01</th>
+                    <td><a href="http://www.dtic.mil/whs/directives/corres/ins1.html">http://www.dtic.mil/whs/directives/corres/ins1.html</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SC-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:23 GMT -->
+</html>

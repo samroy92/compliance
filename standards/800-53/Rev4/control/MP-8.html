@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MP-8" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MP-8 <small>MEDIA DOWNGRADING</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP - MEDIA PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP</a>
+                    &gt; <strong>MP-8</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Establishes [Assignment: organization-defined information system media downgrading process] that includes employing downgrading mechanisms with [Assignment: organization-defined strength and integrity];
+</p>
+<p>
+b.
+Ensures that the information system media downgrading process is commensurate with the security category and/or classification level of the information to be removed and the access authorizations of the potential recipients of the downgraded information;
+</p>
+<p>
+c.
+Identifies [Assignment: organization-defined information system media requiring downgrading]; and
+</p>
+<p>
+d.
+Downgrades the identified information system media using the established process.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>This control applies to all information system media, digital and non-digital, subject to release outside of the organization, whether or not the media is considered removable. The downgrading process, when applied to system media, removes information from the media, typically by security category or classification level, such that the information cannot be retrieved or reconstructed. Downgrading of media includes redacting information to enable wider release and distribution. Downgrading of media also ensures that empty space on the media (e.g., slack space within files) is devoid of information.</blockquote>
+    
+        <p>
+        Related to: 
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MP-8(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-8%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA DOWNGRADING | DOCUMENTATION OF PROCESS<br>
+                                <strong>The organization documents information system media downgrading actions.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations can document the media downgrading process by providing information such as the downgrading technique employed, the identification number of the downgraded media, and the identity of the individual that authorized and/or performed the downgrading action.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MP-8(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-8%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA DOWNGRADING | EQUIPMENT TESTING<br>
+                                <strong>The organization employs [Assignment: organization-defined tests] of downgrading equipment and procedures to verify correct performance [Assignment: organization-defined frequency].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">MP-8(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-8%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA DOWNGRADING | CONTROLLED UNCLASSIFIED INFORMATION<br>
+                                <strong>The organization downgrades information system media containing [Assignment: organization-defined Controlled Unclassified Information (CUI)] prior to public release in accordance with applicable federal and organizational standards and policies.</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">MP-8(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-8%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA DOWNGRADING | CLASSIFIED INFORMATION<br>
+                                <strong>The organization downgrades information system media containing classified information prior to release to individuals without required access authorizations in accordance with NSA standards and policies.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Downgrading of classified information uses approved sanitization tools, techniques, and procedures to transfer information confirmed to be unclassified from classified information systems to unclassified media.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-8 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+</html>

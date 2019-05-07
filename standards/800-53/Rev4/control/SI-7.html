@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SI-7" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SI-7 <small>SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI - SYSTEM AND INFORMATION INTEGRITY</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SI-7 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-7">7</a>)
+                                        </td>
+                                        <td>
+                                            SI-7 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-5">5</a>) (<a href="#enhancement-7">7</a>) (<a href="#enhancement-14">14</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20INFORMATION%20INTEGRITY-2.html">SI</a>
+                    &gt; <strong>SI-7</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization employs integrity verification tools to detect unauthorized changes to [Assignment: organization-defined software, firmware, and information].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity (e.g., tampering). Software includes, for example, operating systems (with key internal components such as kernels, drivers), middleware, and applications. Firmware includes, for example, the Basic Input Output System (BIOS). Information includes metadata such as security attributes associated with information. State-of-the-practice integrity-checking mechanisms (e.g., parity checks, cyclical redundancy checks, cryptographic hashes) and associated tools can automatically monitor the integrity of information systems and hosted applications.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-8">SC-8</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-3">SI-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SI-7(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRITY CHECKS<br>
+                                <strong>The information system performs an integrity check of [Assignment: organization-defined software, firmware, and information] [Selection (one or more): at startup; at [Assignment: organization-defined transitional states or security-relevant events]; [Assignment: organization-defined frequency]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-relevant events include, for example, the identification of a new threat to which organizational information systems are susceptible, and the installation of new hardware, software, or firmware. Transitional states include, for example, system startup, restart, shutdown, and abort.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SI-7(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUTOMATED NOTIFICATIONS OF INTEGRITY VIOLATIONS<br>
+                                <strong>The organization employs automated tools that provide notification to [Assignment: organization-defined personnel or roles] upon discovering discrepancies during integrity verification.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The use of automated tools to report integrity violations and to notify organizational personnel in a timely matter is an essential precursor to effective risk response. Personnel having an interest in integrity violations include, for example, mission/business owners, information system owners, systems administrators, software developers, systems integrators, and information security officers.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SI-7(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CENTRALLY-MANAGED INTEGRITY TOOLS<br>
+                                <strong>The organization employs centrally managed integrity verification tools.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-3.html">AU-3</a>, <a href="SI-2.html">SI-2</a>, <a href="SI-8.html">SI-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SI-7(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | TAMPER-EVIDENT PACKAGING<br>
+                                <strong>[Withdrawn: Incorporated into SA-12].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SI-7(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUTOMATED RESPONSE TO INTEGRITY VIOLATIONS<br>
+                                <strong>The information system automatically [Selection (one or more): shuts the information system down; restarts the information system; implements [Assignment: organization-defined security safeguards]] when integrity violations are discovered.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations may define different integrity checking and anomaly responses: (i) by type of information (e.g., firmware, software, user data); (ii) by specific information (e.g., boot firmware, boot firmware for a specific types of machines); or (iii) a combination of both. Automatic implementation of specific safeguards within organizational information systems includes, for example, reversing the changes, halting the information system, or triggering audit alerts when unauthorized modifications to critical security files occur.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SI-7(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CRYPTOGRAPHIC PROTECTION<br>
+                                <strong>The information system implements cryptographic mechanisms to detect unauthorized changes to software, firmware, and information.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cryptographic mechanisms used for the protection of integrity include, for example, digital signatures and the computation and application of signed hashes using asymmetric cryptography, protecting the confidentiality of the key used to generate the hash, and using the public key to verify the hash information.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SC-13.html">SC-13</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SI-7(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRATION OF DETECTION AND RESPONSE<br>
+                                <strong>The organization incorporates the detection of unauthorized [Assignment: organization-defined security-relevant changes to the information system] into the organizational incident response capability.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement helps to ensure that detected events are tracked, monitored, corrected, and available for historical purposes. Maintaining historical records is important both for being able to identify and discern adversary actions over an extended period of time and for possible legal actions. Security-relevant changes include, for example, unauthorized changes to established configuration settings or unauthorized elevation of information system privileges.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IR-4.html">IR-4</a>, <a href="IR-5.html">IR-5</a>, <a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">SI-7(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | AUDITING CAPABILITY FOR SIGNIFICANT EVENTS<br>
+                                <strong>The information system, upon detection of a potential integrity violation, provides the capability to audit the event and initiates the following actions: [Selection (one or more): generates an audit record; alerts current user; alerts [Assignment: organization-defined personnel or roles]; [Assignment: organization-defined other actions]].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations select response actions based on types of software, specific software, or information for which there are potential integrity violations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="AU-6.html">AU-6</a>, <a href="AU-12.html">AU-12</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">SI-7(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | VERIFY BOOT PROCESS<br>
+                                <strong>The information system verifies the integrity of the boot process of [Assignment: organization-defined devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Ensuring the integrity of boot processes is critical to starting devices in known/trustworthy states. Integrity verification mechanisms provide organizational personnel with assurance that only trusted code is executed during boot processes.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">SI-7(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | PROTECTION OF BOOT FIRMWARE<br>
+                                <strong>The information system implements [Assignment: organization-defined security safeguards] to protect the integrity of boot firmware in [Assignment: organization-defined devices].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Unauthorized modifications to boot firmware may be indicative of a sophisticated, targeted cyber attack. These types of cyber attacks can result in a permanent denial of service (e.g., if the firmware is corrupted) or a persistent malicious code presence (e.g., if code is embedded within the firmware). Devices can protect the integrity of the boot firmware in organizational information systems by: (i) verifying the integrity and authenticity of all updates to the boot firmware prior to applying changes to the boot devices; and (ii) preventing unauthorized processes from modifying the boot firmware.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">SI-7(11)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2811%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CONFINED ENVIRONMENTS WITH LIMITED PRIVILEGES<br>
+                                <strong>The organization requires that [Assignment: organization-defined user-installed software] execute in a confined physical or virtual machine environment with limited privileges.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations identify software that may be of greater concern with regard to origin or potential for containing malicious code. For this type of software, user installations occur in confined environments of operation to limit or contain damage from malicious code that may be executed.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-12">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_EnhancementNameDT">SI-7(12)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2812%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | INTEGRITY VERIFICATION<br>
+                                <strong>The organization requires that the integrity of [Assignment: organization-defined user-installed software] be verified prior to execution.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl12_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or code that contains errors from unauthorized modifications. Organizations consider the practicality of approaches to verifying software integrity including, for example, availability of checksums of adequate trustworthiness from software developers or vendors.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-13">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_EnhancementNameDT">SI-7(13)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2813%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CODE EXECUTION IN PROTECTED ENVIRONMENTS<br>
+                                <strong>The organization allows execution of binary or machine-executable code obtained from sources with limited or no warranty and without the provision of source code only in confined physical or virtual machine environments and with the explicit approval of [Assignment: organization-defined personnel or roles].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl13_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to all sources of binary or machine-executable code including, for example, commercial software/firmware and open source software.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-14">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_EnhancementNameDT">SI-7(14)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2814%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | BINARY OR MACHINE EXECUTABLE CODE<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SI-7 (14)(a)<a name="//apple_ref/cpp/Modifier/SI-7%20%2814%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Prohibits the use of binary or machine-executable code from sources with limited or no warranty and without the provision of source code; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SI-7 (14)(b)<a name="//apple_ref/cpp/Modifier/SI-7%20%2814%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Provides exceptions to the source code requirement only for compelling mission/operational requirements and with the approval of the authorizing official.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl14_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement applies to all sources of binary or machine-executable code including, for example, commercial software/firmware and open source software. Organizations assess software products without accompanying source code from sources with limited or no warranty for potential security impacts. The assessments address the fact that these types of software products may be very difficult to review, repair, or extend, given that organizations, in most cases, do not have access to the original source code, and there may be no owners who could make such repairs on behalf of organizations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-5.html">SA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-15">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_EnhancementNameDT">SI-7(15)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2815%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | CODE AUTHENTICATION<br>
+                                <strong>The information system implements cryptographic mechanisms to authenticate [Assignment: organization-defined software or firmware components] prior to installation.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl15_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Cryptographic authentication includes, for example, verifying that software or firmware components have been digitally signed using certificates recognized and approved by organizations. Code signing is an effective method to protect against malicious code.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-16">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_EnhancementNameDT">SI-7(16)</span>
+                            <a name="//apple_ref/cpp/Modifier/SI-7%2816%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY | TIME LIMIT ON PROCESS EXECUTION W/O SUPERVISION<br>
+                                <strong>The organization does not allow processes to execute without supervision for more than [Assignment: organization-defined time period].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl16_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses processes for which normal execution periods can be determined and situations in which organizations exceed such periods. Supervision includes, for example, operating system timers, automated responses, or manual oversight and response when information system process anomalies occur.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-147</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-147">http://csrc.nist.gov/publications/PubsSPs.html#800-147</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-155</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-155">http://csrc.nist.gov/publications/PubsSPs.html#800-155</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SI-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:24 GMT -->
+</html>

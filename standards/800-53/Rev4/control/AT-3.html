@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AT-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AT-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AT-3 <small>ROLE-BASED SECURITY TRAINING</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/AWARENESS%20AND%20TRAINING-2.html">AT - AWARENESS AND TRAINING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AT-3
+                                        </td>
+                                        <td>
+                                            AT-3
+                                        </td>
+                                        <td>
+                                            AT-3
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/AWARENESS%20AND%20TRAINING-2.html">AT</a>
+                    &gt; <strong>AT-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization provides role-based security training to personnel with assigned security roles and responsibilities:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Before authorizing access to the information system or performing assigned duties;
+</p>
+<p>
+b.
+When required by information system changes; and
+</p>
+<p>
+c.
+[Assignment: organization-defined frequency] thereafter.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Organizations determine the appropriate content of security training based on the assigned roles and responsibilities of individuals and the specific security requirements of organizations and the information systems to which personnel have authorized access. In addition, organizations provide enterprise architects, information system developers, software developers, acquisition/procurement officials, information system managers, system/network administrators, personnel conducting configuration management and auditing activities, personnel performing independent verification and validation activities, security control assessors, and other personnel having access to system-level software, adequate security-related technical training specifically tailored for their assigned duties. Comprehensive role-based training addresses management, operational, and technical roles and responsibilities covering physical, personnel, and technical safeguards and countermeasures. Such training can include for example, policies, procedures, tools, and artifacts for the organizational security roles defined. Organizations also provide the training necessary for individuals to carry out their responsibilities related to operations and supply chain security within the context of organizational information security programs. Role-based security training also applies to contractors providing services to federal agencies.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-2">AT-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AT-4">AT-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PS-7">PS-7</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-3">SA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-16">SA-16</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AT-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AT-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ROLE-BASED SECURITY TRAINING | ENVIRONMENTAL CONTROLS<br>
+                                <strong>The organization provides [Assignment: organization-defined personnel or roles] with initial and [Assignment: organization-defined frequency] training in the employment and operation of environmental controls.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Environmental controls include, for example, fire suppression and detection devices/systems, sprinkler systems, handheld fire extinguishers, fixed fire hoses, smoke detectors, temperature/humidity, HVAC, and power within the facility. Organizations identify personnel with specific roles and responsibilities associated with environmental controls requiring specialized training.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-1.html">PE-1</a>, <a href="PE-13.html">PE-13</a>, <a href="PE-14.html">PE-14</a>, <a href="PE-15.html">PE-15</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AT-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AT-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ROLE-BASED SECURITY TRAINING | PHYSICAL SECURITY CONTROLS<br>
+                                <strong>The organization provides [Assignment: organization-defined personnel or roles] with initial and [Assignment: organization-defined frequency] training in the employment and operation of physical security controls.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Physical security controls include, for example, physical access control devices, physical intrusion alarms, monitoring/surveillance equipment, and security guards (deployment and operating procedures). Organizations identify personnel with specific roles and responsibilities associated with physical security controls requiring specialized training.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PE-2.html">PE-2</a>, <a href="PE-3.html">PE-3</a>, <a href="PE-4.html">PE-4</a>, <a href="PE-5.html">PE-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AT-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AT-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ROLE-BASED SECURITY TRAINING | PRACTICAL EXERCISES<br>
+                                <strong>The organization includes practical exercises in security training that reinforce training objectives.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Practical exercises may include, for example, security training for software developers that includes simulated cyber attacks exploiting common software vulnerabilities (e.g., buffer overflows), or spear/whale phishing attacks targeted at senior leaders/executives. These types of practical exercises help developers better understand the effects of such vulnerabilities and appreciate the need for security coding standards and processes.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AT-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AT-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ROLE-BASED SECURITY TRAINING | SUSPICIOUS COMMUNICATIONS AND ANOMALOUS SYSTEM BEHAVIOR<br>
+                                <strong>The organization provides training to its personnel on [Assignment: organization-defined indicators of malicious code] to recognize suspicious communications and anomalous behavior in organizational information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                A well-trained workforce provides another organizational safeguard that can be employed as part of a defense-in-depth strategy to protect organizations against malicious code coming in to organizations via email or the web applications. Personnel are trained to look for indications of potentially suspicious email (e.g., receiving an unexpected email, receiving an email containing strange or poor grammar, or receiving an email from an unfamiliar sender but who appears to be from a known sponsor or contractor). Personnel are also trained on how to respond to such suspicious email or web communications (e.g., not opening attachments, not clicking on embedded web links, and checking the source of email addresses). For this process to work effectively, all organizational personnel are trained and made aware of what constitutes suspicious communications. Training personnel on how to recognize anomalous behaviors in organizational information systems can potentially provide early warning for the presence of malicious code. Recognition of such anomalous behavior by organizational personnel can supplement automated malicious code detection and protection tools and systems employed by organizations.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>C.F.R. Part 5 Subpart C (5 C.F.R. 930.301)</th>
+                    <td><a href="http://www.gpo.gov/fdsys/granule/CFR-2009-title5-vol2/CFR-2009-title5-vol2-sec930-301/content-detail.html">http://www.gpo.gov/fdsys/granule/CFR-2009-title5-vol2/CFR-2009-title5-vol2-sec930-301/content-detail.html</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-16</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-16">http://csrc.nist.gov/publications/PubsSPs.html#800-16</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-50</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-50">http://csrc.nist.gov/publications/PubsSPs.html#800-50</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AT-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:15 GMT -->
+</html>

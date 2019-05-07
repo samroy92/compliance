@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/AC-3" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">AC-3 <small>ACCESS ENFORCEMENT</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC - ACCESS CONTROL</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            AC-3
+                                        </td>
+                                        <td>
+                                            AC-3
+                                        </td>
+                                        <td>
+                                            AC-3
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/ACCESS%20CONTROL-2.html">AC</a>
+                    &gt; <strong>AC-3</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The information system enforces approved authorizations for logical access to information           and system resources in accordance with applicable access control policies.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Access control policies (e.g., identity-based policies, role-based policies, control matrices, cryptography) control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (e.g., devices, files, records, domains) in information systems. In addition to enforcing authorized access at the information system level and recognizing that information systems can host many applications and services in support of organizational missions and business operations, access enforcement mechanisms can also be employed at the application and service level to provide increased information security.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-2">AC-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-4">AC-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-5">AC-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-6">AC-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-16">AC-16</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-17">AC-17</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-18">AC-18</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-20">AC-20</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-21">AC-21</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-22">AC-22</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AU-9">AU-9</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-5">CM-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-6">CM-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CM-11">CM-11</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-3">MA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-4">MA-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MA-5">MA-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">AC-3(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | RESTRICTED ACCESS TO PRIVILEGED FUNCTIONS<br>
+                                <strong>[Withdrawn: Incorporated into AC-6].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">AC-3(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | DUAL AUTHORIZATION<br>
+                                <strong>The information system enforces dual authorization for [Assignment: organization-defined privileged commands and/or other organization-defined actions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dual authorization mechanisms require the approval of two authorized individuals in order to execute. Organizations do not require dual authorization mechanisms when immediate responses are necessary to ensure public and environmental safety. Dual authorization may also be known as two-person control.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CP-9.html">CP-9</a>, <a href="MP-6.html">MP-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">AC-3(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | MANDATORY ACCESS CONTROL<br>
+                                <strong>The information system enforces [Assignment: organization-defined mandatory access control policy] over all subjects and objects where the policy:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-3 (3)(a)<a name="//apple_ref/cpp/Modifier/AC-3%20%283%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Is uniformly enforced across all subjects and objects within the boundary of the information system;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (3)(b)<a name="//apple_ref/cpp/Modifier/AC-3%20%283%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Specifies that a subject that has been granted access to information is constrained from doing any of the following;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (3)(c)<a name="//apple_ref/cpp/Modifier/AC-3%20%283%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Specifies that [Assignment: organization-defined subjects] may explicitly be granted [Assignment: organization-defined privileges (i.e., they are trusted subjects)] such that they are not limited by some or all of the above constraints.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Mandatory access control as defined in this control enhancement is synonymous with nondiscretionary access control, and is not constrained only to certain historical uses (e.g., implementations using the Bell-LaPadula Model). The above class of mandatory access control policies constrains what actions subjects can take with information obtained from data objects for which they have already been granted access, thus preventing the subjects from passing the information to unauthorized subjects and objects. This class of mandatory access control policies also constrains what actions subjects can take with respect to the propagation of access control privileges; that is, a subject with a privilege cannot pass that privilege to other subjects. The policy is uniformly enforced over all subjects and objects to which the information system has control. Otherwise, the access control policy can be circumvented. This enforcement typically is provided via an implementation that meets the reference monitor concept (see AC-25). The policy is bounded by the information system boundary (i.e., once the information is passed outside of the control of the system, additional means may be required to ensure that the constraints on the information remain in effect). The trusted subjects described above are granted privileges consistent with the concept of least privilege (see AC-6). Trusted subjects are only given the minimum privileges relative to the above policy necessary for satisfying organizational mission/business needs. The control is most applicable when there is some policy mandate (e.g., law, Executive Order, directive, or regulation) that establishes a policy regarding access to sensitive/classified information and some users of the information system are not authorized access to all sensitive/classified information resident in the information system. This control can operate in conjunction with AC-3 (4). A subject that is constrained in its operation by policies governed by this control is still able to operate under the less rigorous constraints of AC-3 (4), but policies governed by this control take precedence over the less rigorous constraints of AC-3 (4). For example, while a mandatory access control policy imposes a constraint preventing a subject from passing information to another subject operating at a different sensitivity label, AC-3 (4) permits the subject to pass the information to any subject with the same sensitivity label as the subject.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-25.html">AC-25</a>, <a href="SC-11.html">SC-11</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">AC-3(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | DISCRETIONARY ACCESS CONTROL<br>
+                                <strong>The information system enforces [Assignment: organization-defined discretionary access control policy] over defined subjects and objects where the policy specifies that a subject that has been granted access to information can do one or more of the following:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-3 (4)(a)<a name="//apple_ref/cpp/Modifier/AC-3%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Pass the  information to any other subjects or objects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (4)(b)<a name="//apple_ref/cpp/Modifier/AC-3%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Grant its privileges to other subjects;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (4)(c)<a name="//apple_ref/cpp/Modifier/AC-3%20%284%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Change security attributes on subjects, objects, the information system, or the information system�s components;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (4)(d)<a name="//apple_ref/cpp/Modifier/AC-3%20%284%29%28d%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Choose the security attributes to be associated with newly created or revised objects; or</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (4)(e)<a name="//apple_ref/cpp/Modifier/AC-3%20%284%29%28e%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Change the rules governing access control.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing (i.e., the subjects have the discretion to pass) the information to other subjects or objects. This control enhancement can operate in conjunction with AC-3 (3). A subject that is constrained in its operation by policies governed by AC-3 (3) is still able to operate under the less rigorous constraints of this control enhancement. Thus, while AC-3 (3) imposes constraints preventing a subject from passing information to another subject operating at a different sensitivity level, AC-3 (4) permits the subject to pass the information to any subject at the same sensitivity level. The policy is bounded by the information system boundary. Once the information is passed outside of the control of the information system, additional means may be required to ensure that the constraints remain in effect. While the older, more traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this use of discretionary access control.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">AC-3(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | SECURITY-RELEVANT INFORMATION<br>
+                                <strong>The information system prevents access to [Assignment: organization-defined security-relevant information] except during secure, non-operable system states.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Security-relevant information is any information within information systems that can potentially impact the operation of security functions or the provision of security services in a manner that could result in failure to enforce system security policies or maintain the isolation of code and data. Security-relevant information includes, for example, filtering rules for routers/firewalls, cryptographic key management information, configuration parameters for security services, and access control lists. Secure, non-operable system states include the times in which information systems are not performing mission/business-related processing (e.g., the system is off-line for maintenance, troubleshooting, boot-up, shut down).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-3.html">CM-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">AC-3(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | PROTECTION OF USER AND SYSTEM INFORMATION<br>
+                                <strong>[Withdrawn: Incorporated into MP-4 and SC-28].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">AC-3(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | ROLE-BASED ACCESS CONTROL<br>
+                                <strong>The information system enforces a role-based access control policy over defined subjects and objects and controls access based upon [Assignment: organization-defined roles and users authorized to assume such roles].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Role-based access control (RBAC) is an access control policy that restricts information system access to authorized users. Organizations can create specific roles based on job functions and the authorizations (i.e., privileges) to perform needed operations on organizational information systems associated with the organization-defined roles. When users are assigned to the organizational roles, they inherit the authorizations or privileges defined for those roles. RBAC simplifies privilege administration for organizations because privileges are not assigned directly to every user (which can be a significant number of individuals for mid- to large-size organizations) but are instead acquired through role assignments. RBAC can be implemented either as a mandatory or discretionary form of access control. For organizations implementing RBAC with mandatory access controls, the requirements in AC-3 (3) define the scope of the subjects and objects covered by the policy.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">AC-3(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | REVOCATION OF ACCESS AUTHORIZATIONS<br>
+                                <strong>The information system enforces the revocation of access authorizations resulting from changes to the security attributes of subjects and objects based on [Assignment: organization-defined rules governing the timing of revocations of access authorizations].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Revocation of access rules may differ based on the types of access revoked. For example, if a subject (i.e., user or process) is removed from a group, access may not be revoked until the next time the object (e.g., file) is opened or until the next time the subject attempts a new access to the object. Revocation based on changes to security labels may take effect immediately. Organizations can provide alternative approaches on how to make revocations immediate if information systems cannot provide such capability and immediate revocation is necessary.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">AC-3(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | CONTROLLED RELEASE<br>
+                                <strong>The information system does not release information outside of the established system boundary unless:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>AC-3 (9)(a)<a name="//apple_ref/cpp/Modifier/AC-3%20%289%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>The receiving [Assignment: organization-defined information system or system component] provides [Assignment: organization-defined security safeguards]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>AC-3 (9)(b)<a name="//apple_ref/cpp/Modifier/AC-3%20%289%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>[Assignment: organization-defined security safeguards] are used to validate the appropriateness of the information designated for release.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information systems can only protect organizational information within the confines of established system boundaries. Additional security safeguards may be needed to ensure that such information is adequately protected once it is passed beyond the established information system boundaries. Examples of information leaving the system boundary include transmitting information to an external information system or printing the information on one of its printers. In cases where the information system is unable to make a determination of the adequacy of the protections provided by entities outside its boundary, as a mitigating control, organizations determine procedurally whether the external information systems are providing adequate security. The means used to determine the adequacy of the security provided by external information systems include, for example, conducting inspections or periodic testing, establishing agreements between the organization and its counterpart organizations, or some other process. The means used by external entities to protect the information received need not be the same as those used by the organization, but the means employed are sufficient to provide consistent adjudication of the security policy to protect the information. This control enhancement requires information systems to employ technical or procedural means to validate the information prior to releasing it to external systems. For example, if the information system passes information to another system controlled by another organization, technical means are employed to validate that the security attributes associated with the exported information are appropriate for the receiving system. Alternatively, if the information system passes information to a printer in organization-controlled space, procedural means can be employed to ensure that only appropriately authorized individuals gain access to the printer. This control enhancement is most applicable when there is some policy mandate (e.g., law, Executive Order, directive, or regulation) that establishes policy regarding access to the information, and that policy applies beyond the realm of a particular information system or organization.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">AC-3(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/AC-3%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS ENFORCEMENT | AUDITED OVERRIDE OF ACCESS CONTROL MECHANISMS<br>
+                                <strong>The organization employs an audited override of automated access control mechanisms under [Assignment: organization-defined conditions].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AU-2.html">AU-2</a>, <a href="AU-6.html">AU-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/AC-3 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:14 GMT -->
+</html>

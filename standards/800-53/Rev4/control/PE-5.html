@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/PE-5" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">PE-5 <small>ACCESS CONTROL FOR OUTPUT DEVICES</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE - PHYSICAL AND ENVIRONMENTAL PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            PE-5
+                                        </td>
+                                        <td>
+                                            PE-5
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/PHYSICAL%20AND%20ENVIRONMENTAL%20PROTECTION-2.html">PE</a>
+                    &gt; <strong>PE-5</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization controls physical access to information system output devices to prevent unauthorized individuals from obtaining the output.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Controlling physical access to output devices includes, for example, placing output devices in locked rooms or other secured areas and allowing access to authorized individuals only, and placing output devices in locations that can be monitored by organizational personnel. Monitors, printers, copiers, scanners, facsimile machines, and audio devices are examples of information system output devices.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-2">PE-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-4">PE-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-18">PE-18</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">PE-5(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-5%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR OUTPUT DEVICES | ACCESS TO OUTPUT BY AUTHORIZED INDIVIDUALS<br>
+                                <strong>The organization:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PE-5 (1)(a)<a name="//apple_ref/cpp/Modifier/PE-5%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Controls physical access to output from [Assignment: organization-defined output devices]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PE-5 (1)(b)<a name="//apple_ref/cpp/Modifier/PE-5%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Ensures that only authorized individuals receive output from the device.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Controlling physical access to selected output devices includes, for example, placing printers, copiers, and facsimile machines in controlled areas with keypad access controls or limiting access to individuals with certain types of badges.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">PE-5(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-5%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR OUTPUT DEVICES | ACCESS TO OUTPUT BY INDIVIDUAL IDENTITY<br>
+                                <strong>The information system:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>PE-5 (2)(a)<a name="//apple_ref/cpp/Modifier/PE-5%20%282%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Controls physical access to output from [Assignment: organization-defined output devices]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>PE-5 (2)(b)<a name="//apple_ref/cpp/Modifier/PE-5%20%282%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Links individual identity to receipt of the output from the device.</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Controlling physical access to selected output devices includes, for example, installing security functionality on printers, copiers, and facsimile machines that allows organizations to implement authentication (e.g., using a PIN or hardware token) on output devices prior to the release of output to individuals.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">PE-5(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/PE-5%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                ACCESS CONTROL FOR OUTPUT DEVICES | MARKING OUTPUT DEVICES<br>
+                                <strong>The organization marks [Assignment: organization-defined information system output devices] indicating the appropriate security marking of the information permitted to be output from the device.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Outputs devices include, for example, printers, monitors, facsimile machines, scanners, copiers, and audio devices. This control enhancement is generally applicable to information system output devices other than mobiles devices.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/PE-5 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:20 GMT -->
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-18" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="kzW6n9v8Sbi6aHaR4rZRBfGkUnyWBlBRhqqA6CxvwOC97ERjKxS61unkXPRDiHliKwnM0uuEYg8VWCJTgXElga+93gPLABiNAQCn5G/J7rrf9nz2kKfpWmyBGaHzexLwoLpuoQ+HeTAzrpyuvlCkz6TdAhL3kCtvAIjmxr2wFg/E+LlWmVE+EdebH6FVrF4oiHvX08RJ/oV5D/sxnwJV/vSejgW+GaO8uoSh75oK5PZbkbEyYKYGbWQh36mxL2+q4l9YlL21woeLsS91R8Ad9/baiQd587ob1BOMd/SSzkOu8byZGTL17nh2qbFhdu6AssvQMqQFCHQ6VNr2VqBB4qfxB5WeQReK+Pig+UqjWluTyzPRGWYT3FSFDNEvUAwsUxQJksjQHbbv8Ij1X0x3TYCkoN2n8M98ailU2sQRw0mEPPCkXeS6ac/1RIcAJBGJC8BsJgiLe1xHVh6Xz6Vp0CTARb66fdxu5tCfSOjQj5q+XD84G3K3ZTgJqjNC5S8VLpili1uZ4pXYQBMaaM8JeXIumzqcF+wjcRwgNFWYpK3KxGuz0Ty+zgh9MjugqUQfbhv5yABfdSrFCwutV13YiVrqPHz10Eg+KbT4drD747RYlt9VDtFRv7vTaLuz40kPzCGiaNmlpqBUuXv/kizYmsjPIR6uuyjksafzd+Hh0/q4l2Cr18D46AgVLgwfrN+gib6L75oNXxWpJRa6voScq1P6FpWoDRyKQHpLKDqqhBx5rw4A86JOCf7JFYO2ukr7wrSnDfHW7KtznPfp3kNTcwr1vu0s+iHjHLr9V6Brs7ztAq79BUIk8DU0bkJzUc6iqPjSPRLyjB6BwkMVO7NOV/xEV8vEaXcdpUORszLdH54sH/j6Wg85MSZ1IO1AUEIXj0am2OIfyi3ijcFMj5W2zTri7DyRb94Fu/P6QNvNDkTuPEQQlVUu+VOPCyq8Y/DIg8M0v/oW3uFjFtSH7r/W51ld8UFDDoYoM08Racz8mF7B1CxO717VpdLrsAZQxMA3xucNtAdYV3vKbkStpfjnLNCJx+p4D8xaehOLFVCBJIMWkAvJIVZUqswA8jDqFSaT/4nhrj0hRHWY0yOtXkv6Q3VOmZ+sTxovjRHT8dsf++yHaQaLtyJIfUR5+ugWa0W2C1CWBVUrZzgJ6ZTeXEfaeE4sMM3UzK2CEvQvbQjeLO0OpXbHKxT77jv168HbWNnkdbPrRdhEpl7Qf0w+9i6gSt9z6xFtlE8XvLAP6Tsk36yA9TypCT0CWwt88Bn85hwDrGpPwMhBj4/0rF2I5xcPmoZOap39vkdcj3P+QcMyUD6TFw5AXmjavEq+RlA3TxkmsdKMz5q747U05Jj9cMiWLmsZ0WPcfgNI8Gm87+oYNCwDyKwoVx13O2dszbkvpaR1grn5Y2VTFv+1L60PIs+mCzIfOlgKcNsX7L1SQ7Ng4mJ1XIR7pXVgZvL5iNDUM3S1Pm6q6o0rapO0mkcLjkcwuyAfOIeTuKXrWw3RxkSOi7C3Xs///YDjh6o/Bde3h/H7wI/CWCnNQ7/bNeUPOIrKUKIigEqWPk8/B/WbhQzJUue4RojrKE7PY3LOBbgjrhCkrBmW2nXIVM7/GCeW95Lkjt3pfJmo/9alp7dyCNZM54rUpIcuqn3XjktdECNDiZDm0Vfbtu2HNJmZ9hPa4gJ52htWlddxGIpkOZIt2m1lfVaX1oqZ6u9KqhazGUO8CFdfk1s5t3MECpGoApCgKqJm2P4Ob2luvN2nMwNkGShxBPI/HmhCZ/je3lbznVylpmiuKZyOiVNEXip1lVBnQSOsJoFaSm63qRo70/RQh8K80wCh33/TRL1ZanTNZjvLIqIGualfg52ZzJL5zjM/b17ZQDrDGw17eBqALMf7lPAKd2DJkya0PY6f6g+g45ZAEUHkgqYsoF31n/N0WZVcol9ChdMirOS9XSMnUessF5qd8oxLlAs0bEdk68OoONEnb10ZoClbaQhHoKtnhzbKxB8YChFT4OaCW2uFbulsxppE2cUJDhNqEDaCsbaZfaf21ZFnzjcrgzUW8Qa8S5o+YbjvE8tIw3IDy3vA6U2LsOEYzrUWjDhgxKtVo0iQ2hlgZKB9tvjfuiZWfZSq6l3eY5A/t8tebM1vpY2l4PnMVbLrY2YN7fBlgF4iqS/uBTDSvhzU021+O+/i/8rznlNVCx93wd1gibgPBcll1z1rXHfakPJSk+WQW9VgBRkrpkKF1LqmF+J5k4DT2Tz66pdBztwWvjLaglTS/iibqccqcx8MwDHuuirpGeQvg+v5LXpvtZck5TZjaXe9sdo1ZnLBkzZD9txiI107sphsHdSKW2nY5OCDzc03UPgm4MboagDZY3x6JvvHW9GYIxmLiEhthhT0TVpMdctKEqZ284vcaZgemhQZzZm6SMbwfiBT4NpAJBHdaIevaa8QHz11Iy9wwngPM7GjtkOYkMbW9KZlj/qVDsj3jKfUueA659qDt/06DnSQIE2GtB30gNnDJSXZ4eLNpy3+6HXiooeXdEb5esrGgdN2QjMudci5CMKbyL9WLbvdzzbUrACKmCL7acLKS8HPmZmPuK/p7ewPBAmOGyD4M0xa6AyJxAvVx4Z33sDbGNeVoPSut3KBnHxczr+uWI0o4f8p7Y5JsDAn8lx2IVPtGUkFIxaVrhQLdD5jaLAPUkZeHNhHU0WEd6OeIpoG+bvpSPJAUdiGF+zgnwj8GXjZIpa/KTP4PWonrSh4pCNVEHJNO74N9fMTsGHUn/dTSH8t2Hg7n/RcOZDEy4wIokcnbMlrkZJTtZBo9OqpPBqtR1bIaKvzcwzjn9I6o1eGw66EUIpRqalSlNyybNLGWy8XGn5gVAm/SiGz9mpviDZ8tIXGgHO2LkdkfC1fmMB19p6uJw7koXEFemHBcDt6QvQiGT6xzIw7XeG0IBc9IXqXCEd6WcQm38KD60YaUbBFSz24Jg8MEzbR0JQhGt2ssYI55nlWZB7Js/UtJjafMGagHZzYX0yVqenYo3c0/knXewBBTMU2f01+V0L332HzhnT5T483yiDYiJ+fnQryeUDmb4oK8V1xro5ixpauWbNQbqdh7SnVA7qzs38EdfIT2T+ULkyZxr6B16/Xx543K94hCLofi7ex2xaknVEAlrrMpGJfq606twGnLZJemwQUspONkloVdhgv1h51xnTIXRhlveyMy8R9t+jPJyzeR3QliAtpVXxRXut6DNfiaM5mS3xcO+0b1A9HnbCLIMigJaJbIF5cO6EKbzqw17OpbOLPMphA5k+915T/ZjkURRcgs5qr9C+pUyAtvhVCks/hT63G+VVRXtNSmU8XxgB4+tEFzvIsAZ0J0pC1oKI7n5/kZ6YggX8VU2pRF8JCTpWOCiaLNgDT/FdyEkdThWU7Q4n6VRJu7owDpucBy2M1areiSn2HCzARbOyzUNAp11qk4UaTsaP7OA0lrmHnPajslLZs0onoSxx7ibSKurED1O1tZ8HyIcyAJI+iSRULpBK/jdcf1pDSkDdb64V03Kr0RNu7rd0Nv1C4Q22pEzIbEfxZBMoHw/wMQZse/sVzgMsmhkrYYpfTM7JqPSOnVQ9wDfhMu1WG93VpeufUt1cMFVZk9zsM8KlWMS5ci7gZNtH8KuChQauq2/Y/BE7hxeXm+N5OFg+Cs9/9nlQqjG/pMMTApO+2neaWvn8WRO0S3O6fbF1PLLr8seuFB7JbW/2gqMVjJW7/qSHDTRDiSwmOmVazTy1nfZ8Jun2yMbmWYlp9LvP8OqJNE2t46CPW+QKqkM6Q2fofl9+to8erA/1rb0bLwcbBgPJ74Ev4Gg47ZQH0dn3qFmd5GZ6peqahbj/Cx8qwi9SvSoD0+/bMPxEbcNiQPQaYNsYErUWU/i8iCPRIzDk5TGLG5NZUjuZ16ejdAJYGFqlVKMEXCovpkvlDPunfgp4KgCzElB8RUQIyETKGbjWRSOBpWXI9N+RRZv4BjQAZTgYZU+EkRByzf6IbFttyJAMQKEBFs0pH3iiR9HBU5qK3cn7QbmW8/Wua40dxwRCUir9LLTIrKlRPjSdAkfDwyAGJERiaae5r+nbJIhT7LuiEZeRXsK7dfEZKDa+KYv5sspWm6AbljcXl40GvatvScswcP7BxiAz15obTWEuH0wF6wgmXrA4+k+GHsJ7Mvfkt9Fny1mc7ksH3re3cocbT/g39toA37VL1R4V9/RqJLiOnOGwN">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-18 <small>TAMPER RESISTANCE AND DETECTION</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P0 - Unspecified priority.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-18</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization implements a tamper protection program for the information system, system component, or information system service.</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Anti-tamper technologies and techniques provide a level of protection for critical information systems, system components, and information technology products against a number of related threats including modification, reverse engineering, and substitution. Strong identification combined with tamper resistance and/or tamper detection is essential to protecting information systems, components, and products during distribution and when in use.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PE-3">PE-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-12">SA-12</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SI-7">SI-7</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SA-18(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-18%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TAMPER RESISTANCE AND DETECTION | MULTIPLE PHASES OF SDLC<br>
+                                <strong>The organization employs anti-tamper technologies and techniques during multiple phases in the system development life cycle including design, development, integration, operations, and maintenance.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations use a combination of hardware and software techniques for tamper resistance and detection. Organizations employ obfuscation and self-checking, for example, to make reverse engineering and modifications more difficult, time-consuming, and expensive for adversaries. Customization of information systems and system components can make substitutions easier to detect and therefore limit damage.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-3.html">SA-3</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SA-18(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-18%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                TAMPER RESISTANCE AND DETECTION | INSPECTION OF INFORMATION SYSTEMS, COMPONENTS, OR DEVICES<br>
+                                <strong>The organization inspects [Assignment: organization-defined information systems, system components, or devices] [Selection (one or more): at random; at [Assignment: organization-defined frequency], upon [Assignment: organization-defined indications of need for inspection]] to detect tampering.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement addresses both physical and logical tampering and is typically applied to mobile devices, notebook computers, or other system components taken out of organization-controlled areas. Indications of need for inspection include, for example, when individuals return from travel to high-risk locations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SI-4.html">SI-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-18 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

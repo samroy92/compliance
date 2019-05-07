@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-15 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/SA-15" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">SA-15 <small>DEVELOPMENT PROCESS, STANDARDS, AND TOOLS</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA - SYSTEM AND SERVICES ACQUISITION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P2 - Implement P2 security controls after implementation of P1 controls.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            N/A
+                                        </td>
+                                        <td>
+                                            SA-15
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/SYSTEM%20AND%20SERVICES%20ACQUISITION-2.html">SA</a>
+                    &gt; <strong>SA-15</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Requires the developer of the information system, system component, or information system service to follow a documented development process that:
+</p>
+<p>
+1.
+Explicitly addresses security requirements;
+</p>
+<p>
+2.
+Identifies the standards and tools used in the development process;
+</p>
+<p>
+3.
+Documents the specific tool options and tool configurations used in the development process; and
+</p>
+<p>
+4.
+Documents, manages, and ensures the integrity of changes to the process and/or tools used in development; and
+</p>
+
+
+<p>
+b.
+Reviews the development process, standards, tools, and tool options/configurations [Assignment: organization-defined frequency] to determine if the process, standards, tools, and tool options/configurations selected and employed can satisfy [Assignment: organization-defined security requirements].
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Development tools include, for example, programming languages and computer-aided design (CAD) systems. Reviews of development processes can include, for example, the use of maturity models to determine the potential effectiveness of such processes. Maintaining the integrity of changes to tools and processes enables accurate supply chain risk assessment and mitigation, and requires robust configuration control throughout the life cycle (including design, development, transport, delivery, integration, and maintenance) to track authorized changes and prevent unauthorized changes.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-3">SA-3</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SA-8">SA-8</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">SA-15(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | QUALITY METRICS<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-15 (1)(a)<a name="//apple_ref/cpp/Modifier/SA-15%20%281%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Define quality metrics at the beginning of the development process; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (1)(b)<a name="//apple_ref/cpp/Modifier/SA-15%20%281%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Provide evidence of meeting the quality metrics [Selection (one or more): [Assignment: organization-defined frequency]; [Assignment: organization-defined program review milestones]; upon delivery].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Organizations use quality metrics to establish minimum acceptable levels of information system quality. Metrics may include quality gates which are collections of completion criteria or sufficiency standards representing the satisfactory execution of particular phases of the system development project. A quality gate, for example, may require the elimination of all compiler warnings or an explicit determination that the warnings have no impact on the effectiveness of required security capabilities. During the execution phases of development projects, quality gates provide clear, unambiguous indications of progress. Other metrics apply to the entire development project. These metrics can include defining the severity thresholds of vulnerabilities, for example, requiring no known vulnerabilities in the delivered information system with a Common Vulnerability Scoring System (CVSS) severity of Medium or High.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">SA-15(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | SECURITY TRACKING TOOLS<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to select and employ a security tracking tool for use during the development process.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information system development teams select and deploy security tracking tools, including, for example, vulnerability/work item tracking systems that facilitate assignment, sorting, filtering, and tracking of completed work items or tasks associated with system development processes.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">SA-15(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | CRITICALITY ANALYSIS<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to perform a criticality analysis at [Assignment: organization-defined breadth/depth] and at [Assignment: organization-defined decision points in the system development life cycle].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                This control enhancement provides developer input to the criticality analysis performed by organizations in SA-14. Developer input is essential to such analysis because organizations may not have access to detailed design documentation for information system components that are developed as commercial off-the-shelf (COTS) information technology products (e.g., functional specifications, high-level designs, low-level designs, and source code/hardware schematics).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-4.html">SA-4</a>, <a href="SA-14.html">SA-14</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">SA-15(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | THREAT MODELING / VULNERABILITY ANALYSIS<br>
+                                <strong>The organization requires that developers perform threat modeling and a vulnerability analysis for the information system at [Assignment: organization-defined breadth/depth] that:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-15 (4)(a)<a name="//apple_ref/cpp/Modifier/SA-15%20%284%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Uses [Assignment: organization-defined information concerning impact, environment of operations, known or assumed threats, and acceptable risk levels];</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (4)(b)<a name="//apple_ref/cpp/Modifier/SA-15%20%284%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Employs [Assignment: organization-defined tools and methods]; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (4)(c)<a name="//apple_ref/cpp/Modifier/SA-15%20%284%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Produces evidence that meets [Assignment: organization-defined acceptance criteria].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="SA-4.html">SA-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">SA-15(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | ATTACK SURFACE REDUCTION<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to reduce attack surfaces to [Assignment: organization-defined thresholds].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Attack surface reduction is closely aligned with developer threat and vulnerability analyses and information system architecture and design. Attack surface reduction is a means of reducing risk to organizations by giving attackers less opportunity to exploit weaknesses or deficiencies (i.e., potential vulnerabilities) within information systems, information system components, and information system services. Attack surface reduction includes, for example, applying the principle of least privilege, employing layered defenses, applying the principle of least functionality (i.e., restricting ports, protocols, functions, and services), deprecating unsafe functions, and eliminating application programming interfaces (APIs) that are vulnerable to cyber attacks.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-7.html">CM-7</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">SA-15(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | CONTINUOUS IMPROVEMENT<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to implement an explicit process to continuously improve the development process.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Developers of information systems, information system components, and information system services consider the effectiveness/efficiency of current development processes for meeting quality objectives and addressing security capabilities in current threat environments.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">SA-15(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | AUTOMATED VULNERABILITY ANALYSIS<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to:</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                            <table class="table table-hover table-condensed table-striped">
+                                                <tbody>
+                                        
+                                            <tr>
+                                                <th>SA-15 (7)(a)<a name="//apple_ref/cpp/Modifier/SA-15%20%287%29%28a%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Perform an automated vulnerability analysis using [Assignment: organization-defined tools];</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (7)(b)<a name="//apple_ref/cpp/Modifier/SA-15%20%287%29%28b%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Determine the exploitation potential for discovered vulnerabilities;</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (7)(c)<a name="//apple_ref/cpp/Modifier/SA-15%20%287%29%28c%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Determine potential risk mitigations for delivered vulnerabilities; and</pre></td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <th>SA-15 (7)(d)<a name="//apple_ref/cpp/Modifier/SA-15%20%287%29%28d%29" class="dashAnchor"></a>
+</th>
+                                                <td><pre>Deliver the outputs of the tools and results of the analysis to [Assignment: organization-defined personnel or roles].</pre></td>
+                                            </tr>
+                                        
+                                                </tbody>
+                                            </table>
+                                        
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="RA-5.html">RA-5</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-8">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_EnhancementNameDT">SA-15(8)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%288%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | REUSE OF THREAT / VULNERABILITY INFORMATION<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to use threat modeling and vulnerability analyses from similar systems, components, or services to inform the current development process.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl08_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Analysis of vulnerabilities found in similar software applications can inform potential design or implementation issues for information systems under development. Similar information systems or system components may exist within developer organizations. Authoritative vulnerability information is available from a variety of public and private sector sources including, for example, the National Vulnerability Database.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-9">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_EnhancementNameDT">SA-15(9)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%289%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | USE OF LIVE DATA<br>
+                                <strong>The organization approves, documents, and controls the use of live data in development and test environments for the information system, system component, or information system service.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl09_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The use of live data in preproduction environments can result in significant risk to organizations. Organizations can minimize such risk by using test or dummy data during the development and testing of information systems, information system components, and information system services.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-10">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_EnhancementNameDT">SA-15(10)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%2810%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | INCIDENT RESPONSE PLAN<br>
+                                <strong>The organization requires the developer of the information system, system component, or information system service to provide an incident response plan.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl10_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                The incident response plan for developers of information systems, system components, and information system services is incorporated into organizational incident response plans to provide the type of incident response information not readily available to organizations. Such information may be extremely helpful, for example, when organizations respond to vulnerabilities in commercial off-the-shelf (COTS) information technology products.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="IR-8.html">IR-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-11">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_EnhancementNameDT">SA-15(11)</span>
+                            <a name="//apple_ref/cpp/Modifier/SA-15%2811%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                DEVELOPMENT PROCESS, STANDARDS, AND TOOLS | ARCHIVE INFORMATION SYSTEM / COMPONENT<br>
+                                <strong>The organization requires the developer of the information system or system component to archive the system or component to be released or delivered together with the corresponding evidence supporting the final security review.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl11_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Archiving relevant documentation from the development process can provide a readily available baseline of information that can be helpful during information system/component upgrades or modifications.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        <p>None.</p>
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/SA-15 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:25 GMT -->
+</html>

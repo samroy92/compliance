@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/CP-9" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">CP-9 <small>INFORMATION SYSTEM BACKUP</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP - CONTINGENCY PLANNING</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            CP-9
+                                        </td>
+                                        <td>
+                                            CP-9 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            CP-9 (<a href="#enhancement-1">1</a>) (<a href="#enhancement-2">2</a>) (<a href="#enhancement-3">3</a>) (<a href="#enhancement-5">5</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/CONTINGENCY%20PLANNING-2.html">CP</a>
+                    &gt; <strong>CP-9</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization:</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+<p>
+a.
+Conducts backups of user-level information contained in the information system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives];
+</p>
+<p>
+b.
+Conducts backups of system-level information contained in the information system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives];
+</p>
+<p>
+c.
+Conducts backups of information system documentation including security-related documentation [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; and
+</p>
+<p>
+d.
+Protects the confidentiality, integrity, and availability of backup information at storage locations.
+</p>
+
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>System-level information includes, for example, system-state information, operating system and application software, and licenses. User-level information includes any information other than system-level information. Mechanisms employed by organizations to protect the integrity of information system backups include, for example, digital signatures and cryptographic hashes. Protection of system backup information while in transit is beyond the scope of this control. Information system backups reflect the requirements in contingency plans as well as other organizational requirements for backing up information.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-2">CP-2</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=CP-6">CP-6</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-4">MP-4</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=MP-5">MP-5</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=SC-13">SC-13</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">CP-9(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | TESTING FOR RELIABILITY / INTEGRITY<br>
+                                <strong>The organization tests backup information [Assignment: organization-defined frequency] to verify media reliability and information integrity.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CP-4.html">CP-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">CP-9(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | TEST RESTORATION USING SAMPLING<br>
+                                <strong>The organization uses a sample of backup information in the restoration of selected information system functions as part of contingency plan testing.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CP-4.html">CP-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-3">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_EnhancementNameDT">CP-9(3)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%283%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | SEPARATE STORAGE FOR CRITICAL INFORMATION<br>
+                                <strong>The organization stores backup copies of [Assignment: organization-defined critical information system software and other security-related information] in a separate facility or in a fire-rated container that is not collocated with the operational system.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl03_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Critical information system software includes, for example, operating systems, cryptographic key management systems, and intrusion detection/prevention systems. Security-related information includes, for example, organizational inventories of hardware, software, and firmware components. Alternate storage sites typically serve as separate storage facilities for organizations.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CM-2.html">CM-2</a>, <a href="CM-8.html">CM-8</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-4">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl04_EnhancementNameDT">CP-9(4)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%284%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | PROTECTION FROM UNAUTHORIZED MODIFICATION<br>
+                                <strong>[Withdrawn: Incorporated into CP-9].</strong>
+                                
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-5">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_EnhancementNameDT">CP-9(5)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%285%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | TRANSFER TO ALTERNATE STORAGE SITE<br>
+                                <strong>The organization transfers information system backup information to the alternate storage site [Assignment: organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl05_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Information system backup information can be transferred to alternate storage sites either electronically or by physical shipment of storage media.
+                                                
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-6">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_EnhancementNameDT">CP-9(6)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%286%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | REDUNDANT SECONDARY SYSTEM<br>
+                                <strong>The organization accomplishes information system backup by maintaining a redundant secondary system that is not collocated with the primary system and that can be activated without loss of information or disruption to operations.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl06_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u></u>
+                                            <span class="controlDetailValue">
+                                                
+                                                <br>
+                                                    Related to: 
+                                                    <a href="CP-7.html">CP-7</a>, <a href="CP-10.html">CP-10</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-7">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_EnhancementNameDT">CP-9(7)</span>
+                            <a name="//apple_ref/cpp/Modifier/CP-9%287%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                INFORMATION SYSTEM BACKUP | DUAL AUTHORIZATION<br>
+                                <strong>The organization enforces dual authorization for the deletion or destruction of [Assignment: organization-defined backup information].</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl07_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Dual authorization ensures that the deletion or destruction of backup information cannot occur unless two qualified individuals carry out the task. Individuals deleting/destroying backup information possess sufficient skills/expertise to determine if the proposed deletion/destruction of backup information reflects organizational policies and procedures. Dual authorization may also be known as two-person control.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="AC-3.html">AC-3</a>, <a href="MP-2.html">MP-2</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>NIST Special Publication 800-34</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-34">http://csrc.nist.gov/publications/PubsSPs.html#800-34</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/CP-9 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:16 GMT -->
+</html>

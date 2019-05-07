@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+<!-- Added by HTTrack --><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<!-- /Added by HTTrack -->
+<title>
+	NVD - Control
+</title>
+<meta charset="UTF-8"> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/font-awesome/css/font-awesome.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/css/calendar.min.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/asp-styles.css" type="text/css" rel="stylesheet">
+<link href="https://beta.nvd.nist.gov/NVD/media/css/media-resize.css" type="text/css" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/manifest.json">
+<link rel="mask-icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="https://beta.nvd.nist.gov/NVD/Media/images/favicons/favicon.ico">
+<meta name="msapplication-config" content="https://beta.nvd.nist.gov/NVD/Media/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#000000">
+
+<script src="https://beta.nvd.nist.gov/Scripts/jquery-modern/jquery.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/underscore/underscore.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap/js/tab.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/Scripts/bootstrap-calendar/js/calendar.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/megamenu.js" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/NVD/media/js/main.js" type="text/javascript"></script> 
+
+</head>
+<body class="LTR ENUS ContentBody">
+    <form method="post" action="https://beta.nvd.nist.gov/800-53/Rev4/control/MP-7" id="form">
+<div class="aspNetHidden">
+<input type="hidden" name="manScript_HiddenField" id="manScript_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://beta.nvd.nist.gov/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBcQTBcvKn4zR2vrBMhVDraidpzZELMo7LR30ZToyPhl981Y0mhd8H4Ih6Yb3OMWIg2&amp;t=636161530540000000" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US">
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('m$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('m$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTdejtcO9IQD2a8X4CBWS4f3etoK7gMP6Vvx9hY2sWbcxbN-03qL8ATI_j6HEnutPc2diI_KcScrsQImYwy8rmW2c0M940pv77XKfx7AY0A6s0&amp;t=7c776dc1" type="text/javascript"></script>
+<script src="https://beta.nvd.nist.gov/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBRrOQc0E8M4rgbYJr0N5udNftNh7IaCB1i42UYudCTp_fvj8tr7QUPhpWlGnS_drLSaZ9xtIaHUr23VlvSow6_htBLA2zzXz4Eihmi_ViJLO0&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A5343185">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('manScript', 'form', ['tctxM',''], [], [], 90, '');
+//]]>
+</script>
+
+    <div id="ctxM">
+
+</div>
+    <div id="frameBusterDiv" style="display: none">
+    <h1>You are viewing this page in an unauthorized frame window.</h1>
+    <p>This is a potential security issue, you are being redirected to <a href="http://nvd.nist.gov/">http://nvd.nist.gov</a></p>
+</div>
+
+
+<div id="body-section">
+<div class="container">
+<ol class="breadcrumb">
+<a href="https://beta.nvd.nist.gov/800-53" class="CMSBreadCrumbsLink">800-53/800-53A</a> <span class="fa fa-angle-right"></span> <a href="../../Rev4.html" class="CMSBreadCrumbsLink">Rev4</a> <span class="fa fa-angle-right"></span> <span class="CMSBreadCrumbsCurrentItem">Control</span>
+</ol>
+</div>  
+
+
+
+
+  <div class="container">
+    <div>
+      <h1 class="page-header">NIST Special Publication 800-53 (Rev. 4)</h1>
+
+<p class="lead">Security Controls and Assessment Procedures for Federal Information Systems and Organizations</p>
+
+
+
+
+
+
+
+
+
+<h2 id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_TitleHeader" class="page-header">MP-7 <small>MEDIA USE</small>
+</h2>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            
+            <div class="panel panel-success">
+                <div class="panel-body">
+                    <dl class="dl-horizontal">
+                        <dt class="text-success">Family:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP - MEDIA PROTECTION</a>
+                        </dd>
+                        <dt class="text-success">Class:</dt>
+                        <dd>
+                            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_PropertiesBoxClassLink" href="../class/index.html"></a>
+                        </dd>
+                        <dt class="text-success">Priority:</dt>
+                        <dd>
+					        P1 - Implement P1 security controls first.
+                        </dd>
+                        <dt class="text-success">Baseline Allocation:</dt>
+                        <dd>
+                            <table class="table table-hover table-striped table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Low</th>
+                                        <th>Moderate</th>
+                                        <th>High</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>
+                                            MP-7
+                                        </td>
+                                        <td>
+                                            MP-7 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                        <td>
+                                            MP-7 (<a href="#enhancement-1">1</a>)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4">
+            
+            <div class="bs-callout bs-callout-info">
+                
+                    <h3>Jump To:</h3>
+                    <p>
+                        <a href="#Rev4Statements">Revision 4 Statements</a><br>
+                        <a href="#controlDescription">Control Description</a><br>
+                        <a href="#supplementalGuidance">Supplemental Guidance</a><br>
+                        <a href="#references">References</a>
+                    </p>
+		        
+                
+                <p>
+		            <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbAllControlsLink" href="../home.html">All Controls</a>
+                    &gt; <a id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_BreadCrumbFamilyLink" href="../family/MEDIA%20PROTECTION-2.html">MP</a>
+                    &gt; <strong>MP-7</strong>
+
+                </p>
+	            
+            </div>
+
+        </div>
+    </div>
+				                                     
+	<h2 class="page-header" id="controlDescription">Control Description</h2>
+
+	
+			    
+    <div id="Rev4Statements">
+        <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_StatementsDiv">
+                    
+            <strong id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementHeader" class="controlDetailHeading">The organization [Selection: restricts; prohibits] the use of [Assignment: organization-defined types of information system media] on [Assignment: organization-defined information systems or system components] using [Assignment: organization-defined security safeguards].</strong>
+
+            <p id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4StatementContentsDiv"></p>
+
+        </div>
+    </div>
+                
+
+	<h3 id="supplementalGuidance">Supplemental Guidance</h3>
+	
+	<blockquote>Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. This control also applies to mobile devices with information storage capability (e.g., smart phones, tablets, E-readers). In contrast to MP-2, which restricts user access to media, this control restricts the use of certain types of media on information systems, for example, restricting/prohibiting the use of flash drives or external hard disk drives. Organizations can employ technical and nontechnical safeguards (e.g., policies, procedures, rules of behavior) to restrict the use of information system media. Organizations may restrict the use of portable storage devices, for example, by using physical cages on workstations to prohibit access to certain external ports, or disabling/removing the ability to insert, read or write to such devices. Organizations may also limit the use of portable storage devices to only approved devices including, for example, devices provided by the organization, devices provided by other approved organizations, and devices that are not personally owned. Finally, organizations may restrict the use of portable storage devices based on the type of device, for example, prohibiting the use of writeable, portable storage devices, and implementing this restriction by disabling or removing the capability to write to such devices.</blockquote>
+    
+        <p>
+        Related to: <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=AC-19">AC-19</a>, <a href="http://web.nvd.nist.gov/view/800-53/Rev4/control?controlName=PL-4">PL-4</a>
+        </p>
+    <div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementDiv" class="controlDetailSection">
+
+		<h3 id="controlEnhancements">Control Enhancements</h3>
+
+		
+		
+                <table class="table table-hover table-striped">
+                    <tbody>
+            
+                        <tr id="enhancement-1">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_EnhancementNameDT">MP-7(1)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-7%281%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA USE | PROHIBIT USE WITHOUT OWNER<br>
+                                <strong>The organization prohibits the use of portable storage devices in organizational information systems when such devices have no identifiable owner.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl01_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Requiring identifiable owners (e.g., individuals, organizations, or projects) for portable storage devices reduces the risk of using such technologies by allowing organizations to assign responsibility and accountability for addressing known vulnerabilities in the devices (e.g., malicious code insertion).
+                                                <br>
+                                                    Related to: 
+                                                    <a href="PL-4.html">PL-4</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                        <tr id="enhancement-2">
+                            <th nowrap>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_EnhancementNameDT">MP-7(2)</span>
+                            <a name="//apple_ref/cpp/Modifier/MP-7%282%29" class="dashAnchor"></a>
+</th>
+                            <td>
+                                MEDIA USE | PROHIBIT USE OF SANITIZATION-RESISTANT MEDIA<br>
+                                <strong>The organization prohibits the use of sanitization-resistant media in organizational information systems.</strong>
+                                <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidePanel">
+                                    
+                                    <span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidRow">
+                                        <div class="controlDetailSection">
+					                        <u><span id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_Rev4ControlEnhancementRepeater_ctl02_SuppGuidHeading" class="controlDetailHeading">Supplemental Guidance:</span></u>
+                                            <span class="controlDetailValue">
+                                                Sanitization-resistance applies to the capability to purge information from media. Certain types of media do not support sanitize commands, or if supported, the interfaces are not supported in a standardized way across these devices. Sanitization-resistant media include, for example, compact flash, embedded flash on boards and devices, solid state drives, and USB removable media.
+                                                <br>
+                                                    Related to: 
+                                                    <a href="MP-6.html">MP-6</a>
+                                            </span>
+                                        </div>
+                                    </span>
+                                    
+                                </span>
+                            </td>
+                        </tr>
+			
+                    </tbody>
+                </table>
+            
+    </div>
+<div id="p_lt_WebPartZone1_zoneCenter_pageplaceholder_p_lt_WebPartZone1_ContentZone_800_53Control_ReferencesDiv" class="controlDetailSection">
+                    
+        <h3 id="references">References</h3>
+
+        
+        
+                <table class="table table-hover">
+                    <tbody>
+            
+                <tr>
+                    <th>FIPS Publication 199</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsFIPS.html#199">http://csrc.nist.gov/publications/PubsFIPS.html#199</a></td>
+                </tr>
+            
+                <tr>
+                    <th>NIST Special Publication 800-111</th>
+                    <td><a href="http://csrc.nist.gov/publications/PubsSPs.html#800-111">http://csrc.nist.gov/publications/PubsSPs.html#800-111</a></td>
+                </tr>
+            
+                    </tbody>
+                </table>
+            
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+  <script type="text/javascript">
+    if (self.location != top.location) {
+        document.getElementById("navbar").style.display = 'none';
+        document.getElementById("body-section").style.display = 'none';
+        document.getElementById("footer").style.display = 'none';
+        document.getElementById("frameBusterDiv").style.display = 'block';
+        setTimeout("top.location.replace('http://nvd.nist.gov/')", 2000);
+    }
+</script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("manScript_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+var callBackFrameUrl='https://beta.nvd.nist.gov/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdWfdrQQYgP7DC59IKij0GnL03bkDh9TN2_DM5CNM63fuFBB-o2ByflfqPl0g0g71aw2&amp;t=636161530540000000';
+WebForm_InitCallback();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+//]]>
+</script>
+</form>
+</body>
+
+<!-- Mirrored from beta.nvd.nist.gov/800-53/Rev4/control/MP-7 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Mar 2017 20:13:19 GMT -->
+</html>
