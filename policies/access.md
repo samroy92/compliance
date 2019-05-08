@@ -8,6 +8,8 @@ satisfies:
 majorRevisions:
   - date: Jun 1 2018
     comment: Initial document
+  - date: May 7 2019
+    comment: Sam updated doc
 ---
 # Purpose and Scope
 
